@@ -192,34 +192,34 @@
     <section class="now-popular">
         <h1>Now Popular</h1>
         <div class="popular-list">
-            <div class="popular-item">
-                <img src="images/battlefront.jpg" alt="Popular Game 1">
-                <div class="details">
-                    <p>Popular Game 1</p>
-                    <div class="rating">★★★☆☆</div>
-                </div>
-            </div>
-            <div class="popular-item">
-                <img src="images/minecraft.jpg" alt="Popular Game 2">
-                <div class="details">
-                    <p>Popular Game 2</p>
-                    <div class="rating">★★★☆☆</div>
-                </div>
-            </div>
-            <div class="popular-item">
-                <img src="images/minecraft.jpg" alt="Popular Game 3">
-                <div class="details">
-                    <p>Popular Game 3</p>
-                    <div class="rating">★★★☆☆</div>
-                </div>
-            </div>
-            <div class="popular-item">
-                <img src="images/minecraft.jpg" alt="Popular Game 4">
-                <div class="details">
-                    <p>Popular Game 4</p>
-                    <div class="rating">★★★☆☆</div>
-                </div>
-            </div>
+            <figure>
+                <img src="images/battlefront.jpg" alt="Game 7">
+                <figcaption>
+                    <p>Game 7</p>
+                    <p class="stars">★★★☆☆</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/battlefront.jpg" alt="Game 7">
+                <figcaption>
+                    <p>Game 7</p>
+                    <p class="stars">★★★☆☆</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/battlefront.jpg" alt="Game 7">
+                <figcaption>
+                    <p>Game 7</p>
+                    <p class="stars">★★★☆☆</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/battlefront.jpg" alt="Game 7">
+                <figcaption>
+                    <p>Game 7</p>
+                    <p class="stars">★★★☆☆</p>
+                </figcaption>
+            </figure>
         </div>
     </section>
 </main>
