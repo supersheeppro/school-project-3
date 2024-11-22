@@ -1,46 +1,145 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
+  <head>
+  <head>
     <meta charset="UTF-8">
+      
+    <!-- Zorgt ervoor dat de pagina correct wordt weergegeven op mobiele apparaten. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice</title>
+      
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+    <!-- SEO (search engine optimation) Metagegevens -->
+
+    <!-- Description voor zoekmachines en sociale media, omschrijft kort de inhoud van de pagina. -->
+    <meta name="description" content="">
+
+    <!-- Keywords Helpt zoekmachines begrijpen waar de pagina over gaat. -->
+    <meta name="keywords" content="">
+
+    <!-- Author de naam van de developer van de pagina.  -->
+    <meta name="Kaya Altona" content="">
+      
+    <!-- De titel van de pagina, deze verschijnt op het tabblad, geef hieraan waar de
+    de pagina over gaat  -->
+    
+    <title></title>
+
+    <!-- Favicon kleine afbeelding die wordt weergegeven in de browser-tabbladen -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!--  link naar de stylesheet -->
     <link rel="stylesheet" href="css/style.css">
-</head>
+  </head> 
 
-<body>
-<header>
-  <nav>
-    <img src="images/logo_breed_wit.png" alt="logo">
-      <form id="form">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
-          <input type="search" id="query" name="q" placeholder="Search">
-      </form>
-    <ul>
-      <a href="#">Home</a>
-      <a href="#">Games</a>
-      <a href="#">Merch</a>
-      <a href="#">Contact</a>
-    </ul>
-    <div class="box-cart">
-      <a href="#" class="button-cart">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
-          <p>Your Cart</p>
-      </a>
-    </div>
-  </nav>
-</header>
+  <body>
+    <header>
+      <nav>
+        <img src="images/logo_breed_wit.png" alt="logo">
+          <form id="form">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+              <input type="search" id="query" name="q" placeholder="Search">
+          </form>
+        <ul>
+          <a href="#">Home</a>
+          <a href="#">Games</a>
+          <a href="#">Merch</a>
+          <a href="#">Contact</a>
+        </ul>
+        <div class="box-cart">
+          <a href="#" class="button-cart">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+              <p>Your Cart</p>
+          </a>
+        </div>
+      </nav>
+    </header>
 
-<main>
-	<div class="box-slideshow">
-		<article class="content-slideshow">
-			<H1>
-				Game Stars
-			</H1>
-			<a href="#" class="btn-slideshow">
-				<p>Shop Now</p>
-			</a>
-		</article>
-	</div>
-</main>
-</body>
+    <main>
+      <div class="box-slideshow">
+        <article class="content-slideshow">
+          <h1>
+            Game Stars
+          </h1>
+          <a href="#" class="btn-slideshow">
+            <p>Shop Now</p>
+          </a>
+        </article>
+      </div>
+
+        <div class="title-products">
+          <h1>Featured Products</h1>
+        </div>
+
+      <section>
+        <div class="product-list">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+            <div class="product">
+              <img src="images/skull_and_bones.jpg" alt="Skull and Bones">
+              <p>Skull and Bones</p>
+            </div>
+            <div class="product">
+              <img src="images/super_mario.jpg" alt="Super Mario">
+              <p>Super Mario</p>
+            </div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+        </div>
+      </section>
+
+      <section>
+        <div class="game-gallery">
+          <div class="game-item1">
+              <img src="images/minecraft.webp" alt="Minecraft">
+              <p>MINECRAFT</p>
+              <div class="rating">
+                  ★★★☆☆
+              </div>
+          </div>
+          <div class="game-item2">
+              <img src="images/fortnite.jpg" alt="Fortnite">
+              <p>FORTNITE</p>
+              <div class="rating">
+                  ★★★☆☆
+              </div>
+          </div>
+          <div class="game-item3">
+              <img src="images\red_dead.jpg" alt="Red Dead Redemption II">
+              <p>RED DEAD II</p>
+              <div class="rating">
+                  ★★★★★
+              </div>
+          </div>
+          <div class="game-item4">
+              <img src="images\flight_simulator.jpg" alt="Flight Simulator 2024">
+              <p>FLIGHT SIMULATOR 2024</p>
+              <div class="rating">
+                  ★★★★☆
+              </div>
+          </div>
+          <div class="game-item5">
+              <img src="images\far_cry.jpg" alt="Far Cry 4">
+              <p>FARCRY 4</p>
+              <div class="rating">
+                  ★★★☆☆
+              </div>
+          </div>
+          <div class="game-item6">
+              <img src="images\spider_man.jpg" alt="Spider-Man 2">
+              <p>SPIDER MAN 2</p>
+              <div class="rating">
+                  ★★★★☆
+              </div>
+          </div>
+          <div class="game-item7">
+              <img src="images\assasins_creed.jpg" alt="Assassin's Creed">
+              <p>ASSASSIN'S CREED</p>
+              <div class="rating">
+                  ★★★★☆
+              </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </body>
 </html>
