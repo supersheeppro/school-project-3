@@ -4,28 +4,72 @@
     margin: 0;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+html{
+    display: flex;
+    justify-content: center;
+}
+
 body{
-    margin: 0 12%;
+    max-width: 100%;
+    min-width: 80vw;
     background-color: #000;
 }
 
-@media (prefers-color-scheme: light) {
-    body {
-        background-color: #ffffff;
-    }
-}
-
-.foto{
-    margin-left: 60px;
-    display: flex ;
+header{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    height: 70px;
+    background: #4A4949;
+    height: 5vh;
+    padding: 2% 0;
 }
 
-img{
-    width: 296px;
-    height: 80px;
+nav{
+    justify-content: space-between;
+    max-width: 100%;
+    min-width: 80vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    margin: 2%;
 }
+
+nav img{
+    height: 5rem;
+}
+
+nav ul a{
+    text-decoration: none;
+    width: 463px;
+    height: 37px;
+    color: #FFF;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+nav ul a:nth-child(1), nav ul a:nth-child(2), nav ul a:nth-child(3){
+    border-right: solid #929292;
+}
+
+main{
+    background: #4A4949;
+    height: 100vh;
+    justify-content: center;
+}
+
+main img{
+    margin-left: 8%;
+    width: 84%;
+}
+
 
 .button-cart{
     width: 150px;
@@ -45,7 +89,7 @@ img{
 }
 
 .box-cart{
-    height: 70px;
+    height: 5rem;
     display: flex;
     align-items: center;
 }
@@ -79,55 +123,14 @@ img{
     align-items: center;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #4A4949;
-    height: 70px;
-    padding: 25px 0;
-}
-
-main{
-    background: #4A4949;
-    height: 1780px;
-}
-
-.navbar ul a{
-    text-decoration: none;
-    width: 463px;
-    height: 37px;
-    color: #FFF;
-    font-family: "Poppins";
-    font-weight: 400;
-    font-size: 16px;
-    text-align: center;
-    padding: 0 10px;
-}
-
-.navbar ul a:nth-child(1), .navbar ul a:nth-child(2), .navbar ul a:nth-child(3){
-    border-right: solid #929292;
-}
-
 .button-cart svg{
     height: 25px;
     width: 25px;
 }
 
-.navbar{
-    height: 70px;
-    display: flex;
-    align-items: center;
-}
 
-.slideshow{
-    height: 550px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slideshow img{
-    max-width: 100%;
-    width: auto;
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #ffffff;
+    }
 }
