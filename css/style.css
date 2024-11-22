@@ -407,6 +407,9 @@ figcaption {
     justify-content: space-between;
 }
 
+.stars {
+    color: #ffcc00;
+}
 
 
 .pagination {

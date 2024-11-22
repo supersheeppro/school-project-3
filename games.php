@@ -74,35 +74,35 @@
                 <img src="images/battlefront.jpg" alt="Game 7">
                 <figcaption>
                     <p>Game 7</p>
-                    <p>★★★☆☆</p>
+                    <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
             <figure>
                 <img src="images/battlefront.jpg"  alt="Game 8">
                 <figcaption>
                     <p>Game 7</p>
-                    <p>★★★☆☆</p>
+                    <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
             <figure>
                 <img src="images/battlefront.jpg"  alt="Game 9">
                 <figcaption>
                     <p>Game 7</p>
-                    <p>★★★☆☆</p>
+                    <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
             <figure>
                 <img src="images/battlefront.jpg"  alt="Game 10">
                 <figcaption>
                     <p>Game 7</p>
-                    <p>★★★☆☆</p>
+                    <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
             <figure>
                 <img src="images/battlefront.jpg" alt="Game 11">
                 <figcaption>
                     <p>Game 7</p>
-                    <p>★★★☆☆</p>
+                    <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
         </div>
@@ -111,35 +111,35 @@
                 <img src="images/battlefront.jpg" alt="Game 7">
                 <figcaption>
                     <p>Game 7</p>
-                    <p>★★★☆☆</p>
+                    <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
             <figure>
                 <img src="images/battlefront.jpg"  alt="Game 8">
                 <figcaption>
                     <p>Game 7</p>
-                    <p>★★★☆☆</p>
+                    <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
             <figure>
                 <img src="images/battlefront.jpg"  alt="Game 9">
                 <figcaption>
                     <p>Game 7</p>
-                    <p>★★★☆☆</p>
+                    <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
             <figure>
                 <img src="images/battlefront.jpg"  alt="Game 10">
                 <figcaption>
                     <p>Game 7</p>
-                    <p>★★★☆☆</p>
+                    <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
             <figure>
                 <img src="images/battlefront.jpg" alt="Game 11">
                 <figcaption>
                     <p>Game 7</p>
-                    <p>★★★☆☆</p>
+                    <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
         </div>
@@ -148,35 +148,35 @@
                 <img src="images/battlefront.jpg" alt="Game 7">
                 <figcaption>
                     <p>Game 7</p>
-                    <p>★★★☆☆</p>
+                    <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
             <figure>
                 <img src="images/battlefront.jpg"  alt="Game 8">
                 <figcaption>
                     <p>Game 7</p>
-                    <p>★★★☆☆</p>
+                    <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
             <figure>
                 <img src="images/battlefront.jpg"  alt="Game 9">
                 <figcaption>
                     <p>Game 7</p>
-                    <p>★★★☆☆</p>
+                    <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
             <figure>
                 <img src="images/battlefront.jpg"  alt="Game 10">
                 <figcaption>
                     <p>Game 7</p>
-                    <p>★★★☆☆</p>
+                    <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
             <figure>
                 <img src="images/battlefront.jpg" alt="Game 11">
                 <figcaption>
                     <p>Game 7</p>
-                    <p>★★★☆☆</p>
+                    <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
         </div>
