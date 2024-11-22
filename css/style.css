@@ -579,6 +579,7 @@ section svg{
 
 .game-gallery img{
     width: 100%;
+    cursor: pointer;
     height: auto;
     border: solid 2px var(--border-color);
     border-radius: 4px 4px 4px 4px;
