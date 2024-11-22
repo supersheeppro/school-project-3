@@ -136,6 +136,8 @@ form svg{
     height: 55vh;
     display: grid;
     place-content: center;
+    border: solid 2px #929292;
+    border-radius: 4px 4px 4px 4px;
 }
 
 .btn-slideshow{
