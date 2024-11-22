@@ -95,11 +95,11 @@ main{
     align-items: center;
 }
 
-form input{
+/*form input{
     width: 191px;
     height: 32px;
-    background: var(--background-color);
-    color: #000;
+    background: var(--text-color);
+    color: #000000;
     border-color: #232323;
     border-width: 1px;
     border-style: solid;
@@ -109,7 +109,8 @@ form input{
     font-size: 14px;
     text-align: left;
     padding-left: 25px;
-}
+}*/
+
 form svg{
     height: 16px;
     width: auto;
