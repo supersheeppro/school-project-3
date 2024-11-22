@@ -13,10 +13,10 @@
     <nav>
         <img src="images/logo_breed_wit.png" alt="logo">
         <ul>
-            <a href="#">Home</a>
+            <a href="index.php">Home</a>
             <a href="#">Games</a>
             <a href="#">Merch</a>
-            <a href="#">Contact</a>
+            <a href="contact_us_form.php">Contact</a>
         </ul>
         <div class="box-cart">
             <a href="#" class="button-cart">
