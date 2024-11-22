@@ -354,7 +354,7 @@ main{
 }
 
 .top-games figure img{
-    border: 3px solid #929292;
+    border: 3px solid var(--border-color);
     border-radius: 10px;
 }
 
@@ -369,8 +369,8 @@ figcaption {
     padding: 10px;
     font-size: 18px;
     font-weight: bold;
-    font-family: "Poppins", sans-serif;
-    color: #ffffff;
+    font-family: var(--text-poppins);
+    color: var(--text-color);
 }
 
 /* All Games sectie */
@@ -384,7 +384,7 @@ figcaption {
 
 .all-games .header-games h1{
     font-size: 3rem;
-    color: #ffffff;
+    color: var(--text-color)
 }
 
 
@@ -398,7 +398,7 @@ figcaption {
 .game-list figure img{
     width: 12vw;
     height: auto;
-    border: 3px solid #929292;
+    border: 3px solid var(--border-color);
     border-radius: 10px;
 }
 
@@ -410,15 +410,15 @@ figcaption {
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--text-poppins);
     gap: 10px;
-    color: #ffffff;
+    color: var(--text-color);
 }
 
 .pagination i {
     font-size: 18px;
     cursor: pointer;
-    color: #ffffff;
+    color: var(--text-color);
 }
 
 .pagination span {
