@@ -14,8 +14,8 @@
         <img src="images/logo_breed_wit.png" alt="logo">
         <ul>
             <a href="index.php">Home</a>
-            <a href="#">Games</a>
-            <a href="#">Merch</a>
+            <a href="games.php">Games</a>
+            <a href="merch.php">Merch</a>
             <a href="contact_us_form.php">Contact</a>
         </ul>
         <div class="box-cart">
