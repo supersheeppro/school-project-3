@@ -37,6 +37,20 @@ body{
     background-color: #000;
 }
 
+h1{
+    font-family: "Poppins", sans-serif;
+}
+
+
+hr {
+ border: 0;
+ height: 2px;
+ background: #929292; /* Kies een kleur */
+ margin: 20px 0; /* Ruimte boven en onder */
+}
+
+
+
 header{
     display: flex;
     justify-content: space-between;
@@ -65,7 +79,7 @@ nav ul a{
     width: 463px;
     height: 37px;
     color: var(--text-color);
-    font-family: var(--text-poppins);
+    font-family: "Poppins";
     font-weight: 400;
     font-size: 16px;
     text-align: center;
@@ -84,7 +98,7 @@ nav ul a:nth-child(1), nav ul a:nth-child(2), nav ul a:nth-child(3){
     background: var(--btn-color);
     color: #000;
     border-radius: 3px 3px 3px 3px;
-    font-family: var(--text-poppins);
+    font-family: "Poppins";
     font-weight: 500;
     font-size: 16px;
     text-align: center;
@@ -110,7 +124,7 @@ form input{
     border-width: 1px;
     border-style: solid;
     border-radius: 32px 32px 32px 32px;
-    font-family: var(--text-poppins);
+    font-family: "Poppins";
     font-weight: 400;
     font-size: 14px;
     text-align: left;
@@ -167,7 +181,7 @@ main{
     text-decoration: none;
     color: #000;
     border-radius: 3px 3px 3px 3px;
-    font-family: var(--text-poppins);
+    font-family: "Poppins";
     font-weight: 500;
     font-size: 18px;
     width: 170px;
@@ -181,12 +195,281 @@ main{
 
 .content-slideshow h1{
     color: var(--text-color);
-    font-family: var(--text-poppins);
+    font-family: "Poppins";
     font-weight: bold;
     font-size: 6rem;
     line-height: 1.3;
-    text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
 }
+
+
+
+
+.main2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 120px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h4 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact-info h1 {
+    font-size: 4rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.contact-method .contact-item {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.icons-flex {
+    display: flex;
+    gap: 7vw;
+}
+
+.social-icons a {
+    margin-right: 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ff7c00;
+}
+
+
+.contact-form {
+    background: #fff;
+    width: 25vw;
+    height: 60vh;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.contact-form label {
+    font-size: 14px;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: var(--btn-color);
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10vh;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+.contact-item {
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: 22vw;
+    height: 5vh;
+    gap: 1vw;
+}
+
+.contact-item article strong {
+    color: #333;
+    font-weight: bold;
+}
+
+.contact-item article i {
+    color: #007BFF;
+    font-size: 15px;
+}
+.contact-item article p {
+    color: #000000;
+    font-size: 18px;
+}
+
+.main3 {
+    height: 200vh;
+}
+.main3 section {
+    margin-bottom: 4vh;
+}
+
+/* Top Games */
+.top-games {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3vw;
+    padding-top: 3vh;
+}
+
+.top-games figure{
+    width: 10rem;
+    height: auto;
+    text-align: center;
+
+}
+
+.top-games figure img{
+    border: 3px solid #929292;
+    border-radius: 10px;
+}
+
+
+figure img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+figcaption {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+}
+
+/* All Games sectie */
+.all-games .header-games {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 2vh 4vw;
+}
+
+.all-games .header-games h1{
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+
+.game-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3vw;
+}
+
+.game-list figure img{
+    width: 12vw;
+    height: auto;
+    border: 3px solid #929292;
+    border-radius: 10px;
+}
+
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    gap: 10px;
+    color: #ffffff;
+}
+
+.pagination i {
+    font-size: 18px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.pagination span {
+    font-size: 2rem;
+}
+
+/* Now Popular sectie */
+.now-popular .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.popular-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.popular-item {
+    display: flex;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    flex: 1 1 calc(25% - 20px);
+}
+
+.popular-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.details {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.details p {
+    margin: 0 0 10px;
+    font-size: 14px;
+}
+
+.rating {
+    font-size: 16px;
+    color: #ffcc00;
+}
+
+
 
 .title-products h1 {
     color: var(--text-color);
