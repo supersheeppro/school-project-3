@@ -27,7 +27,7 @@
     </nav>
 </header>
 
-<main>
+<main class="main2">
     <!-- Left Section -->
     <section class="contact-info">
         <h4>CONTACT US</h4>

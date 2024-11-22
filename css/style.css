@@ -183,7 +183,7 @@ form svg{
 
 
 
-main {
+.main2 {
     display: flex;
     justify-content: space-between;
     padding: 120px;
@@ -307,6 +307,130 @@ main {
     color: #000000;
     font-size: 18px;
 }
+
+
+
+/* Secties */
+.main3 section {
+    margin-bottom: 40px;
+}
+
+/* Top Games */
+.top-games {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.top-games figure{
+
+
+}
+
+figure img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+figcaption {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+}
+
+/* All Games sectie */
+.all-games .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.all-games .title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.search-bar {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.game-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pagination i {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.pagination span {
+    font-size: 16px;
+}
+
+/* Now Popular sectie */
+.now-popular .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.popular-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.popular-item {
+    display: flex;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    flex: 1 1 calc(25% - 20px);
+}
+
+.popular-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.details {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.details p {
+    margin: 0 0 10px;
+    font-size: 14px;
+}
+
+.rating {
+    font-size: 16px;
+    color: #ffcc00;
+}
+
 
 
 @media (prefers-color-scheme: light) {

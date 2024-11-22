@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
 <header>
     <nav>
         <img src="images/logo_breed_wit.png" alt="logo">
+        <form id="form">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+            <input type="search" id="query" name="q" placeholder="Search">
+        </form>
         <ul>
             <a href="index.php">Home</a>
             <a href="games.php">Games</a>
@@ -26,3 +29,104 @@
         </div>
     </nav>
 </header>
+<main class="main3">
+    <!-- Horizontale rij met 6 foto's en titels -->
+    <section class="top-games">
+        <figure>
+            <img src="images/minecraft.jpg"alt="Game 1">
+            <figcaption>FREEPLAY</figcaption>
+        </figure>
+        <figure>
+            <img src="images/minecraft.jpg" alt="Game 2">
+            <figcaption>LAND</figcaption>
+        </figure>
+        <figure>
+            <img src="images/minecraft.jpg" alt="Game 3">
+            <figcaption>ADVENTURE</figcaption>
+        </figure>
+        <figure>
+            <img src="images/minecraft.jpg" alt="Game 4">
+            <figcaption>STORY</figcaption>
+        </figure>
+        <figure>
+            <img src="images/minecraft.jpg" alt="Game 5">
+            <figcaption>SURVIVAL</figcaption>
+        </figure>
+        <figure>
+            <img src="images/minecraft.jpg" alt="Game 6">
+            <figcaption>SPORT</figcaption>
+        </figure>
+    </section>
+
+    <!-- Sectie met zoekbalk -->
+    <section class="all-games">
+        <div class="header">
+            <h2 class="title">All Games</h2>
+            <input type="text" class="search-bar" placeholder="Search...">
+        </div>
+        <div class="game-list">
+            <figure>
+                <img src="images/minecraft.jpg" alt="Game 7">
+                <figcaption>Game 7</figcaption>
+            </figure>
+            <figure>
+                <img src="images/minecraft.jpg" alt="Game 8">
+                <figcaption>Game 8</figcaption>
+            </figure>
+            <figure>
+                <img src="images/minecraft.jpg" alt="Game 9">
+                <figcaption>Game 9</figcaption>
+            </figure>
+            <figure>
+                <img src="images/minecraft.jpg" alt="Game 10">
+                <figcaption>Game 10</figcaption>
+            </figure>
+            <figure>
+                <img src="images/minecraft.jpg" alt="Game 11">
+                <figcaption>Game 11</figcaption>
+            </figure>
+        </div>
+        <div class="pagination">
+            <i class="fa fa-arrow-left"></i>
+            <span>Page 1/4</span>
+            <i class="fa fa-arrow-right"></i>
+        </div>
+    </section>
+
+    <!-- Sectie met populaire games -->
+    <section class="now-popular">
+        <h2 class="title">Now Popular</h2>
+        <div class="popular-list">
+            <div class="popular-item">
+                <img src="images/minecraft.jpg" alt="Popular Game 1">
+                <div class="details">
+                    <p>Popular Game 1</p>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+            <div class="popular-item">
+                <img src="images/minecraft.jpg" alt="Popular Game 2">
+                <div class="details">
+                    <p>Popular Game 2</p>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+            <div class="popular-item">
+                <img src="images/minecraft.jpg" alt="Popular Game 3">
+                <div class="details">
+                    <p>Popular Game 3</p>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                </div>
+            </div>
+            <div class="popular-item">
+                <img src="images/minecraft.jpg" alt="Popular Game 4">
+                <div class="details">
+                    <p>Popular Game 4</p>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+</body>
