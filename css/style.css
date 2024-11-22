@@ -402,6 +402,12 @@ figcaption {
     border-radius: 10px;
 }
 
+.game-list figure figcaption{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 .pagination {
     text-align: center;
@@ -425,11 +431,14 @@ figcaption {
     font-size: 2rem;
 }
 
+.now-popular {
+    padding: 0 4vw;
+}
+
 /* Now Popular sectie */
-.now-popular .title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 20px;
+.now-popular h1 {
+    font-size: 3rem;
+    color: #ffffff;
 }
 
 .popular-list {

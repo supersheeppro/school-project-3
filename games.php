@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -71,106 +72,152 @@
         <div class="game-list">
             <figure>
                 <img src="images/battlefront.jpg" alt="Game 7">
-                <figcaption>Game 7</figcaption>
+                <figcaption>
+                    <p>Game 7</p>
+                    <p>★★★☆☆</p>
+                </figcaption>
             </figure>
             <figure>
                 <img src="images/battlefront.jpg"  alt="Game 8">
-                <figcaption>Game 8</figcaption>
+                <figcaption>
+                    <p>Game 7</p>
+                    <p>★★★☆☆</p>
+                </figcaption>
             </figure>
             <figure>
                 <img src="images/battlefront.jpg"  alt="Game 9">
-                <figcaption>Game 9</figcaption>
+                <figcaption>
+                    <p>Game 7</p>
+                    <p>★★★☆☆</p>
+                </figcaption>
             </figure>
             <figure>
                 <img src="images/battlefront.jpg"  alt="Game 10">
-                <figcaption>Game 10</figcaption>
+                <figcaption>
+                    <p>Game 7</p>
+                    <p>★★★☆☆</p>
+                </figcaption>
             </figure>
             <figure>
                 <img src="images/battlefront.jpg" alt="Game 11">
-                <figcaption>Game 11</figcaption>
+                <figcaption>
+                    <p>Game 7</p>
+                    <p>★★★☆☆</p>
+                </figcaption>
             </figure>
         </div>
         <div class="game-list">
             <figure>
                 <img src="images/battlefront.jpg" alt="Game 7">
-                <figcaption>Game 7</figcaption>
+                <figcaption>
+                    <p>Game 7</p>
+                    <p>★★★☆☆</p>
+                </figcaption>
             </figure>
             <figure>
                 <img src="images/battlefront.jpg"  alt="Game 8">
-                <figcaption>Game 8</figcaption>
+                <figcaption>
+                    <p>Game 7</p>
+                    <p>★★★☆☆</p>
+                </figcaption>
             </figure>
             <figure>
                 <img src="images/battlefront.jpg"  alt="Game 9">
-                <figcaption>Game 9</figcaption>
+                <figcaption>
+                    <p>Game 7</p>
+                    <p>★★★☆☆</p>
+                </figcaption>
             </figure>
             <figure>
                 <img src="images/battlefront.jpg"  alt="Game 10">
-                <figcaption>Game 10</figcaption>
+                <figcaption>
+                    <p>Game 7</p>
+                    <p>★★★☆☆</p>
+                </figcaption>
             </figure>
             <figure>
                 <img src="images/battlefront.jpg" alt="Game 11">
-                <figcaption>Game 11</figcaption>
+                <figcaption>
+                    <p>Game 7</p>
+                    <p>★★★☆☆</p>
+                </figcaption>
             </figure>
         </div>
         <div class="game-list">
             <figure>
                 <img src="images/battlefront.jpg" alt="Game 7">
-                <figcaption>Game 7</figcaption>
+                <figcaption>
+                    <p>Game 7</p>
+                    <p>★★★☆☆</p>
+                </figcaption>
             </figure>
             <figure>
                 <img src="images/battlefront.jpg"  alt="Game 8">
-                <figcaption>Game 8</figcaption>
+                <figcaption>
+                    <p>Game 7</p>
+                    <p>★★★☆☆</p>
+                </figcaption>
             </figure>
             <figure>
                 <img src="images/battlefront.jpg"  alt="Game 9">
-                <figcaption>Game 9</figcaption>
+                <figcaption>
+                    <p>Game 7</p>
+                    <p>★★★☆☆</p>
+                </figcaption>
             </figure>
             <figure>
                 <img src="images/battlefront.jpg"  alt="Game 10">
-                <figcaption>Game 10</figcaption>
+                <figcaption>
+                    <p>Game 7</p>
+                    <p>★★★☆☆</p>
+                </figcaption>
             </figure>
             <figure>
                 <img src="images/battlefront.jpg" alt="Game 11">
-                <figcaption>Game 11</figcaption>
+                <figcaption>
+                    <p>Game 7</p>
+                    <p>★★★☆☆</p>
+                </figcaption>
             </figure>
         </div>
         <div class="pagination">
-            <i class="fa fa-facebook"></i>
+            <i class="fa fa-chevron-left"></i>
             <span>Page 1/4</span>
-            <i class="fa fa-arrow-right"></i>
+            <i class="fa fa-chevron-right"></i>
         </div>
     </section>
+    <hr>
 
     <!-- Sectie met populaire games -->
     <section class="now-popular">
-        <h2 class="title">Now Popular</h2>
+        <h1>Now Popular</h1>
         <div class="popular-list">
             <div class="popular-item">
-                <img src="images/minecraft.jpg" alt="Popular Game 1">
+                <img src="images/battlefront.jpg" alt="Popular Game 1">
                 <div class="details">
                     <p>Popular Game 1</p>
-                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <div class="rating">★★★☆☆</div>
                 </div>
             </div>
             <div class="popular-item">
                 <img src="images/minecraft.jpg" alt="Popular Game 2">
                 <div class="details">
                     <p>Popular Game 2</p>
-                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <div class="rating">★★★☆☆</div>
                 </div>
             </div>
             <div class="popular-item">
                 <img src="images/minecraft.jpg" alt="Popular Game 3">
                 <div class="details">
                     <p>Popular Game 3</p>
-                    <div class="rating">⭐⭐⭐⭐</div>
+                    <div class="rating">★★★☆☆</div>
                 </div>
             </div>
             <div class="popular-item">
                 <img src="images/minecraft.jpg" alt="Popular Game 4">
                 <div class="details">
                     <p>Popular Game 4</p>
-                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <div class="rating">★★★☆☆</div>
                 </div>
             </div>
         </div>
