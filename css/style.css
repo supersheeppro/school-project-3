@@ -31,6 +31,16 @@ h1{
     font-family: "Poppins", sans-serif;
 }
 
+
+hr {
+ border: 0;
+ height: 2px;
+ background: #929292; /* Kies een kleur */
+ margin: 20px 0; /* Ruimte boven en onder */
+}
+
+
+
 header{
     display: flex;
     justify-content: space-between;
@@ -308,25 +318,34 @@ form svg{
     font-size: 18px;
 }
 
-
-
-/* Secties */
+.main3 {
+    height: 200vh;
+}
 .main3 section {
-    margin-bottom: 40px;
+    margin-bottom: 4vh;
 }
 
 /* Top Games */
 .top-games {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 3vw;
+    padding-top: 3vh;
 }
 
 .top-games figure{
-
+    width: 10rem;
+    height: auto;
+    text-align: center;
 
 }
+
+.top-games figure img{
+    border: 3px solid #929292;
+    border-radius: 10px;
+}
+
 
 figure img {
     width: 100%;
@@ -343,31 +362,34 @@ figcaption {
 }
 
 /* All Games sectie */
-.all-games .header {
+.all-games .header-games {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    padding: 2vh 4vw;
 }
 
-.all-games .title {
-    font-size: 18px;
-    font-weight: bold;
+.all-games .header-games h1{
+    font-size: 3rem;
+    color: #ffffff;
 }
 
-.search-bar {
-    padding: 8px 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 200px;
-}
 
 .game-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 3vw;
 }
+
+.game-list figure img{
+    width: 12vw;
+    height: auto;
+    border: 3px solid #929292;
+    border-radius: 10px;
+}
+
 
 .pagination {
     text-align: center;
@@ -375,16 +397,20 @@ figcaption {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
     gap: 10px;
+    color: #ffffff;
 }
 
 .pagination i {
     font-size: 18px;
     cursor: pointer;
+    color: #ffffff;
 }
 
 .pagination span {
-    font-size: 16px;
+    font-size: 2rem;
 }
 
 /* Now Popular sectie */
