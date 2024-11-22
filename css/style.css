@@ -94,7 +94,7 @@ main img{
     align-items: center;
 }
 
-.search-balk input{
+form input{
     width: 191px;
     height: 32px;
     background: #fff;
@@ -109,8 +109,7 @@ main img{
     text-align: left;
     padding-left: 25px;
 }
-
-.search-balk svg{
+form svg{
     height: 16px;
     width: auto;
     fill: #929292;
