@@ -204,6 +204,7 @@ main{
     padding: 120px;
     margin: 0 auto;
     height: max-content;
+    border-bottom: solid 2px var(--border-color);
 }
 
 .contact-info {
@@ -328,7 +329,8 @@ main{
 }
 
 .main3 {
-    height: fit-content;
+    height: 275vh;
+    border-bottom: solid 2px var(--border-color);
 }
 
 .top-games {
