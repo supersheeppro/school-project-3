@@ -432,8 +432,6 @@ figcaption {
     padding: 0 4vw;
 }
 
-<<<<<<< HEAD
-=======
 .now-popular figure img{
     width: 15.4vw;
     height: auto;
@@ -446,7 +444,6 @@ figcaption {
     justify-content: space-between;
 }
 /* Now Popular sectie */
->>>>>>> c61a24f2476e0822a5b2da4af08828dff39b99f0
 .now-popular h1 {
     font-size: 3rem;
     color: #ffffff;
@@ -460,15 +457,12 @@ figcaption {
 }
 
 
-<<<<<<< HEAD
 .popular-item img {
     width: 100px;
     height: 100px;
     object-fit: cover;
     cursor: pointer;
 }
-=======
->>>>>>> c61a24f2476e0822a5b2da4af08828dff39b99f0
 
 .details {
     padding: 10px;
@@ -668,6 +662,7 @@ footer div ul li{
     font-family: var(--text-inter);
     color: var(--text-color);
     font-size: 1rem;
+}
 
 .popular-game-section{
     display: flex;
@@ -820,9 +815,6 @@ footer div ul li{
     text-align: center;
     text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
 }
-
-
-
 
 .box-slideshow-merch{
     height: 65vh;
