@@ -45,7 +45,7 @@ h1{
 hr {
  border: 0;
  height: 2px;
- background: #929292; /* Kies een kleur */
+ background: var(--border-color); /* Kies een kleur */
  margin: 20px 0; /* Ruimte boven en onder */
 }
 
