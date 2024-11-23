@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -216,5 +216,44 @@
         </div>
     </section>
 </main>
+
+<footer>
+      <div class="footer-content">
+        <div class="footer-items">
+          <img src="images/logo_kopie.png" alt="logo">
+          <p>1717 Harrison St, San Francisco, CA 94103, USA</p>
+          <p>&copyGameStars</p>
+        </div>
+        <div>
+          <h1>Main Menu</h1><br>
+          <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="games.php">Games</a></li>
+            <li><a href="merch.php">Merch</a></li>
+            <li><a href="contact_us_form.php">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1>Find Us On</h1><br>
+          <ul>
+            <li><i class="fa-brands fa-square-x-twitter"></i></li>
+            <li><i class="fa-brands fa-square-facebook"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+          </ul>
+        </div>
+        <div>
+          <h1>Contact Us</h1><br>
+          <p>
+            177 Huntington Ave Ste 1703<br><br>
+            contact-us@company.com<br><br>
+            +1-617-555-0108
+          </p>
+        </div>
+      </div>
+      <p class="disclaimer-footer">
+        Disclaimer: This website is not responsible for any mistakes
+      </p>
+    </footer>
 
 </body>

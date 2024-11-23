@@ -203,6 +203,7 @@ main{
     justify-content: space-between;
     padding: 120px;
     margin: 0 auto;
+    height: max-content;
 }
 
 .contact-info {
@@ -327,11 +328,7 @@ main{
 }
 
 .main3 {
-    height: 300vh;
-}
-
-.main3 section {
-    margin-bottom: 4vh;
+    height: fit-content;
 }
 
 .top-games {
