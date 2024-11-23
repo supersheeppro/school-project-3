@@ -432,7 +432,21 @@ figcaption {
     padding: 0 4vw;
 }
 
+<<<<<<< HEAD
+=======
+.now-popular figure img{
+    width: 15.4vw;
+    height: auto;
+    border: 3px solid var(--border-color);
+    border-radius: 10px;
+}
+
+.now-popular figure figcaption{
+    display: flex;
+    justify-content: space-between;
+}
 /* Now Popular sectie */
+>>>>>>> c61a24f2476e0822a5b2da4af08828dff39b99f0
 .now-popular h1 {
     font-size: 3rem;
     color: #ffffff;
@@ -445,11 +459,16 @@ figcaption {
     gap: 3vw;
 }
 
+
+<<<<<<< HEAD
 .popular-item img {
     width: 100px;
     height: 100px;
     object-fit: cover;
+    cursor: pointer;
 }
+=======
+>>>>>>> c61a24f2476e0822a5b2da4af08828dff39b99f0
 
 .details {
     padding: 10px;
@@ -590,4 +609,266 @@ section svg{
     font-family: var(--text-inter);
     font-size: 1.1rem;
     font-weight: bold;
+}
+
+<<<<<<< HEAD
+.game-item5, .game-item6, .game-item7{
+    padding-top: 3.5vh;
+}
+
+footer{
+    height: 42vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 10vh 0;
+}
+
+footer div h1{
+    font-family: var(--text-poppins);
+    font-size: 1.7rem;
+}
+
+footer div p{
+    font-family: var(--text-inter);
+    font-size: 1rem;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-items img{
+    height: 12vh;
+    width: 15vw;
+    object-fit: cover;
+
+}
+
+footer div ul li{
+    font-family: var(--text-inter);
+    color: var(--text-color);
+    list-style: none;
+}
+
+.footer-content ul li{
+    padding-bottom: 1vh;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.footer-content ul li a{
+    color: var(--text-color);
+    font-family: var(--text-inter);
+    text-decoration: none;
+}
+
+.disclaimer-footer{
+    text-align: center;
+    padding-top: 5vh;
+    font-family: var(--text-inter);
+    color: var(--text-color);
+    font-size: 1rem;
+=======
+
+.popular-game-section {
+    display: flex;
+    margin: 0 5vw;
+    gap: 3vw;
+}
+
+.popular-game-section-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+.box-slideshow-games-1{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+}
+
+.content-slideshow-games-1{
+    background-image: url("../images/skull_and_bones.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:45vw;
+    height: 30vh;
+    display: grid;
+    place-content: center;
+    border: solid 3px var(--border-color);
+    border-radius: 4px 4px 4px 4px;
+}
+
+.btn-slideshow-games-1{
+    background-color: var(--btn-color);
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    border-radius: 3px 3px 3px 3px;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 18px;
+    width: 170px;
+    height: 43px;
+    display: grid;
+    place-content: center;
+    display: grid;
+    place-self: center;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.content-slideshow-games-1 h1{
+    color: var(--text-color);
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 1.3;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.box-slideshow-games-2{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+}
+
+.content-slideshow-games-2{
+    background-image: url("../images/skull_and_bones.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 45vw;
+    height: 15vh;
+    display: flex;
+    place-content: space-around;
+    border: solid 3px var(--border-color);
+    border-radius: 4px 4px 4px 4px;
+}
+
+.btn-slideshow-games-2{
+    background-color: var(--btn-color);
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    border-radius: 3px 3px 3px 3px;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 18px;
+    width: 120px;
+    height: 43px;
+    display: grid;
+    place-content: center;
+    display: grid;
+    place-self: center;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.content-slideshow-games-2 h1{
+    color: var(--text-color);
+    font-family: "Poppins";
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 4rem;
+    line-height: 1.3;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.box-slideshow-games-3{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+}
+
+.content-slideshow-games-3{
+    background-image: url("../images/skull_and_bones.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 21.4vw;
+    height: 51vh;
+    display: grid;
+    place-content: center;
+    border: solid 3px var(--border-color);
+    border-radius: 4px 4px 4px 4px;
+}
+
+.btn-slideshow-games-3{
+    background-color: var(--btn-color);
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    border-radius: 3px 3px 3px 3px;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 18px;
+    width: 100px;
+    height: 43px;
+    display: grid;
+    place-content: center;
+    display: grid;
+    place-self: center;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.content-slideshow-games-3 h1{
+    color: var(--text-color);
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 1.3;
+    text-align: center;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+.box-slideshow-merch{
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+}
+
+.content-slideshow-merch{
+    background-image: url("../images/skull_and_bones.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70vw;
+    height: 55vh;
+    display: grid;
+    place-content: center;
+    border: solid 3px var(--border-color);
+    border-radius: 4px 4px 4px 4px;
+}
+
+.btn-slideshow-merch{
+    background-color: var(--btn-color);
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    border-radius: 3px 3px 3px 3px;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 18px;
+    width: 170px;
+    height: 43px;
+    display: grid;
+    place-content: center;
+    display: grid;
+    place-self: center;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.content-slideshow-merch h1{
+    color: var(--text-color);
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 1.3;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+>>>>>>> c61a24f2476e0822a5b2da4af08828dff39b99f0
 }
