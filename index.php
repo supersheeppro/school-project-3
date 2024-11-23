@@ -2,31 +2,29 @@
 <html lang="nl">
   <head>
   <head>
-    <meta charset="UTF-8">
-      
-    <!-- Zorgt ervoor dat de pagina correct wordt weergegeven op mobiele apparaten. -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      
-    <!-- SEO (search engine optimation) Metagegevens -->
+      <meta charset="UTF-8">
+      <!-- Zorgt ervoor dat de pagina correct wordt weergegeven op mobiele apparaten. -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- SEO (search engine optimation) Metagegevens -->
 
-    <!-- Description voor zoekmachines en sociale media, omschrijft kort de inhoud van de pagina. -->
-    <meta name="description" content="">
+      <!-- Description voor zoekmachines en sociale media, omschrijft kort de inhoud van de pagina. -->
+      <meta name="description" content="Een pagina voor de home van gamestars">
 
-    <!-- Keywords Helpt zoekmachines begrijpen waar de pagina over gaat. -->
-    <meta name="keywords" content="">
+      <!-- Keywords Helpt zoekmachines begrijpen waar de pagina over gaat. -->
+      <meta name="keywords" content="Games, rating, game, videogames, advise">
 
-    <!-- Author de naam van de developer van de pagina.  -->
-    <meta name="Kaya Altona" content="">
-      
-    <!-- De titel van de pagina, deze verschijnt op het tabblad, geef hieraan waar de
-    de pagina over gaat  -->
-    
-    <title></title>
+      <!-- Author de naam van de developer van de pagina.  -->
+      <meta name="author" content="Kaya Altona">
 
-    <!-- Favicon kleine afbeelding die wordt weergegeven in de browser-tabbladen -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+      <!-- De Opdracht van de huidige pagina.  -->
+      <meta name="opdracht" content="Deze pagina is gemaakt door Kaya Altona">
+
+      <!-- De titel van de pagina, deze verschijnt op het tabblad, geef hieraan waar de pagina over gaat  -->
+      <title>Gamestars - Homepage</title>
+
+      <!-- Favicon kleine afbeelding die wordt weergegeven in de browser-tabbladen -->
+      <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
     <!--  link naar de stylesheet -->
     <link rel="stylesheet" href="css/style.css">
@@ -67,6 +65,7 @@
           </a>
         </article>
       </div>
+        <hr>
 
         <div class="title-products">
           <h1>Featured Products</h1>
@@ -143,6 +142,7 @@
     </main>
 
     <footer>
+        <hr>
       <div class="footer-content">
         <div class="footer-items">
           <img src="images/logo_kopie.png" alt="logo">

@@ -152,7 +152,6 @@ main{
 }
 
 .box-slideshow{
-    border-bottom: solid 2px var(--border-color);
     height: 65vh;
     display: flex;
     justify-content: center;
@@ -177,7 +176,7 @@ main{
     text-decoration: none;
     color: #000;
     border-radius: 3px 3px 3px 3px;
-    font-family: "Poppins";
+    font-family: var(--text-poppins);
     font-weight: 500;
     font-size: 18px;
     width: 170px;
@@ -191,7 +190,7 @@ main{
 
 .content-slideshow h1{
     color: var(--text-color);
-    font-family: "Poppins";
+    font-family: var(--text-poppins);
     font-weight: bold;
     font-size: 6rem;
     line-height: 1.3;
@@ -309,7 +308,7 @@ main{
     display: flex;
     align-items: center;
     width: 22vw;
-    height: 5vh;
+    height: 7vh;
     gap: 1vw;
 }
 
@@ -665,6 +664,7 @@ footer div ul li{
     display: flex;
     margin: 0 5vw;
     gap: 3vw;
+    margin-top: 5vh;
 }
 
 .popular-game-section-box {
@@ -680,7 +680,7 @@ footer div ul li{
 }
 
 .content-slideshow-games-1{
-    background-image: url("../images/skull_and_bones.jpg");
+    background-image: url("../images/fortnitebg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width:45vw;
@@ -698,7 +698,7 @@ footer div ul li{
     text-decoration: none;
     color: #000;
     border-radius: 3px 3px 3px 3px;
-    font-family: "Poppins";
+    font-family: var(--text-poppins);
     font-weight: 500;
     font-size: 18px;
     width: 170px;
@@ -712,7 +712,7 @@ footer div ul li{
 
 .content-slideshow-games-1 h1{
     color: var(--text-color);
-    font-family: "Poppins";
+    font-family: var(--text-poppins);
     font-weight: bold;
     font-size: 4rem;
     line-height: 1.3;
@@ -726,7 +726,7 @@ footer div ul li{
 }
 
 .content-slideshow-games-2{
-    background-image: url("../images/skull_and_bones.jpg");
+    background-image: url("../images/theforest.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 45vw;
@@ -744,7 +744,7 @@ footer div ul li{
     text-decoration: none;
     color: #000;
     border-radius: 3px 3px 3px 3px;
-    font-family: "Poppins";
+    font-family: var(--text-poppins);
     font-weight: 500;
     font-size: 18px;
     width: 120px;
@@ -758,7 +758,7 @@ footer div ul li{
 
 .content-slideshow-games-2 h1{
     color: var(--text-color);
-    font-family: "Poppins";
+    font-family: var(--text-poppins);
     font-weight: bold;
     margin-top: 20px;
     font-size: 4rem;
@@ -773,7 +773,7 @@ footer div ul li{
 }
 
 .content-slideshow-games-3{
-    background-image: url("../images/skull_and_bones.jpg");
+    background-image: url("../images/minecraft2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 21.4vw;
@@ -791,7 +791,7 @@ footer div ul li{
     text-decoration: none;
     color: #000;
     border-radius: 3px 3px 3px 3px;
-    font-family: "Poppins";
+    font-family: var(--text-poppins);
     font-weight: 500;
     font-size: 18px;
     width: 100px;
@@ -805,7 +805,7 @@ footer div ul li{
 
 .content-slideshow-games-3 h1{
     color: var(--text-color);
-    font-family: "Poppins";
+    font-family: var(--text-poppins);
     font-weight: bold;
     font-size: 4rem;
     line-height: 1.3;
@@ -838,7 +838,7 @@ footer div ul li{
     text-decoration: none;
     color: #000;
     border-radius: 3px 3px 3px 3px;
-    font-family: "Poppins";
+    font-family: var(--text-poppins);
     font-weight: 500;
     font-size: 18px;
     width: 170px;
@@ -852,7 +852,7 @@ footer div ul li{
 
 .content-slideshow-merch h1{
     color: var(--text-color);
-    font-family: "Poppins";
+    font-family: var(--text-poppins);
     font-weight: bold;
     font-size: 4rem;
     line-height: 1.3;

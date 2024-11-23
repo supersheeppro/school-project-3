@@ -2,8 +2,28 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
+    <!-- Zorgt ervoor dat de pagina correct wordt weergegeven op mobiele apparaten. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- SEO (search engine optimation) Metagegevens -->
+
+    <!-- Description voor zoekmachines en sociale media, omschrijft kort de inhoud van de pagina. -->
+    <meta name="description" content="Een pagina met de games en de ratings ervan">
+
+    <!-- Keywords Helpt zoekmachines begrijpen waar de pagina over gaat. -->
+    <meta name="keywords" content="Games, rating, game, videogames, advise">
+
+    <!-- Author de naam van de developer van de pagina.  -->
+    <meta name="author" content="Dévi van Riet">
+
+    <!-- De Opdracht van de huidige pagina.  -->
+    <meta name="opdracht" content="Deze pagina is gemaakt door Dévi van Riet">
+
+    <!-- De titel van de pagina, deze verschijnt op het tabblad, geef hieraan waar de pagina over gaat  -->
+    <title>Gamestars - Games</title>
+
+    <!-- Favicon kleine afbeelding die wordt weergegeven in de browser-tabbladen -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -34,27 +54,27 @@
     <!-- Horizontale rij met 6 foto's en titels -->
     <section class="top-games">
         <figure>
-            <img src="images/minecraft.jpg"alt="Game 1">
+            <img src="images/sims.jpg"alt="Game 1">
             <figcaption>FREEPLAY</figcaption>
         </figure>
         <figure>
-            <img src="images/minecraft.jpg" alt="Game 2">
+            <img src="images/farmingsimulator.jpg" alt="Game 2">
             <figcaption>LAND</figcaption>
         </figure>
         <figure>
-            <img src="images/minecraft.jpg" alt="Game 3">
+            <img src="images/jumangi.jpg" alt="Game 3">
             <figcaption>ADVENTURE</figcaption>
         </figure>
         <figure>
-            <img src="images/minecraft.jpg" alt="Game 4">
+            <img src="images/startwarsjedi.jpg" alt="Game 4">
             <figcaption>STORY</figcaption>
         </figure>
         <figure>
-            <img src="images/minecraft.jpg" alt="Game 5">
+            <img src="images/daysgone.jpg" alt="Game 5">
             <figcaption>SURVIVAL</figcaption>
         </figure>
         <figure>
-            <img src="images/minecraft.jpg" alt="Game 6">
+            <img src="images/fifa19.jpg" alt="Game 6">
             <figcaption>SPORT</figcaption>
         </figure>
     </section>
@@ -107,35 +127,35 @@
             <figure>
                 <img src="images/battlefront.jpg" alt="Game 7">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>BATTLEFRONT</p>
                     <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/battlefront.jpg"  alt="Game 8">
+                <img src="images/outerworlds.jpg"  alt="Game 8">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>OUTER WORLDS</p>
                     <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/battlefront.jpg"  alt="Game 9">
+                <img src="images/doom.jpg"  alt="Game 9">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>DOOM</p>
                     <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/battlefront.jpg"  alt="Game 10">
+                <img src="images/fortnite2.jpg"  alt="Game 10">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>FORTNITE</p>
                     <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/battlefront.jpg" alt="Game 11">
+                <img src="images/gtav.jpg" alt="Game 11">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>GTA V</p>
                     <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
@@ -227,9 +247,9 @@
         <h1>Now Popular</h1>
         <div class="popular-list">
             <figure>
-                <img src="images/battlefront.jpg" alt="Game 7">
+                <img src="images/minecraft3.jpg" alt="Game 7">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>MINECRAFT</p>
                     <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
@@ -259,6 +279,7 @@
 </main>
 
 <footer>
+    <hr>
       <div class="footer-content">
         <div class="footer-items">
           <img src="images/logo_kopie.png" alt="logo">
