@@ -254,9 +254,9 @@
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/battlefront.jpg" alt="Game 7">
+                <img src="images/tombraider.jpg" alt="Game 7">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>TOMB RAIDER</p>
                     <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>

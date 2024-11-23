@@ -203,7 +203,6 @@ main{
     padding: 120px;
     margin: 0 auto;
     height: max-content;
-    border-bottom: solid 2px var(--border-color);
 }
 
 .contact-info {
@@ -329,7 +328,6 @@ main{
 
 .main3 {
     height: 275vh;
-    border-bottom: solid 2px var(--border-color);
 }
 
 .top-games {
@@ -553,7 +551,6 @@ section svg{
     height: 70vh;
     display: grid;
     place-content: center;
-    border-bottom: solid 2px var(--border-color);
 }
 
 .game-item1{
