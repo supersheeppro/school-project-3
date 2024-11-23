@@ -327,7 +327,7 @@ main{
 }
 
 .main3 {
-    height: 200vh;
+    height: 300vh;
 }
 
 .main3 section {
@@ -343,7 +343,7 @@ main{
 }
 
 .top-games figure{
-    width: 10rem;
+    width: 11rem;
     height: auto;
     text-align: center;
 
@@ -432,6 +432,7 @@ figcaption {
     padding: 0 4vw;
 }
 
+/* Now Popular sectie */
 .now-popular h1 {
     font-size: 3rem;
     color: #ffffff;
@@ -439,23 +440,15 @@ figcaption {
 
 .popular-list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
-}
-
-.popular-item {
-    display: flex;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    overflow: hidden;
-    flex: 1 1 calc(25% - 20px);
+    gap: 3vw;
 }
 
 .popular-item img {
     width: 100px;
     height: 100px;
     object-fit: cover;
-    cursor: pointer;
 }
 
 .details {
@@ -597,63 +590,4 @@ section svg{
     font-family: var(--text-inter);
     font-size: 1.1rem;
     font-weight: bold;
-}
-
-.game-item5, .game-item6, .game-item7{
-    padding-top: 3.5vh;
-}
-
-footer{
-    height: 42vh;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    padding: 10vh 0;
-}
-
-footer div h1{
-    font-family: var(--text-poppins);
-    font-size: 1.7rem;
-}
-
-footer div p{
-    font-family: var(--text-inter);
-    font-size: 1rem;
-}
-
-.footer-content{
-    display: flex;
-    justify-content: space-around;
-}
-
-.footer-items img{
-    height: 12vh;
-    width: 15vw;
-    object-fit: cover;
-
-}
-
-footer div ul li{
-    font-family: var(--text-inter);
-    color: var(--text-color);
-    list-style: none;
-}
-
-.footer-content ul li{
-    padding-bottom: 1vh;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-.footer-content ul li a{
-    color: var(--text-color);
-    font-family: var(--text-inter);
-    text-decoration: none;
-}
-
-.disclaimer-footer{
-    text-align: center;
-    padding-top: 5vh;
-    font-family: var(--text-inter);
-    color: var(--text-color);
-    font-size: 1rem;
 }

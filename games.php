@@ -58,6 +58,40 @@
             <figcaption>SPORT</figcaption>
         </figure>
     </section>
+    <section class="popular-game-section">
+        <div class="popular-game-section-box">
+            <div class="box-slideshow-games-1">
+                <article class="content-slideshow-games-1">
+                    <h1>
+                        Most popular games
+                    </h1>
+                    <a href="#" class="btn-slideshow-games-1">
+                        <p>Shop Now</p>
+                    </a>
+                </article>
+            </div>
+            <div class="box-slideshow-games-2">
+                <article class="content-slideshow-games-2">
+                    <h1>
+                        Game Stars
+                    </h1>
+                    <a href="#" class="btn-slideshow-games-2">
+                        <p>Read more</p>
+                    </a>
+                </article>
+            </div>
+        </div>
+        <div class="box-slideshow-games-3">
+            <article class="content-slideshow-games-3">
+                <h1>
+                    Bestselling games
+                </h1>
+                <a href="#" class="btn-slideshow-games-3">
+                    <p>Explore</p>
+                </a>
+            </article>
+        </div>
+    </section>
     <hr>
 
     <!-- Sectie met zoekbalk -->
@@ -192,34 +226,34 @@
     <section class="now-popular">
         <h1>Now Popular</h1>
         <div class="popular-list">
-            <div class="popular-item">
-                <img src="images/battlefront.jpg" alt="Popular Game 1">
-                <div class="details">
-                    <p>Popular Game 1</p>
-                    <div class="rating">★★★☆☆</div>
-                </div>
-            </div>
-            <div class="popular-item">
-                <img src="images/minecraft.jpg" alt="Popular Game 2">
-                <div class="details">
-                    <p>Popular Game 2</p>
-                    <div class="rating">★★★☆☆</div>
-                </div>
-            </div>
-            <div class="popular-item">
-                <img src="images/minecraft.jpg" alt="Popular Game 3">
-                <div class="details">
-                    <p>Popular Game 3</p>
-                    <div class="rating">★★★☆☆</div>
-                </div>
-            </div>
-            <div class="popular-item">
-                <img src="images/minecraft.jpg" alt="Popular Game 4">
-                <div class="details">
-                    <p>Popular Game 4</p>
-                    <div class="rating">★★★☆☆</div>
-                </div>
-            </div>
+            <figure>
+                <img src="images/battlefront.jpg" alt="Game 7">
+                <figcaption>
+                    <p>Game 7</p>
+                    <p class="stars">★★★☆☆</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/battlefront.jpg" alt="Game 7">
+                <figcaption>
+                    <p>Game 7</p>
+                    <p class="stars">★★★☆☆</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/battlefront.jpg" alt="Game 7">
+                <figcaption>
+                    <p>Game 7</p>
+                    <p class="stars">★★★☆☆</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/battlefront.jpg" alt="Game 7">
+                <figcaption>
+                    <p>Game 7</p>
+                    <p class="stars">★★★☆☆</p>
+                </figcaption>
+            </figure>
         </div>
     </section>
 </main>
