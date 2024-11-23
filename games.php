@@ -58,6 +58,40 @@
             <figcaption>SPORT</figcaption>
         </figure>
     </section>
+    <section class="popular-game-section">
+        <div class="popular-game-section-box">
+            <div class="box-slideshow-games-1">
+                <article class="content-slideshow-games-1">
+                    <h1>
+                        Most popular games
+                    </h1>
+                    <a href="#" class="btn-slideshow-games-1">
+                        <p>Shop Now</p>
+                    </a>
+                </article>
+            </div>
+            <div class="box-slideshow-games-2">
+                <article class="content-slideshow-games-2">
+                    <h1>
+                        Game Stars
+                    </h1>
+                    <a href="#" class="btn-slideshow-games-2">
+                        <p>Read more</p>
+                    </a>
+                </article>
+            </div>
+        </div>
+        <div class="box-slideshow-games-3">
+            <article class="content-slideshow-games-3">
+                <h1>
+                    Bestselling games
+                </h1>
+                <a href="#" class="btn-slideshow-games-3">
+                    <p>Explore</p>
+                </a>
+            </article>
+        </div>
+    </section>
     <hr>
 
     <!-- Sectie met zoekbalk -->
