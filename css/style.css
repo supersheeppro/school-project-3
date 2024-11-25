@@ -161,17 +161,33 @@ main{
     justify-content: center;
 }
 
-.content-slideshow{
-    background-image: url("../images/skull_and_bones.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+.content-slideshow {
     width: 70vw;
     height: 55vh;
     display: grid;
     place-content: center;
     border: solid 3px var(--border-color);
     border-radius: 4px 4px 4px 4px;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
 }
+
+.content-slideshow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/skull_and_bones.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+}
+
 
 .btn-slideshow{
     background-color: var(--btn-color);
