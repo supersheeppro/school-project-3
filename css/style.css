@@ -45,8 +45,8 @@ h1{
 hr {
  border: 0;
  height: 2px;
- background: #929292; /* Kies een kleur */
- margin: 20px 0; /* Ruimte boven en onder */
+ background: var(--border-color);
+ margin: 20px 0;
 }
 
 header{
@@ -77,15 +77,19 @@ nav ul a{
     width: 463px;
     height: 37px;
     color: var(--text-color);
-    font-family: "Poppins";
+    font-family: var(--text-poppins);
     font-weight: 400;
     font-size: 16px;
     text-align: center;
     padding: 0 10px;
 }
 
+nav ul a:hover{
+    color: var(--btn2-color);
+}
+
 nav ul a:nth-child(1), nav ul a:nth-child(2), nav ul a:nth-child(3){
-    border-right: solid var(--border-color)   ;
+    border-right: solid 3px var(--border-color);
 }
 
 .button-cart{
@@ -94,7 +98,7 @@ nav ul a:nth-child(1), nav ul a:nth-child(2), nav ul a:nth-child(3){
     background: var(--btn-color);
     color: #000;
     border-radius: 3px 3px 3px 3px;
-    font-family: "Poppins";
+    font-family: var(--text-poppins);
     font-weight: 500;
     font-size: 16px;
     text-align: center;
@@ -116,11 +120,11 @@ form input{
     height: 32px;
     color: #000;
     background: var(--text-color);
-    border-color: #232323;
+    border-color: var(--border-color);
     border-width: 1px;
     border-style: solid;
     border-radius: 32px 32px 32px 32px;
-    font-family: "Poppins";
+    font-family: var(--text-poppins);
     font-weight: 400;
     font-size: 14px;
     text-align: left;
@@ -197,6 +201,17 @@ main{
     text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
 }
 
+section svg{
+    fill: var(--text-color);
+    height: 25px;
+    width: auto;
+    cursor: pointer;
+}
+
+section svg:hover{
+    fill: var(--btn2-color);
+}
+
 .main2 {
     display: flex;
     justify-content: space-between;
@@ -244,17 +259,17 @@ main{
 
 .social-icons a {
     margin-right: 15px;
-    color: #ffffff;
+    color: var(--text-color);
     text-decoration: none;
 }
 
 .social-icons a:hover {
-    color: #ff7c00;
+    color: var(--btn2-color);
 }
 
 
 .contact-form {
-    background: #fff;
+    background: var(--text-color);
     width: 25vw;
     height: 60vh;
     padding: 40px;
@@ -315,6 +330,7 @@ main{
 .contact-item article strong {
     color: #333;
     font-weight: bold;
+    font-family: var(--text-inter);
 }
 
 .contact-item article i {
@@ -324,6 +340,7 @@ main{
 .contact-item article p {
     color: #000000;
     font-size: 18px;
+    font-family: var(--text-inter);
 }
 
 .main3 {
@@ -399,7 +416,7 @@ figcaption {
 }
 
 .stars {
-    color: #ffcc00;
+    color: var(--btn2-color);
 }
 
 .pagination {
@@ -418,6 +435,10 @@ figcaption {
     font-size: 18px;
     cursor: pointer;
     color: var(--text-color);
+}
+
+.pagination i:hover{
+    color: var(--btn2-color);
 }
 
 .pagination span {
@@ -439,10 +460,10 @@ figcaption {
     display: flex;
     justify-content: space-between;
 }
-/* Now Popular sectie */
+
 .now-popular h1 {
     font-size: 3rem;
-    color: #ffffff;
+    color: var(--text-color);
 }
 
 .popular-list {
@@ -451,7 +472,6 @@ figcaption {
     flex-wrap: wrap;
     gap: 3vw;
 }
-
 
 .popular-item img {
     width: 100px;
@@ -474,7 +494,7 @@ figcaption {
 
 .rating {
     font-size: 16px;
-    color: #ffcc00;
+    color: var(--btn2-color);
 }
 
 .title-products h1 {
@@ -528,13 +548,6 @@ figcaption {
     font-weight: bold;
 }
 
-section svg{
-    fill: var(--text-color);
-    height: 25px;
-    width: auto;
-    cursor: pointer;
-}
-
 .game-gallery{
     display: grid;
     max-width: 1200px;
@@ -544,7 +557,6 @@ section svg{
     "game1 game2 game3 game4"
     "game1 game5 game6 game7";
     grid-gap: 1.7rem;
-    margin: 15vh 10vw 13.5vh 10vw;
 }
 
 .box-game-gallery{
@@ -605,7 +617,7 @@ section svg{
 }
 
 footer{
-    height: 42vh;
+    height: 45vh;
     background-color: var(--background-color);
     color: var(--text-color);
     padding: 10vh 0;
@@ -639,6 +651,10 @@ footer div ul li{
     list-style: none;
 }
 
+footer div ul li:hover{
+    color: var(--btn2-color);
+}
+
 .footer-content ul li{
     padding-bottom: 1vh;
     font-size: 1.5rem;
@@ -649,6 +665,10 @@ footer div ul li{
     color: var(--text-color);
     font-family: var(--text-inter);
     text-decoration: none;
+}
+
+.footer-content ul li a:hover{
+    color: var(--btn2-color);
 }
 
 .disclaimer-footer{
@@ -832,7 +852,6 @@ footer div ul li{
 
 .btn-slideshow-merch{
     background-color: var(--btn-color);
-    padding: 0px 10px 0px 10px;
     text-align: center;
     text-decoration: none;
     color: #000;
