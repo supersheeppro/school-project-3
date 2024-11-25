@@ -162,74 +162,74 @@
         </div>
         <div class="game-list">
             <figure>
-                <img src="images/battlefront.jpg" alt="Game 7">
+                <img src="images/ratchetclank.jpg" alt="Game 7">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>RATCHET CLANK</p>
                     <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/battlefront.jpg"  alt="Game 8">
+                <img src="images/batman2.jpg"  alt="Game 8">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>BATMAN</p>
                     <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/battlefront.jpg"  alt="Game 9">
+                <img src="images/spiderman.jpg"  alt="Game 9">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>SPIDERMAN</p>
                     <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/battlefront.jpg"  alt="Game 10">
+                <img src="images/godofwar.jpg"  alt="Game 10">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>GOD OF WAR</p>
                     <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/battlefront.jpg" alt="Game 11">
+                <img src="images/farcry.jpg" alt="Game 11">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>FAR CRY</p>
                     <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
         </div>
         <div class="game-list">
             <figure>
-                <img src="images/battlefront.jpg" alt="Game 7">
+                <img src="images/rdr2.jpg" alt="Game 7">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>RED DEAD<br> REDEMPTION 2</p>
                     <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/battlefront.jpg"  alt="Game 8">
+                <img src="images/spiderman22.jpg"  alt="Game 8">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>SPIDERMAN 2</p>
                     <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/battlefront.jpg"  alt="Game 9">
+                <img src="images/megaman.jpg"  alt="Game 9">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>MEGA MAN</p>
                     <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/battlefront.jpg"  alt="Game 10">
+                <img src="images/zelda.jpg"  alt="Game 10">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>ZELDA</p>
                     <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/battlefront.jpg" alt="Game 11">
+                <img src="images/mariorabbits.jpg" alt="Game 11">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>MARIO RABBITS<br> KINGDOM BATTLE</p>
                     <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
@@ -261,16 +261,16 @@
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/battlefront.jpg" alt="Game 7">
+                <img src="images/supermariogalaxy2.jpg" alt="Game 7">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>Super mario galaxy 2</p>
                     <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/battlefront.jpg" alt="Game 7">
+                <img src="images/control.jpg" alt="Game 7">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>CONTROL</p>
                     <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
