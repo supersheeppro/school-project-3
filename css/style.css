@@ -175,7 +175,6 @@ main{
 
 .btn-slideshow{
     background-color: var(--btn-color);
-    padding: 0px 10px 0px 10px;
     text-align: center;
     text-decoration: none;
     color: #000;
@@ -313,6 +312,7 @@ section svg:hover{
 .contact-form button:hover {
     background-color: #0056b3;
 }
+
 .contact-item {
     font-size: 16px;
     margin-bottom: 10px;
@@ -454,6 +454,7 @@ figcaption {
     height: auto;
     border: 3px solid var(--border-color);
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .now-popular figure figcaption{
