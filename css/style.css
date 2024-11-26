@@ -75,9 +75,9 @@ nav ul a {
   color: var(--text-color);
   font-family: var(--text-poppins);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.2rem;
   text-align: center;
-  padding: 0 10px;
+  padding: 0 1vw;
 }
 
 nav ul a:hover {
@@ -87,24 +87,24 @@ nav ul a:hover {
 nav ul a:nth-child(1),
 nav ul a:nth-child(2),
 nav ul a:nth-child(3) {
-  border-right: solid 3px var(--border-color);
+  border-right: solid 0.2rem var(--border-color);
 }
 
 .button-cart {
-  width: 150px;
-  height: 37px;
+  width: 9.1rem;
+  height: 2.4rem;
   background: var(--btn-color);
   color: #000;
-  border-radius: 3px 3px 3px 3px;
+  border-radius: 0.18rem 0.18rem 0.18rem 0.18rem;
   font-family: var(--text-poppins);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   text-decoration: none;
-  margin-right: 60px;
+  margin-right: 6vw;
 }
 
 .box-cart {
@@ -124,7 +124,7 @@ form input {
   border-radius: 32px 32px 32px 32px;
   font-family: var(--text-poppins);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1rem;
   text-align: left;
   padding-left: 25px;
 }
@@ -163,8 +163,8 @@ main {
   height: 55vh;
   display: grid;
   place-content: center;
-  border: solid 3px var(--border-color);
-  border-radius: 4px;
+  border: solid 0.18rem var(--border-color);
+  border-radius: 0.24rem;
   z-index: 1;
   position: relative;
   overflow: hidden;
@@ -208,12 +208,12 @@ main {
   text-align: center;
   text-decoration: none;
   color: #000;
-  border-radius: 3px 3px 3px 3px;
+  border-radius: 0.18rem 0.18rem 0.18rem 0.18rem;
   font-family: var(--text-poppins);
   font-weight: 500;
   font-size: 18px;
   width: 170px;
-  height: 43px;
+  height: 2.4rem;
   display: grid;
   place-content: center;
   display: grid;
@@ -297,7 +297,7 @@ section svg:hover {
 }
 
 .contact-form label {
-  font-size: 14px;
+  font-size: 10.24rem;
   color: #555;
   font-family: var(--text-inter);
 }
@@ -377,7 +377,7 @@ section svg:hover {
 }
 
 .top-games figure img {
-  border: 3px solid var(--border-color);
+  border: 0.18rem solid var(--border-color);
   border-radius: 10px;
   cursor: pointer;
 }
@@ -419,7 +419,7 @@ figcaption {
 .game-list figure img {
   width: 12vw;
   height: auto;
-  border: 3px solid var(--border-color);
+  border: 0.18rem solid var(--border-color);
   border-radius: 10px;
   cursor: pointer;
 }
@@ -466,7 +466,7 @@ figcaption {
 .now-popular figure img {
   width: 15.4vw;
   height: auto;
-  border: 3px solid var(--border-color);
+  border: 0.18rem solid var(--border-color);
   border-radius: 10px;
   cursor: pointer;
 }
@@ -504,7 +504,7 @@ figcaption {
 
 .details p {
   margin: 0 0 10px;
-  font-size: 14px;
+  font-size: 10.24rem;
 }
 
 .rating {
@@ -530,7 +530,7 @@ figcaption {
 
 .featured-products h2 {
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 20.24rem;
   color: var(--text-color);
 }
 
@@ -552,7 +552,7 @@ figcaption {
   height: 35vh;
   width: 35vw;
   border: solid 2px var(--border-color);
-  border-radius: 4px 4px 4px 4px;
+  border-radius: 0.24rem 0.24rem 0.24rem 0.24rem;
   cursor: pointer;
 }
 
@@ -613,7 +613,7 @@ figcaption {
   cursor: pointer;
   height: auto;
   border: solid 2px var(--border-color);
-  border-radius: 4px 4px 4px 4px;
+  border-radius: 0.24rem 0.24rem 0.24rem 0.24rem;
 }
 
 .game-gallery .rating {
@@ -719,8 +719,8 @@ footer div ul li:hover {
   height: 30vh;
   display: grid;
   place-content: center;
-  border: solid 3px var(--border-color);
-  border-radius: 4px 4px 4px 4px;
+  border: solid 0.18rem var(--border-color);
+  border-radius: 0.24rem 0.24rem 0.24rem 0.24rem;
   z-index: 1;
   position: relative;
   overflow: hidden;
@@ -747,12 +747,12 @@ footer div ul li:hover {
   text-align: center;
   text-decoration: none;
   color: #000;
-  border-radius: 3px 3px 3px 3px;
+  border-radius: 0.18rem 0.18rem 0.18rem 0.18rem;
   font-family: var(--text-poppins);
   font-weight: 500;
   font-size: 18px;
   width: 170px;
-  height: 43px;
+  height: 2.4rem;
   display: grid;
   place-content: center;
   display: grid;
@@ -780,8 +780,8 @@ footer div ul li:hover {
   height: 15vh;
   display: flex;
   justify-content: space-around;
-  border: solid 3px var(--border-color);
-  border-radius: 4px 4px 4px 4px;
+  border: solid 0.18rem var(--border-color);
+  border-radius: 0.24rem 0.24rem 0.24rem 0.24rem;
   z-index: 1;
   position: relative;
   overflow: hidden;
@@ -808,12 +808,12 @@ footer div ul li:hover {
   text-align: center;
   text-decoration: none;
   color: #000;
-  border-radius: 3px 3px 3px 3px;
+  border-radius: 0.18rem 0.18rem 0.18rem 0.18rem;
   font-family: var(--text-poppins);
   font-weight: 500;
   font-size: 18px;
   width: 120px;
-  height: 43px;
+  height: 2.4rem;
   display: grid;
   place-content: center;
   display: grid;
@@ -842,8 +842,8 @@ footer div ul li:hover {
   height: 51vh;
   display: grid;
   place-content: center;
-  border: solid 3px var(--border-color);
-  border-radius: 4px 4px 4px 4px;
+  border: solid 0.18rem var(--border-color);
+  border-radius: 0.24rem 0.24rem 0.24rem 0.24rem;
   z-index: 1;
   position: relative;
   overflow: hidden;
@@ -870,12 +870,12 @@ footer div ul li:hover {
   text-align: center;
   text-decoration: none;
   color: #000;
-  border-radius: 3px 3px 3px 3px;
+  border-radius: 0.18rem 0.18rem 0.18rem 0.18rem;
   font-family: var(--text-poppins);
   font-weight: 500;
   font-size: 18px;
   width: 100px;
-  height: 43px;
+  height: 2.4rem;
   display: grid;
   place-content: center;
   display: grid;
@@ -904,8 +904,8 @@ footer div ul li:hover {
   height: 55vh;
   display: grid;
   place-content: center;
-  border: solid 3px var(--border-color);
-  border-radius: 4px 4px 4px 4px;
+  border: solid 0.18rem var(--border-color);
+  border-radius: 0.24rem 0.24rem 0.24rem 0.24rem;
   z-index: 1;
   position: relative;
   overflow: hidden;
@@ -931,12 +931,12 @@ footer div ul li:hover {
   text-align: center;
   text-decoration: none;
   color: #000;
-  border-radius: 3px 3px 3px 3px;
+  border-radius: 0.18rem 0.18rem 0.18rem 0.18rem;
   font-family: var(--text-poppins);
   font-weight: 500;
   font-size: 18px;
   width: 170px;
-  height: 43px;
+  height: 2.4rem;
   display: grid;
   place-content: center;
   display: grid;
