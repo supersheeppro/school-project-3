@@ -103,97 +103,97 @@
         </div>
         <div class="game-list">
             <figure>
-                <img src="images/battlefront.jpg" alt="Game 7">
+                <img src="images/smartmockups_m3yeh93c.jpg" alt="Game 7">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>Tea Cup</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/battlefront.jpg"  alt="Game 8">
+                <img src="images/smartmockups_m3yejw8b.jpg"  alt="Game 8">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>Coffee Cup</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/battlefront.jpg"  alt="Game 9">
+                <img src="images/smartmockups_m3yelell.jpg"  alt="Game 9">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>Regular T-shirt</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/battlefront.jpg"  alt="Game 10">
+                <img src="images/smartmockups_m3yfm07t.jpg"  alt="Game 10">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>Compression Shirt</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/battlefront.jpg" alt="Game 11">
+                <img src="images/smartmockups_m3yg1l09.jpg" alt="Game 11">
                 <figcaption>
-                    <p>Game 7</p>
-                </figcaption>
-            </figure>
-        </div>
-        <div class="game-list">
-            <figure>
-                <img src="images/battlefront.jpg" alt="Game 7">
-                <figcaption>
-                    <p>Game 7</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="images/battlefront.jpg"  alt="Game 8">
-                <figcaption>
-                    <p>Game 7</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="images/battlefront.jpg"  alt="Game 9">
-                <figcaption>
-                    <p>Game 7</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="images/battlefront.jpg"  alt="Game 10">
-                <figcaption>
-                    <p>Game 7</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="images/battlefront.jpg" alt="Game 11">
-                <figcaption>
-                    <p>Game 7</p>
+                    <p>Book Covers</p>
                 </figcaption>
             </figure>
         </div>
         <div class="game-list">
             <figure>
-                <img src="images/battlefront.jpg" alt="Game 7">
+                <img src="images/smartmockups_m3yg9r8p.jpg" alt="Game 7">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>T-shirt | Black</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/battlefront.jpg"  alt="Game 8">
+                <img src="images/smartmockups_m3yg65fg.jpg"  alt="Game 8">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>T-shirt | White</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/battlefront.jpg"  alt="Game 9">
+                <img src="images/smartmockups_m3yg80co.jpg"  alt="Game 9">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>T-shirt | Black</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/battlefront.jpg"  alt="Game 10">
+                <img src="images/smartmockups_m3ygbdg5.jpg"  alt="Game 10">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>Combo Cups</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/battlefront.jpg" alt="Game 11">
+                <img src="images/smartmockups_m3yeh93c.jpg" alt="Game 11">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>Coffee Cup</p>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="game-list">
+            <figure>
+                <img src="images/smartmockups_m3yg9r8p.jpg" alt="Game 7">
+                <figcaption>
+                    <p>Regular T-shirt</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/smartmockups_m3yg1l09.jpg"  alt="Game 8">
+                <figcaption>
+                    <p>Book Covers</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/smartmockups_m3yeh93c.jpg"  alt="Game 9">
+                <figcaption>
+                    <p>Tea Cup</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/smartmockups_m3yg65fg.jpg"  alt="Game 10">
+                <figcaption>
+                    <p>Compression Shirt</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/smartmockups_m3yelell.jpg" alt="Game 11">
+                <figcaption>
+                    <p>T-shirt | Black</p>
                 </figcaption>
             </figure>
         </div>
@@ -210,25 +210,25 @@
         <h1>Most Popular</h1>
         <div class="popular-list">
             <figure>
-                <img src="images/battlefront.jpg" alt="Game 7">
+                <img src="images\smartmockups_m3yg9r8p.jpg" alt="Game 7">
                 <figcaption>
                     <p>Game 7</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/battlefront.jpg" alt="Game 7">
+                <img src="images\smartmockups_m3yelell.jpg" alt="Game 7">
                 <figcaption>
                     <p>Game 7</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/battlefront.jpg" alt="Game 7">
+                <img src="images/smartmockups_m3yg1l09.jpg" alt="Game 7">
                 <figcaption>
                     <p>Game 7</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/battlefront.jpg" alt="Game 7">
+                <img src="images\smartmockups_m3ygbdg5.jpg" alt="Game 7">
                 <figcaption>
                     <p>Game 7</p>
                 </figcaption>

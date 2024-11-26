@@ -392,7 +392,7 @@ figcaption {
   padding: 10px;
   font-size: 18px;
   font-weight: bold;
-  font-family: var(--text-poppins);
+  font-family: var(--text-inter);
   color: var(--text-color);
 }
 
