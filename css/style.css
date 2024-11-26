@@ -114,8 +114,8 @@ nav ul a:nth-child(3) {
 }
 
 form input {
-  width: 191px;
-  height: 32px;
+  width: 11.5rem;
+  height: 2rem;
   color: #000;
   background: var(--text-color);
   border-color: var(--border-color);
@@ -135,6 +135,7 @@ form svg {
   fill: var(--border-color);
   position: absolute;
   padding-left: 0.5vw;
+  color: #000000;
 }
 
 #form {
@@ -231,10 +232,10 @@ main {
 }
 
 section svg {
-  fill: var(--text-color);
-  height: 1.5rem;
+  height: 1.3rem;
   width: auto;
   cursor: pointer;
+  fill: gray
 }
 
 section svg:hover {
