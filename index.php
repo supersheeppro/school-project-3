@@ -180,6 +180,6 @@
         Disclaimer: This website is not responsible for any mistakes
       </p>
     </footer>
-
+    <script src="js/script.js"></script>
   </body>
 </html>
