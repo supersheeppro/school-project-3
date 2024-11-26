@@ -54,28 +54,28 @@
     <!-- Horizontale rij met 6 foto's en titels -->
     <section class="top-games">
         <figure>
-            <img src="images/minecraft.jpg"alt="Game 1">
-            <figcaption>CATEGORY</figcaption>
+            <img src="images\smartmockups_m3yeh93c.jpg"alt="cups">
+            <figcaption>CUPS</figcaption>
         </figure>
         <figure>
-            <img src="images/minecraft.jpg" alt="Game 2">
-            <figcaption>CATEGORY</figcaption>
+            <img src="images\smartmockups_m3yg9r8p.jpg" alt="t-shirts">
+            <figcaption>T-SHIRTS</figcaption>
         </figure>
         <figure>
-            <img src="images/minecraft.jpg" alt="Game 3">
-            <figcaption>CATEGORY</figcaption>
+            <img src="images\smartmockups_m3yelell.jpg" alt="compression">
+            <figcaption>COMPRESSION<br>SHIRTS</figcaption>
         </figure>
         <figure>
-            <img src="images/minecraft.jpg" alt="Game 4">
-            <figcaption>CATEGORY</figcaption>
+            <img src="images\smartmockups_m3yg1l09.jpg" alt="book covers">
+            <figcaption>BOOKS COVERS</figcaption>
         </figure>
         <figure>
-            <img src="images/minecraft.jpg" alt="Game 5">
-            <figcaption>CATEGORY</figcaption>
+            <img src="images\smartmockups_m3yhlt1q.jpg" alt="hoodies">
+            <figcaption>HOODIES</figcaption>
         </figure>
         <figure>
-            <img src="images/minecraft.jpg" alt="Game 6">
-            <figcaption>CATEGORY</figcaption>
+            <img src="images\smartmockups_m3yhn248.jpg" alt="pillows">
+            <figcaption>PILLOWS</figcaption>
         </figure>
     </section>
     <section class="popular-game-section-merch">
@@ -103,31 +103,31 @@
         </div>
         <div class="game-list">
             <figure>
-                <img src="images/smartmockups_m3yeh93c.jpg" alt="Game 7">
+                <img src="images/smartmockups_m3yeh93c.jpg" alt="tea cup">
                 <figcaption>
                     <p>Tea Cup</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/smartmockups_m3yejw8b.jpg"  alt="Game 8">
+                <img src="images/smartmockups_m3yejw8b.jpg"  alt="coffee cup">
                 <figcaption>
                     <p>Coffee Cup</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/smartmockups_m3yelell.jpg"  alt="Game 9">
+                <img src="images/smartmockups_m3yelell.jpg"  alt="t-shirt">
                 <figcaption>
                     <p>Regular T-shirt</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/smartmockups_m3yfm07t.jpg"  alt="Game 10">
+                <img src="images/smartmockups_m3yfm07t.jpg"  alt="compression shirt">
                 <figcaption>
                     <p>Compression Shirt</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/smartmockups_m3yg1l09.jpg" alt="Game 11">
+                <img src="images/smartmockups_m3yg1l09.jpg" alt="book covers">
                 <figcaption>
                     <p>Book Covers</p>
                 </figcaption>
@@ -135,31 +135,31 @@
         </div>
         <div class="game-list">
             <figure>
-                <img src="images/smartmockups_m3yg9r8p.jpg" alt="Game 7">
+                <img src="images/smartmockups_m3yg9r8p.jpg" alt="t-shirt black">
                 <figcaption>
                     <p>T-shirt | Black</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/smartmockups_m3yg65fg.jpg"  alt="Game 8">
+                <img src="images/smartmockups_m3yg65fg.jpg"  alt="t-shirt white">
                 <figcaption>
                     <p>T-shirt | White</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/smartmockups_m3yg80co.jpg"  alt="Game 9">
+                <img src="images/smartmockups_m3yg80co.jpg"  alt="t-shirt black">
                 <figcaption>
                     <p>T-shirt | Black</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/smartmockups_m3ygbdg5.jpg"  alt="Game 10">
+                <img src="images/smartmockups_m3ygbdg5.jpg"  alt="combo cups">
                 <figcaption>
                     <p>Combo Cups</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/smartmockups_m3yeh93c.jpg" alt="Game 11">
+                <img src="images/smartmockups_m3yeh93c.jpg" alt="coffee cup">
                 <figcaption>
                     <p>Coffee Cup</p>
                 </figcaption>
@@ -167,31 +167,31 @@
         </div>
         <div class="game-list">
             <figure>
-                <img src="images/smartmockups_m3yg9r8p.jpg" alt="Game 7">
+                <img src="images/smartmockups_m3yg9r8p.jpg" alt="t-shirt">
                 <figcaption>
                     <p>Regular T-shirt</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/smartmockups_m3yg1l09.jpg"  alt="Game 8">
+                <img src="images/smartmockups_m3yg1l09.jpg"  alt="book covers">
                 <figcaption>
                     <p>Book Covers</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/smartmockups_m3yeh93c.jpg"  alt="Game 9">
+                <img src="images/smartmockups_m3yeh93c.jpg"  alt="tea cup">
                 <figcaption>
                     <p>Tea Cup</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/smartmockups_m3yg65fg.jpg"  alt="Game 10">
+                <img src="images/smartmockups_m3yg65fg.jpg"  alt="compression shirt">
                 <figcaption>
                     <p>Compression Shirt</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/smartmockups_m3yelell.jpg" alt="Game 11">
+                <img src="images/smartmockups_m3yelell.jpg" alt="t-shirt black">
                 <figcaption>
                     <p>T-shirt | Black</p>
                 </figcaption>
@@ -210,27 +210,27 @@
         <h1>Most Popular</h1>
         <div class="popular-list">
             <figure>
-                <img src="images\smartmockups_m3yg9r8p.jpg" alt="Game 7">
+                <img src="images\smartmockups_m3yejw8b.jpg" alt="coffee cup">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>Coffee Cup</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images\smartmockups_m3yelell.jpg" alt="Game 7">
+                <img src="images\smartmockups_m3yelell.jpg" alt="t-shirt black">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>T-shirt | Black</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/smartmockups_m3yg1l09.jpg" alt="Game 7">
+                <img src="images/smartmockups_m3yg1l09.jpg" alt="book cover">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>Book Covers</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images\smartmockups_m3ygbdg5.jpg" alt="Game 7">
+                <img src="images\smartmockups_m3ygbdg5.jpg" alt="combo cups">
                 <figcaption>
-                    <p>Game 7</p>
+                    <p>Combo Cups</p>
                 </figcaption>
             </figure>
         </div>
