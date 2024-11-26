@@ -60,8 +60,8 @@
           <h1>
             Game Stars
           </h1>
-          <a href="#" class="btn-slideshow">
-            <p>Shop Now</p>
+          <a href="merch.php" class="btn-slideshow">
+            <p>Shop Merch</p>
           </a>
         </article>
       </div>
@@ -161,10 +161,10 @@
         <div>
           <h1>Find Us On</h1><br>
           <ul>
-            <li><i class="fa-brands fa-square-x-twitter"></i></li>
-            <li><i class="fa-brands fa-square-facebook"></i></li>
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-brands fa-linkedin"></i></li>
+            <li><a href="https://x.com"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://nl.linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
           </ul>
         </div>
         <div>
