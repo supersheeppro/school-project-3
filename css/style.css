@@ -1,956 +1,956 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-:root{
-    --text-color: #fff;
-    --background-color: #4a494a;
-    --border-color: #929292;
-    --btn-color: #07D874;
-    --btn2-color: #ffbd3f;
-    --text-poppins: 'Poppins', sans-serif;
-    --text-inter: 'Inter', sans-serif;
+:root {
+  --text-color: #fff;
+  --background-color: #4a494a;
+  --border-color: #929292;
+  --btn-color: #07d874;
+  --btn2-color: #ffbd3f;
+  --text-poppins: "Poppins", sans-serif;
+  --text-inter: "Inter", sans-serif;
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
-html{
-    display: flex;
-    justify-content: center;
+html {
+  display: flex;
+  justify-content: center;
 }
 
-body{
-    max-width: 100%;
-    min-width: 80vw;
-    background-color: #000;
+body {
+  max-width: 100%;
+  min-width: 80vw;
+  background-color: #000;
 }
 
-h1{
-    font-family: "Poppins", sans-serif;
+h1 {
+  font-family: "Poppins", sans-serif;
 }
 
 hr {
- border: 0;
- height: 2px;
- background: var(--border-color);
- margin: 20px 0;
+  border: 0;
+  height: 2px;
+  background: var(--border-color);
+  margin: 20px 0;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: var(--background-color);
-    height: 5vh;
-    padding: 4% 0;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--background-color);
+  height: 5vh;
+  padding: 4% 0;
 }
 
-nav{
-    justify-content: space-between;
-    max-width: 100%;
-    min-width: 80vw;
-    height: 5vh;
-    display: flex;
-    align-items: center;
-    margin: 2%;
+nav {
+  justify-content: space-between;
+  max-width: 100%;
+  min-width: 80vw;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  margin: 2%;
 }
 
-nav img{
-    height: 5rem;
+nav img {
+  height: 5rem;
 }
 
-nav ul a{
-    text-decoration: none;
-    width: 463px;
-    height: 37px;
-    color: var(--text-color);
-    font-family: var(--text-poppins);
-    font-weight: 400;
-    font-size: 16px;
-    text-align: center;
-    padding: 0 10px;
+nav ul a {
+  text-decoration: none;
+  width: 463px;
+  height: 37px;
+  color: var(--text-color);
+  font-family: var(--text-poppins);
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  padding: 0 10px;
 }
 
-nav ul a:hover{
-    color: var(--btn2-color);
+nav ul a:hover {
+  color: var(--btn2-color);
 }
 
-nav ul a:nth-child(1), nav ul a:nth-child(2), nav ul a:nth-child(3){
-    border-right: solid 3px var(--border-color);
+nav ul a:nth-child(1),
+nav ul a:nth-child(2),
+nav ul a:nth-child(3) {
+  border-right: solid 3px var(--border-color);
 }
 
-.button-cart{
-    width: 150px;
-    height: 37px;
-    background: var(--btn-color);
-    color: #000;
-    border-radius: 3px 3px 3px 3px;
-    font-family: var(--text-poppins);
-    font-weight: 500;
-    font-size: 16px;
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-decoration: none;
-    margin-right: 60px;
+.button-cart {
+  width: 150px;
+  height: 37px;
+  background: var(--btn-color);
+  color: #000;
+  border-radius: 3px 3px 3px 3px;
+  font-family: var(--text-poppins);
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+  margin-right: 60px;
 }
 
-.box-cart{
-    height: 5rem;
-    display: flex;
-    align-items: center;
+.box-cart {
+  height: 5rem;
+  display: flex;
+  align-items: center;
 }
 
-form input{
-    width: 191px;
-    height: 32px;
-    color: #000;
-    background: var(--text-color);
-    border-color: var(--border-color);
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 32px 32px 32px 32px;
-    font-family: var(--text-poppins);
-    font-weight: 400;
-    font-size: 14px;
-    text-align: left;
-    padding-left: 25px;
+form input {
+  width: 191px;
+  height: 32px;
+  color: #000;
+  background: var(--text-color);
+  border-color: var(--border-color);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 32px 32px 32px 32px;
+  font-family: var(--text-poppins);
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 25px;
 }
 
-form svg{
-    height: 16px;
-    width: auto;
-    fill: var(--border-color);
-    position: absolute;
-    padding-left: 5px;
+form svg {
+  height: 16px;
+  width: auto;
+  fill: var(--border-color);
+  position: absolute;
+  padding-left: 5px;
 }
 
-#form{
-    display: flex;
-    align-items: center;
+#form {
+  display: flex;
+  align-items: center;
 }
 
-.button-cart svg{
-    height: 25px;
-    width: 25px;
+.button-cart svg {
+  height: 25px;
+  width: 25px;
 }
 
-main{
-    background: var(--background-color);
-    height: 194.5vh;
-    justify-content: center;
+main {
+  background: var(--background-color);
+  height: 194.5vh;
+  justify-content: center;
 }
 
-.box-slideshow{
-    height: 65vh;
-    display: flex;
-    justify-content: center;
+.box-slideshow {
+  height: 65vh;
+  display: flex;
+  justify-content: center;
 }
 
 .content-slideshow {
-    width: 70vw;
-    height: 55vh;
-    display: grid;
-    place-content: center;
-    border: solid 3px var(--border-color);
-    border-radius: 4px 4px 4px 4px;
-    z-index: 1;
-    position: relative;
-    overflow: hidden;
+  width: 70vw;
+  height: 55vh;
+  display: grid;
+  place-content: center;
+  border: solid 3px var(--border-color);
+  border-radius: 4px 4px 4px 4px;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
 }
 
 .content-slideshow::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("../images/skull_and_bones.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    filter: blur(5px);
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/skull_and_bones.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: -1;
 }
 
-
-.btn-slideshow{
-    background-color: var(--btn-color);
-    text-align: center;
-    text-decoration: none;
-    color: #000;
-    border-radius: 3px 3px 3px 3px;
-    font-family: var(--text-poppins);
-    font-weight: 500;
-    font-size: 18px;
-    width: 170px;
-    height: 43px;
-    display: grid;
-    place-content: center;
-    display: grid;
-    place-self: center;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+.btn-slideshow {
+  background-color: var(--btn-color);
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  border-radius: 3px 3px 3px 3px;
+  font-family: var(--text-poppins);
+  font-weight: 500;
+  font-size: 18px;
+  width: 170px;
+  height: 43px;
+  display: grid;
+  place-content: center;
+  display: grid;
+  place-self: center;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
 }
 
-.content-slideshow h1{
-    color: var(--text-color);
-    font-family: var(--text-poppins);
-    font-weight: bold;
-    font-size: 6rem;
-    line-height: 1.3;
-    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+.content-slideshow h1 {
+  color: var(--text-color);
+  font-family: var(--text-poppins);
+  font-weight: bold;
+  font-size: 6rem;
+  line-height: 1.3;
+  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
 }
 
-section svg{
-    fill: var(--text-color);
-    height: 25px;
-    width: auto;
-    cursor: pointer;
+section svg {
+  fill: var(--text-color);
+  height: 25px;
+  width: auto;
+  cursor: pointer;
 }
 
-section svg:hover{
-    fill: var(--btn2-color);
+section svg:hover {
+  fill: var(--btn2-color);
 }
 
 .main2 {
-    display: flex;
-    justify-content: space-between;
-    padding: 120px;
-    margin: 0 auto;
-    height: max-content;
+  display: flex;
+  justify-content: space-between;
+  padding: 120px;
+  margin: 0 auto;
+  height: max-content;
 }
 
 .contact-info {
-    flex: 1;
+  flex: 1;
 }
 
 .contact-info h4 {
-    font-size: 18px;
-    color: var(--text-color);
-    margin-bottom: 10px;
-    font-family: var(--text-poppins);
+  font-size: 18px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+  font-family: var(--text-poppins);
 }
 
 .contact-info h1 {
-    font-size: 4rem;
-    color: var(--text-color);
-    margin-bottom: 20px;
-    line-height: 1;
-    font-family: var(--text-poppins);
+  font-size: 4rem;
+  color: var(--text-color);
+  margin-bottom: 20px;
+  line-height: 1;
+  font-family: var(--text-poppins);
 }
 
 .contact-info p {
-    font-size: 16px;
-    margin-bottom: 20px;
-    line-height: 1.5;
-    color: var(--text-color);
-    font-family: var(--text-inter);
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: var(--text-color);
+  font-family: var(--text-inter);
 }
 
 .contact-method .contact-item {
-    font-size: 16px;
-    margin-bottom: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .icons-flex {
-    display: flex;
-    gap: 7vw;
+  display: flex;
+  gap: 7vw;
 }
 
 .social-icons a {
-    margin-right: 15px;
-    color: var(--text-color);
-    text-decoration: none;
+  margin-right: 15px;
+  color: var(--text-color);
+  text-decoration: none;
 }
 
 .social-icons a:hover {
-    color: var(--btn2-color);
+  color: var(--btn2-color);
 }
 
-
 .contact-form {
-    background: var(--text-color);
-    width: 25vw;
-    height: 60vh;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: var(--text-color);
+  width: 25vw;
+  height: 60vh;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 1vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
 }
 
 .contact-form label {
-    font-size: 14px;
-    color: #555;
-    font-family: var(--text-inter);
+  font-size: 14px;
+  color: #555;
+  font-family: var(--text-inter);
 }
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 .contact-form button {
-    align-self: flex-start;
-    padding: 10px 20px;
-    background-color: var(--btn-color);
-    color: #000000;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10vh;
+  align-self: flex-start;
+  padding: 10px 20px;
+  background-color: var(--btn-color);
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10vh;
 }
 
 .contact-form button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 .contact-item {
-    font-size: 16px;
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #f5f5f5;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    width: 22vw;
-    height: 7vh;
-    gap: 1vw;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  width: 22vw;
+  height: 7vh;
+  gap: 1vw;
 }
 
 .contact-item article strong {
-    color: #333;
-    font-weight: bold;
-    font-family: var(--text-inter);
+  color: #333;
+  font-weight: bold;
+  font-family: var(--text-inter);
 }
 
 .contact-item article i {
-    color: #007BFF;
-    font-size: 15px;
+  color: #007bff;
+  font-size: 15px;
 }
+
 .contact-item article p {
-    color: #000000;
-    font-size: 18px;
-    font-family: var(--text-inter);
+  color: #000000;
+  font-size: 18px;
+  font-family: var(--text-inter);
 }
 
 .main3 {
-    height: 275vh;
+  height: 275vh;
 }
 
 .top-games {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 3vw;
-    padding-top: 3vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3vw;
+  padding-top: 3vh;
 }
 
-.top-games figure{
-    width: 11rem;
-    height: auto;
-    text-align: center;
-
+.top-games figure {
+  width: 11rem;
+  height: auto;
+  text-align: center;
 }
 
-.top-games figure img{
-    border: 3px solid var(--border-color);
-    border-radius: 10px;
-    cursor: pointer;
+.top-games figure img {
+  border: 3px solid var(--border-color);
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 figure img {
-    width: 100%;
-    display: block;
-    height: auto;
+  width: 100%;
+  display: block;
+  height: auto;
 }
 
 figcaption {
-    padding: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: var(--text-poppins);
-    color: var(--text-color);
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: var(--text-poppins);
+  color: var(--text-color);
 }
 
 .all-games .header-games {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    padding: 2vh 4vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 2vh 4vw;
 }
 
-.all-games .header-games h1{
-    font-size: 3rem;
-    color: var(--text-color)
+.all-games .header-games h1 {
+  font-size: 3rem;
+  color: var(--text-color);
 }
 
 .game-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 3vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3vw;
 }
 
-.game-list figure img{
-    width: 12vw;
-    height: auto;
-    border: 3px solid var(--border-color);
-    border-radius: 10px;
-    cursor: pointer;
+.game-list figure img {
+  width: 12vw;
+  height: auto;
+  border: 3px solid var(--border-color);
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-.game-list figure figcaption{
-    display: flex;
-    justify-content: space-between;
+.game-list figure figcaption {
+  display: flex;
+  justify-content: space-between;
 }
 
 .stars {
-    color: var(--btn2-color);
+  color: var(--btn2-color);
 }
 
 .pagination {
-    text-align: center;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-family: var(--text-poppins);
-    gap: 10px;
-    color: var(--text-color);
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-family: var(--text-poppins);
+  gap: 10px;
+  color: var(--text-color);
 }
 
 .pagination i {
-    font-size: 18px;
-    cursor: pointer;
-    color: var(--text-color);
+  font-size: 18px;
+  cursor: pointer;
+  color: var(--text-color);
 }
 
-.pagination i:hover{
-    color: var(--btn2-color);
+.pagination i:hover {
+  color: var(--btn2-color);
 }
 
 .pagination span {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .now-popular {
-    padding: 0 4vw;
+  padding: 0 4vw;
 }
 
-.now-popular figure img{
-    width: 15.4vw;
-    height: auto;
-    border: 3px solid var(--border-color);
-    border-radius: 10px;
-    cursor: pointer;
+.now-popular figure img {
+  width: 15.4vw;
+  height: auto;
+  border: 3px solid var(--border-color);
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-.now-popular figure figcaption{
-    display: flex;
-    justify-content: space-between;
+.now-popular figure figcaption {
+  display: flex;
+  justify-content: space-between;
 }
 
 .now-popular h1 {
-    font-size: 3rem;
-    color: var(--text-color);
+  font-size: 3rem;
+  color: var(--text-color);
 }
 
 .popular-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 3vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3vw;
 }
 
 .popular-item img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    cursor: pointer;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
 }
 
 .details {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .details p {
-    margin: 0 0 10px;
-    font-size: 14px;
+  margin: 0 0 10px;
+  font-size: 14px;
 }
 
 .rating {
-    font-size: 16px;
-    color: var(--btn2-color);
+  font-size: 16px;
+  color: var(--btn2-color);
 }
 
 .title-products h1 {
-    color: var(--text-color);
-    font-family: var(--text-poppins);
-    font-weight: 500;
-    font-size: 2.5rem;
-    line-height: 1;
-    text-align: center;
-    margin: 6vh 0;
+  color: var(--text-color);
+  font-family: var(--text-poppins);
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 1;
+  text-align: center;
+  margin: 6vh 0;
 }
 
 .featured-products {
-    width: 90%;
-    max-width: 900px;
-    text-align: center;
+  width: 90%;
+  max-width: 900px;
+  text-align: center;
 }
 
 .featured-products h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: var(--text-color);
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: var(--text-color);
 }
 
 .product-list {
-    display: flex;
-    justify-content: center;
-    padding-top: 5vh;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 5vh;
+  align-items: center;
 }
 
 .product {
-    width: 47%;
-    display: grid;
-    justify-content: space-evenly;
+  width: 47%;
+  display: grid;
+  justify-content: space-evenly;
 }
 
 .product img {
-    margin-bottom: 10px;
-    height: 35vh;
-    width: 35vw;
-    border: solid 2px var(--border-color);
-    border-radius: 4px 4px 4px 4px;
-    cursor: pointer;
+  margin-bottom: 10px;
+  height: 35vh;
+  width: 35vw;
+  border: solid 2px var(--border-color);
+  border-radius: 4px 4px 4px 4px;
+  cursor: pointer;
 }
 
 .product p {
-    color: var(--text-color);
-    font-family: var(--text-inter);
-    font-size: 1.3rem;
-    font-weight: bold;
+  color: var(--text-color);
+  font-family: var(--text-inter);
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
-.game-gallery{
-    display: grid;
-    max-width: 1200px;
-    grid-template-columns: 2.5fr 1.8fr 1.8fr 1.8fr;
-    grid-template-rows: 1.3fr 1.3fr;
-    grid-template-areas:
+.game-gallery {
+  display: grid;
+  max-width: 1200px;
+  grid-template-columns: 2.5fr 1.8fr 1.8fr 1.8fr;
+  grid-template-rows: 1.3fr 1.3fr;
+  grid-template-areas:
     "game1 game2 game3 game4"
     "game1 game5 game6 game7";
-    grid-gap: 1.7rem;
+  grid-gap: 1.7rem;
 }
 
-.box-game-gallery{
-    height: 70vh;
-    display: grid;
-    place-content: center;
+.box-game-gallery {
+  height: 70vh;
+  display: grid;
+  place-content: center;
 }
 
-.game-item1{
-    grid-area: game1;
+.game-item1 {
+  grid-area: game1;
 }
 
-.game-item2{
-    grid-area: game2;
+.game-item2 {
+  grid-area: game2;
 }
 
-.game-item3{
-    grid-area: game3;
+.game-item3 {
+  grid-area: game3;
 }
 
-.game-item4{
-    grid-area: game4;
+.game-item4 {
+  grid-area: game4;
 }
 
-.game-item5{
-    grid-area: game5;
+.game-item5 {
+  grid-area: game5;
 }
 
-.game-item6{
-    grid-area: game6;
+.game-item6 {
+  grid-area: game6;
 }
 
-.game-item7{
-    grid-area: game7;
+.game-item7 {
+  grid-area: game7;
 }
 
-.game-gallery img{
-    width: 100%;
-    cursor: pointer;
-    height: auto;
-    border: solid 2px var(--border-color);
-    border-radius: 4px 4px 4px 4px;
+.game-gallery img {
+  width: 100%;
+  cursor: pointer;
+  height: auto;
+  border: solid 2px var(--border-color);
+  border-radius: 4px 4px 4px 4px;
 }
 
-.game-gallery .rating{
-    color: var(--btn2-color);
+.game-gallery .rating {
+  color: var(--btn2-color);
 }
 
-.game-gallery p{
-    color: var(--text-color);
-    font-family: var(--text-inter);
-    font-size: 1.1rem;
-    font-weight: bold;
+.game-gallery p {
+  color: var(--text-color);
+  font-family: var(--text-inter);
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
-.game-item5, .game-item6, .game-item7{
-    padding-top: 3.5vh;
+.game-item5,
+.game-item6,
+.game-item7 {
+  padding-top: 3.5vh;
 }
 
-footer{
-    height: 45vh;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    padding: 10vh 0;
+footer {
+  height: 45vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 10vh 0;
 }
 
-footer div h1{
-    font-family: var(--text-poppins);
-    font-size: 1.7rem;
+footer div h1 {
+  font-family: var(--text-poppins);
+  font-size: 1.7rem;
 }
 
-footer div p{
-    font-family: var(--text-inter);
-    font-size: 1rem;
+footer div p {
+  font-family: var(--text-inter);
+  font-size: 1rem;
 }
 
-.footer-content{
-    display: flex;
-    justify-content: space-around;
+.footer-content {
+  display: flex;
+  justify-content: space-around;
 }
 
-.footer-items img{
-    height: 12vh;
-    width: 15vw;
-    object-fit: cover;
-
+.footer-items img {
+  height: 12vh;
+  width: 15vw;
+  object-fit: cover;
 }
 
-footer div ul li{
-    font-family: var(--text-inter);
-    color: var(--text-color);
-    list-style: none;
+footer div ul li {
+  font-family: var(--text-inter);
+  color: var(--text-color);
+  list-style: none;
 }
 
-footer div ul li:hover{
-    color: var(--btn2-color);
+footer div ul li:hover {
+  color: var(--btn2-color);
 }
 
-.footer-content ul li{
-    padding-bottom: 1vh;
-    font-size: 1.5rem;
-    cursor: pointer;
+.footer-content ul li {
+  padding-bottom: 1vh;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
-.footer-content ul li a{
-    color: var(--text-color);
-    font-family: var(--text-inter);
-    text-decoration: none;
+.footer-content ul li a {
+  color: var(--text-color);
+  font-family: var(--text-inter);
+  text-decoration: none;
 }
 
-.footer-content ul li a:hover{
-    color: var(--btn2-color);
+.footer-content ul li a:hover {
+  color: var(--btn2-color);
 }
 
-.disclaimer-footer{
-    text-align: center;
-    padding-top: 5vh;
-    font-family: var(--text-inter);
-    color: var(--text-color);
-    font-size: 1rem;
+.disclaimer-footer {
+  text-align: center;
+  padding-top: 5vh;
+  font-family: var(--text-inter);
+  color: var(--text-color);
+  font-size: 1rem;
 }
 
-.popular-game-section{
-    display: flex;
-    margin: 0 5vw;
-    gap: 3vw;
-    margin-top: 5vh;
+.popular-game-section {
+  display: flex;
+  margin: 0 5vw;
+  gap: 3vw;
+  margin-top: 5vh;
 }
 
 .popular-game-section-box {
-    display: flex;
-    flex-direction: column;
-    gap: 3vw;
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
 }
 
-.box-slideshow-games-1{
-    height: 30vh;
-    display: flex;
-    justify-content: center;
+.box-slideshow-games-1 {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
 }
 
 .content-slideshow-games-1 {
-    width: 45vw;
-    height: 30vh;
-    display: grid;
-    place-content: center;
-    border: solid 3px var(--border-color);
-    border-radius: 4px 4px 4px 4px;
-    z-index: 1;
-    position: relative;
-    overflow: hidden;
+  width: 45vw;
+  height: 30vh;
+  display: grid;
+  place-content: center;
+  border: solid 3px var(--border-color);
+  border-radius: 4px 4px 4px 4px;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
 }
 
 .content-slideshow-games-1::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("../images/fortnitebg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    filter: blur(5px);
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/fortnitebg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: -1;
 }
 
-.btn-slideshow-games-1{
-    background-color: var(--btn-color);
-    padding: 0px 10px 0px 10px;
-    text-align: center;
-    text-decoration: none;
-    color: #000;
-    border-radius: 3px 3px 3px 3px;
-    font-family: var(--text-poppins);
-    font-weight: 500;
-    font-size: 18px;
-    width: 170px;
-    height: 43px;
-    display: grid;
-    place-content: center;
-    display: grid;
-    place-self: center;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+.btn-slideshow-games-1 {
+  background-color: var(--btn-color);
+  padding: 0px 10px 0px 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  border-radius: 3px 3px 3px 3px;
+  font-family: var(--text-poppins);
+  font-weight: 500;
+  font-size: 18px;
+  width: 170px;
+  height: 43px;
+  display: grid;
+  place-content: center;
+  display: grid;
+  place-self: center;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
 }
 
-.content-slideshow-games-1 h1{
-    color: var(--text-color);
-    font-family: var(--text-poppins);
-    font-weight: bold;
-    font-size: 4rem;
-    line-height: 1.3;
-    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+.content-slideshow-games-1 h1 {
+  color: var(--text-color);
+  font-family: var(--text-poppins);
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 1.3;
+  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
 }
 
-.box-slideshow-games-2{
-    height: 30vh;
-    display: flex;
-    justify-content: center;
+.box-slideshow-games-2 {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
 }
 
 .content-slideshow-games-2 {
-    width: 45vw;
-    height: 15vh;
-    display: flex;
-    justify-content: space-around;
-    border: solid 3px var(--border-color);
-    border-radius: 4px 4px 4px 4px;
-    z-index: 1;
-    position: relative;
-    overflow: hidden;
+  width: 45vw;
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  border: solid 3px var(--border-color);
+  border-radius: 4px 4px 4px 4px;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
 }
 
 .content-slideshow-games-2::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("../images/theforest.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    filter: blur(5px);
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/theforest.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: -1;
 }
 
-.btn-slideshow-games-2{
-    background-color: var(--btn-color);
-    padding: 0px 10px 0px 10px;
-    text-align: center;
-    text-decoration: none;
-    color: #000;
-    border-radius: 3px 3px 3px 3px;
-    font-family: var(--text-poppins);
-    font-weight: 500;
-    font-size: 18px;
-    width: 120px;
-    height: 43px;
-    display: grid;
-    place-content: center;
-    display: grid;
-    place-self: center;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+.btn-slideshow-games-2 {
+  background-color: var(--btn-color);
+  padding: 0px 10px 0px 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  border-radius: 3px 3px 3px 3px;
+  font-family: var(--text-poppins);
+  font-weight: 500;
+  font-size: 18px;
+  width: 120px;
+  height: 43px;
+  display: grid;
+  place-content: center;
+  display: grid;
+  place-self: center;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
 }
 
-.content-slideshow-games-2 h1{
-    color: var(--text-color);
-    font-family: var(--text-poppins);
-    font-weight: bold;
-    margin-top: 20px;
-    font-size: 4rem;
-    line-height: 1.3;
-    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+.content-slideshow-games-2 h1 {
+  color: var(--text-color);
+  font-family: var(--text-poppins);
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 4rem;
+  line-height: 1.3;
+  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
 }
 
-.box-slideshow-games-3{
-    height: 30vh;
-    display: flex;
-    justify-content: center;
+.box-slideshow-games-3 {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
 }
 
 .content-slideshow-games-3 {
-    width: 21.4vw;
-    height: 51vh;
-    display: grid;
-    place-content: center;
-    border: solid 3px var(--border-color);
-    border-radius: 4px 4px 4px 4px;
-    z-index: 1;
-    position: relative;
-    overflow: hidden;
+  width: 21.4vw;
+  height: 51vh;
+  display: grid;
+  place-content: center;
+  border: solid 3px var(--border-color);
+  border-radius: 4px 4px 4px 4px;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
 }
 
 .content-slideshow-games-3::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("../images/minecraft2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    filter: blur(5px);
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/minecraft2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: -1;
 }
 
-.btn-slideshow-games-3{
-    background-color: var(--btn-color);
-    padding: 0px 10px 0px 10px;
-    text-align: center;
-    text-decoration: none;
-    color: #000;
-    border-radius: 3px 3px 3px 3px;
-    font-family: var(--text-poppins);
-    font-weight: 500;
-    font-size: 18px;
-    width: 100px;
-    height: 43px;
-    display: grid;
-    place-content: center;
-    display: grid;
-    place-self: center;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+.btn-slideshow-games-3 {
+  background-color: var(--btn-color);
+  padding: 0px 10px 0px 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  border-radius: 3px 3px 3px 3px;
+  font-family: var(--text-poppins);
+  font-weight: 500;
+  font-size: 18px;
+  width: 100px;
+  height: 43px;
+  display: grid;
+  place-content: center;
+  display: grid;
+  place-self: center;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
 }
 
-.content-slideshow-games-3 h1{
-    color: var(--text-color);
-    font-family: var(--text-poppins);
-    font-weight: bold;
-    font-size: 4rem;
-    line-height: 1.3;
-    text-align: center;
-    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+.content-slideshow-games-3 h1 {
+  color: var(--text-color);
+  font-family: var(--text-poppins);
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 1.3;
+  text-align: center;
+  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
 }
 
-.box-slideshow-merch{
-    height: 65vh;
-    display: flex;
-    justify-content: center;
+.box-slideshow-merch {
+  height: 65vh;
+  display: flex;
+  justify-content: center;
 }
 
 .content-slideshow-merch {
-    width: 70vw;
-    height: 55vh;
-    display: grid;
-    place-content: center;
-    border: solid 3px var(--border-color);
-    border-radius: 4px 4px 4px 4px;
-    z-index: 1;
-    position: relative;
-    overflow: hidden;
+  width: 70vw;
+  height: 55vh;
+  display: grid;
+  place-content: center;
+  border: solid 3px var(--border-color);
+  border-radius: 4px 4px 4px 4px;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
 }
 
 .content-slideshow-merch::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("../images/skull_and_bones.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    filter: blur(5px);
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/skull_and_bones.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: -1;
 }
 
-.btn-slideshow-merch{
-    background-color: var(--btn-color);
-    text-align: center;
-    text-decoration: none;
-    color: #000;
-    border-radius: 3px 3px 3px 3px;
-    font-family: var(--text-poppins);
-    font-weight: 500;
-    font-size: 18px;
-    width: 170px;
-    height: 43px;
-    display: grid;
-    place-content: center;
-    display: grid;
-    place-self: center;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+.btn-slideshow-merch {
+  background-color: var(--btn-color);
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  border-radius: 3px 3px 3px 3px;
+  font-family: var(--text-poppins);
+  font-weight: 500;
+  font-size: 18px;
+  width: 170px;
+  height: 43px;
+  display: grid;
+  place-content: center;
+  display: grid;
+  place-self: center;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
 }
 
-.content-slideshow-merch h1{
-    color: var(--text-color);
-    font-family: var(--text-poppins);
-    font-weight: bold;
-    font-size: 4rem;
-    line-height: 1.3;
-    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+.content-slideshow-merch h1 {
+  color: var(--text-color);
+  font-family: var(--text-poppins);
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 1.3;
+  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
 }
-
 
 @media (prefers-color-scheme: light) {
-    body {
-        background-color: var(--text-color);
-    }
+  body {
+    background-color: var(--text-color);
+  }
 }
