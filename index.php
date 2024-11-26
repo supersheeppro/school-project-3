@@ -92,14 +92,14 @@
               <img src="images/minecraft.webp" alt="Minecraft">
               <p>MINECRAFT</p>
               <div class="rating">
-                  ★★★☆☆
+                  ★★★★★
               </div>
           </div>
           <div class="game-item2">
               <img src="images/fortnite.jpg" alt="Fortnite">
               <p>FORTNITE</p>
               <div class="rating">
-                  ★★★☆☆
+                  ★★★★☆
               </div>
           </div>
           <div class="game-item3">
@@ -111,7 +111,7 @@
           </div>
           <div class="game-item4">
               <img src="images\flight_simulator.jpg" alt="Flight Simulator 2024">
-              <p>FLIGHT SIMULATOR 2024</p>
+              <p>FLIGHT SIMULATOR 2020</p>
               <div class="rating">
                   ★★★★☆
               </div>
@@ -120,7 +120,7 @@
               <img src="images\far_cry.jpg" alt="Far Cry 4">
               <p>FARCRY 4</p>
               <div class="rating">
-                  ★★★☆☆
+                  ★★★★☆
               </div>
           </div>
           <div class="game-item6">
