@@ -114,27 +114,28 @@ nav ul a:nth-child(3) {
 }
 
 form input {
-  width: 191px;
-  height: 32px;
+  width: 11.5rem;
+  height: 2rem;
   color: #000;
   background: var(--text-color);
   border-color: var(--border-color);
-  border-width: 1px;
+  border-width: 0.1rem;
   border-style: solid;
-  border-radius: 32px 32px 32px 32px;
+  border-radius: 2rem 2rem 2rem 2rem;
   font-family: var(--text-poppins);
   font-weight: 400;
   font-size: 1rem;
   text-align: left;
-  padding-left: 25px;
+  padding-left: 2.5vw;
 }
 
 form svg {
-  height: 16px;
+  height: 1rem;
   width: auto;
   fill: var(--border-color);
   position: absolute;
-  padding-left: 5px;
+  padding-left: 0.5vw;
+  color: #000000;
 }
 
 #form {
@@ -143,8 +144,8 @@ form svg {
 }
 
 .button-cart svg {
-  height: 25px;
-  width: 25px;
+  height: 1.6rem;
+  width: 1.6rem;
 }
 
 main {
@@ -211,14 +212,14 @@ main {
   border-radius: 0.18rem 0.18rem 0.18rem 0.18rem;
   font-family: var(--text-poppins);
   font-weight: 500;
-  font-size: 18px;
-  width: 170px;
+  font-size: 1.1rem;
+  width: 10rem;
   height: 2.4rem;
   display: grid;
   place-content: center;
   display: grid;
   place-self: center;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0.6rem 0.6rem rgba(0, 0, 0, 0.4);
 }
 
 .content-slideshow h1 {
@@ -227,14 +228,14 @@ main {
   font-weight: bold;
   font-size: 6rem;
   line-height: 1.3;
-  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0.6rem 0.6rem rgba(0, 0, 0, 0.4);
 }
 
 section svg {
-  fill: var(--text-color);
-  height: 25px;
+  height: 1.3rem;
   width: auto;
   cursor: pointer;
+  fill: gray
 }
 
 section svg:hover {
@@ -244,7 +245,7 @@ section svg:hover {
 .main2 {
   display: flex;
   justify-content: space-between;
-  padding: 120px;
+  padding: 10%;
   margin: 0 auto;
   height: max-content;
 }
@@ -254,40 +255,40 @@ section svg:hover {
 }
 
 .contact-info h4 {
-  font-size: 18px;
+  font-size: 1.1rem;
   color: var(--text-color);
-  margin-bottom: 10px;
+  margin-bottom: 1vh;
   font-family: var(--text-poppins);
 }
 
 .contact-info h1 {
   font-size: 4rem;
   color: var(--text-color);
-  margin-bottom: 20px;
+  margin-bottom: 2vh;
   line-height: 1;
   font-family: var(--text-poppins);
 }
 
 .contact-info p {
-  font-size: 16px;
-  margin-bottom: 20px;
+  font-size: 1rem;
+  margin-bottom: 2vh;
   line-height: 1.5;
   color: var(--text-color);
   font-family: var(--text-inter);
 }
 
 .contact-method .contact-item {
-  font-size: 16px;
-  margin-bottom: 10px;
+  font-size: 1rem;
+  margin-bottom: 1vh;
 }
 
 .contact-form {
   background: var(--text-color);
   width: 25vw;
   height: 60vh;
-  padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 0.12rem 0.3rem rgba(0, 0, 0, 0.1);
 }
 
 .contact-form form {
@@ -305,21 +306,21 @@ section svg:hover {
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
+  padding: 0.6rem;
+  border: 0.06rem solid #ccc;
+  border-radius: 0.3rem;
+  font-size: 1rem;
 }
 
 .contact-form button {
   align-self: flex-start;
-  padding: 10px 20px;
+  padding: 0.6rem 1.2rem;
   background-color: var(--btn-color);
   color: #000000;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1rem;
   margin-top: 10vh;
 }
 
@@ -328,12 +329,12 @@ section svg:hover {
 }
 
 .contact-item {
-  font-size: 16px;
-  margin-bottom: 10px;
-  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 1vh;
+  padding: 0.6rem;
   background-color: #f5f5f5;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  border: 0.06rem solid #ddd;
+  border-radius: 0.3rem;
   display: flex;
   align-items: center;
   width: 22vw;
@@ -349,12 +350,12 @@ section svg:hover {
 
 .contact-item article i {
   color: #007bff;
-  font-size: 15px;
+  font-size: 0.9rem;
 }
 
 .contact-item article p {
   color: #000000;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-family: var(--text-inter);
 }
 
@@ -378,7 +379,7 @@ section svg:hover {
 
 .top-games figure img {
   border: 0.18rem solid var(--border-color);
-  border-radius: 10px;
+  border-radius: 0.6rem;
   cursor: pointer;
 }
 
@@ -390,7 +391,7 @@ figure img {
 
 figcaption {
   padding: 10px;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: bold;
   font-family: var(--text-inter);
   color: var(--text-color);
@@ -400,7 +401,7 @@ figcaption {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 2vh;
   padding: 2vh 4vw;
 }
 
@@ -420,7 +421,7 @@ figcaption {
   width: 12vw;
   height: auto;
   border: 0.18rem solid var(--border-color);
-  border-radius: 10px;
+  border-radius: 0.6rem;
   cursor: pointer;
 }
 
@@ -435,18 +436,18 @@ figcaption {
 
 .pagination {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 2vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bold;
   font-family: var(--text-poppins);
-  gap: 10px;
+  gap: 1vw;
   color: var(--text-color);
 }
 
 .pagination i {
-  font-size: 18px;
+  font-size: 1.1rem;
   cursor: pointer;
   color: var(--text-color);
 }
@@ -467,7 +468,7 @@ figcaption {
   width: 15.4vw;
   height: auto;
   border: 0.18rem solid var(--border-color);
-  border-radius: 10px;
+  border-radius: 0.6rem;
   cursor: pointer;
 }
 
@@ -489,26 +490,26 @@ figcaption {
 }
 
 .popular-item img {
-  width: 100px;
-  height: 100px;
+  width: 10vw;
+  height: 10vh;
   object-fit: cover;
   cursor: pointer;
 }
 
 .details {
-  padding: 10px;
+  padding: 0.6rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .details p {
-  margin: 0 0 10px;
-  font-size: 10.24rem;
+  margin: 0 0 0.6rem;
+  font-size: 1rem;
 }
 
 .rating {
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--btn2-color);
 }
 
@@ -522,17 +523,6 @@ figcaption {
   margin: 6vh 0;
 }
 
-.featured-products {
-  width: 90%;
-  max-width: 900px;
-  text-align: center;
-}
-
-.featured-products h2 {
-  margin-bottom: 20px;
-  font-size: 20.24rem;
-  color: var(--text-color);
-}
 
 .product-list {
   display: flex;
@@ -548,10 +538,10 @@ figcaption {
 }
 
 .product img {
-  margin-bottom: 10px;
+  margin-bottom: 1vh;
   height: 35vh;
   width: 35vw;
-  border: solid 2px var(--border-color);
+  border: solid 0.12rem var(--border-color);
   border-radius: 0.24rem 0.24rem 0.24rem 0.24rem;
   cursor: pointer;
 }
@@ -565,7 +555,7 @@ figcaption {
 
 .game-gallery {
   display: grid;
-  max-width: 1200px;
+  max-width: 72.5vw;
   grid-template-columns: 2.5fr 1.8fr 1.8fr 1.8fr;
   grid-template-rows: 1.3fr 1.3fr;
   grid-template-areas:
@@ -612,7 +602,7 @@ figcaption {
   width: 100%;
   cursor: pointer;
   height: auto;
-  border: solid 2px var(--border-color);
+  border: solid 0.12rem var(--border-color);
   border-radius: 0.24rem 0.24rem 0.24rem 0.24rem;
 }
 
@@ -743,21 +733,20 @@ footer div ul li:hover {
 
 .btn-slideshow-games-1 {
   background-color: var(--btn-color);
-  padding: 0px 10px 0px 10px;
+  padding: 0 0.6rem 0 0.6rem;
   text-align: center;
   text-decoration: none;
   color: #000;
   border-radius: 0.18rem 0.18rem 0.18rem 0.18rem;
   font-family: var(--text-poppins);
   font-weight: 500;
-  font-size: 18px;
-  width: 170px;
+  font-size: 1.1rem;
   height: 2.4rem;
   display: grid;
   place-content: center;
   display: grid;
   place-self: center;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0.6rem 0.6rem rgba(0, 0, 0, 0.4);
 }
 
 .content-slideshow-games-1 h1 {
@@ -766,7 +755,7 @@ footer div ul li:hover {
   font-weight: bold;
   font-size: 4rem;
   line-height: 1.3;
-  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0.6rem 0.6rem rgba(0, 0, 0, 0.4);
 }
 
 .box-slideshow-games-2 {
@@ -804,31 +793,30 @@ footer div ul li:hover {
 
 .btn-slideshow-games-2 {
   background-color: var(--btn-color);
-  padding: 0px 10px 0px 10px;
+  padding: 0 0.6rem 0 0.6rem;
   text-align: center;
   text-decoration: none;
   color: #000;
   border-radius: 0.18rem 0.18rem 0.18rem 0.18rem;
   font-family: var(--text-poppins);
   font-weight: 500;
-  font-size: 18px;
-  width: 120px;
+  font-size: 1.1rem;
   height: 2.4rem;
   display: grid;
   place-content: center;
   display: grid;
   place-self: center;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0.6rem 0.6rem rgba(0, 0, 0, 0.4);
 }
 
 .content-slideshow-games-2 h1 {
   color: var(--text-color);
   font-family: var(--text-poppins);
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 2vh;
   font-size: 4rem;
   line-height: 1.3;
-  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0.6rem 0.6rem rgba(0, 0, 0, 0.4);
 }
 
 .box-slideshow-games-3 {
@@ -873,9 +861,9 @@ footer div ul li:hover {
   border-radius: 0.18rem 0.18rem 0.18rem 0.18rem;
   font-family: var(--text-poppins);
   font-weight: 500;
-  font-size: 18px;
-  width: 100px;
-  height: 43px;
+  font-size: 1.1rem;
+  width: 6rem;
+  height: 2.5rem;
   display: grid;
   place-content: center;
   display: grid;
@@ -904,8 +892,8 @@ footer div ul li:hover {
   height: 55vh;
   display: grid;
   place-content: center;
-  border: solid 3px var(--border-color);
-  border-radius: 4px 4px 4px 4px;
+  border: solid 0.18rem var(--border-color);
+  border-radius: 0.24rem 0.24rem 0.24rem 0.24rem;
   z-index: 1;
   position: relative;
   overflow: hidden;
@@ -934,9 +922,9 @@ footer div ul li:hover {
   border-radius: 0.18rem 0.18rem 0.18rem 0.18rem;
   font-family: var(--text-poppins);
   font-weight: 500;
-  font-size: 18px;
-  width: 170px;
-  height: 43px;
+  font-size: 1.1rem;
+  width: 10rem;
+  height: 2.5rem;
   display: grid;
   place-content: center;
   display: grid;
