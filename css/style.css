@@ -262,21 +262,6 @@ section svg:hover {
   margin-bottom: 10px;
 }
 
-.icons-flex {
-  display: flex;
-  gap: 7vw;
-}
-
-.social-icons a {
-  margin-right: 15px;
-  color: var(--text-color);
-  text-decoration: none;
-}
-
-.social-icons a:hover {
-  color: var(--btn2-color);
-}
-
 .contact-form {
   background: var(--text-color);
   width: 25vw;

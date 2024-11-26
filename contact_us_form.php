@@ -48,7 +48,6 @@
 </header>
 
 <main class="main2">
-    <!-- Left Section -->
     <section class="contact-info">
         <h4>CONTACT US</h4>
         <h1>Get in touch <br>today</h1>
@@ -71,19 +70,8 @@
                 </article>
             </div>
         </div>
-        <div class="icons-flex">
-            <p>Reach out to us on:</p>
-            <ul class="social-icons">
-
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
-            </ul>
-        </div>
     </section>
 
-    <!-- Right Section -->
     <section class="contact-form">
         <form action="#" method="post">
             <label for="full-name">Full Name</label>
