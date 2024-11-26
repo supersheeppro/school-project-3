@@ -9,6 +9,8 @@
   --btn2-color: #ffbd3f;
   --text-poppins: "Poppins", sans-serif;
   --text-inter: "Inter", sans-serif;
+  --slideshow-bg: url("../images/skull_and_bones.jpg");
+  --next-slideshow-bg: none;
 }
 
 * {
@@ -156,32 +158,49 @@ main {
   display: flex;
   justify-content: center;
 }
-
 .content-slideshow {
   width: 70vw;
   height: 55vh;
   display: grid;
   place-content: center;
   border: solid 3px var(--border-color);
-  border-radius: 4px 4px 4px 4px;
+  border-radius: 4px;
   z-index: 1;
   position: relative;
   overflow: hidden;
 }
 
-.content-slideshow::before {
-  content: "";
+.content-slideshow::before, .content-slideshow::after {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../images/skull_and_bones.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  filter: blur(3px);
+  filter: blur(5px);
+  transition: opacity 1.5s ease-in-out;
   z-index: -1;
+}
+
+.content-slideshow::before {
+  background-image: var(--slideshow-bg);
+  opacity: 1;
+}
+
+.content-slideshow::after {
+  background-image: var(--next-slideshow-bg);
+  opacity: 0;
+}
+
+.content-slideshow.fade-in::after {
+  opacity: 1;
+}
+
+.content-slideshow.fade-in::before {
+  opacity: 0;
 }
 
 .btn-slideshow {
