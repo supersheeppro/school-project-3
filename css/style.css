@@ -70,8 +70,8 @@ nav img {
 
 nav ul a {
   text-decoration: none;
-  width: 463px;
-  height: 37px;
+  width: 46vw;
+  height: 4vh;
   color: var(--text-color);
   font-family: var(--text-poppins);
   font-weight: 400;
