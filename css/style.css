@@ -297,7 +297,7 @@ section svg:hover {
 }
 
 .contact-form label {
-  font-size: 10.24rem;
+  font-size: 1rem;
   color: #555;
   font-family: var(--text-inter);
 }
