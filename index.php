@@ -96,7 +96,7 @@
               </div>
           </div>
           <div class="game-item2">
-              <img src="images/fortnite.jpg" alt="Fortnite">
+              <img src="images/fortnite3.jpg" alt="Fortnite">
               <p>FORTNITE</p>
               <div class="rating">
                   ★★★★☆

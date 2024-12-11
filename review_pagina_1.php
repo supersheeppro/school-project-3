@@ -106,7 +106,9 @@
                     }
                 }
                 ?>
-                <p></p>
+                <p>
+									4 Reviews
+								</p>
             </div>
             <hr>
             <div>

@@ -58,18 +58,26 @@
     <section class="container-game-detail">
         <figure>
           <?php
-          
           if (isset($_GET['titel'])){
             $game_titel = $_GET['titel'];
         } else {
             $game_titel = "Gamestars";
         }
 
+          $ratings = array(
+              "1" => "★☆☆☆☆",
+              "2" => "★★☆☆☆",
+              "3" => "★★★☆☆",
+              "4" => "★★★★☆",
+              "5" => "★★★★★",
+          );
+
         $games_lijst = array(
             "Fortnite" => [
                 "Titel" => "Fortnite",
                 "detail" => "Fortnite is een populaire battle royale-game waarin spelers vechten op een eiland tot één winnaar overblijft. Het combineert schieten, bouwen en overleven in kleurrijke omgevingen. Met regelmatige updates, samenwerkingen en verschillende spelmodi blijft het geliefd bij gamers wereldwijd.",
-                "img" => "images/fortnite.jpg"
+                "img" => "images/fortnite.jpg",
+								"rating" => $ratings["2"]
             ]
         );
         foreach ($games_lijst as $game => $game_info){
@@ -80,7 +88,7 @@
           
           ?>
         </figure>
-        <div>
+        <div class="game-info">
             <?php
                 foreach ($games_lijst as $game => $game_info){
                     if ($game == $game_titel){
@@ -88,14 +96,34 @@
                     }
                 }
             ?>
-            <div>
-                <p></p>
-                <p></p>
+            <div class="rating-box">
+                <?php
+                foreach ($games_lijst as $game => $games_info) {
+                    if ($game == $game_titel) {
+                        echo "<p class='rating-games-info'>$games_info[rating]</p>";
+                    }
+                }
+                ?>
+                <p class="rating-box-p">
+									4 Reviews
+								</p>
             </div>
             <hr>
-            <div>
-                <h2></h2>
-                <input type="text">
+            <div class="box-prijs">
+                <h2>Gratis</h2>
+							<div class="dropdown-box">
+								<p>Select, Model</p>
+								<div class="dropdown">
+									<div class="dropdown-button">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+									</div>
+										<div class="dropdown-content">
+										<a href="#">Link 1</a>
+										<a href="#">Link 2</a>
+										<a href="#">Link 3</a>
+									</div>
+								</div>
+							</div>
             </div>
             <hr>
             <?php
@@ -106,12 +134,15 @@
                 }
             
             ?>
-        <div class="box-cart">
-          <a href="#" class="button-cart">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
-            <p>Your Cart</p>
-          </a>
-        </div>
+				<div class="box-add-to-cart">
+					<div class="box-cart2">
+						<a href="#" class="button-cart2">
+							<p>Add To Cart</p>
+						</a>
+					</div>
+					<svg id="svg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 48C0 21.5 21.5 0 48 0l0 48 0 393.4 130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4 336 48 48 48 48 0 336 0c26.5 0 48 21.5 48 48l0 440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488L0 48z"/></svg>
+					<svg id="svg2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z"/></svg>
+				</div>
       </div>
     </section>
     
@@ -157,3 +188,6 @@
         Disclaimer: This website is not responsible for any mistakes
       </p>
     </footer>
+		<script src="js/script.js"></script>
+	</body>
+</html>

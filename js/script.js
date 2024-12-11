@@ -25,3 +25,13 @@ function changeBackground() {
 
 
 setInterval(changeBackground, 5000);
+
+document.getElementById("svg1").addEventListener("click", function () {
+    document.getElementById("svg2").style.display = "block"
+    document.getElementById("svg1").style.display = "none"
+});
+document.getElementById("svg2").addEventListener("click", function () {
+    document.getElementById("svg2").style.display = "none"
+    document.getElementById("svg1").style.display = "block"
+});
+
