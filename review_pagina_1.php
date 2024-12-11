@@ -124,7 +124,11 @@
                 }
             ?>
             <div>
-                <button></button>
+                <div class="box-cart">
+                    <a href="#" class="button-cart">
+                        <p>Add to Cart</p>
+                    </a>
+                </div>
                 <svg></svg>
             </div>
         </div>
