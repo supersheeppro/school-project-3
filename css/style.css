@@ -235,7 +235,6 @@ section svg {
   height: 1.3rem;
   width: auto;
   cursor: pointer;
-  fill: gray
 }
 
 section svg:hover {
@@ -945,6 +944,11 @@ footer div ul li:hover {
   display: flex;
   width: 100%;
   justify-content: center;
+}
+
+.tekst-game-detail-2 {
+  color: var(--text-color);
+  font-family: var(--text-inter);
 }
 
 @media (prefers-color-scheme: light) {
