@@ -126,7 +126,7 @@ form input {
   font-weight: 400;
   font-size: 1rem;
   text-align: left;
-  padding-left: 2.5vw;
+  padding-left: 1.5vw;
 }
 
 form svg {
@@ -944,9 +944,8 @@ footer div ul li:hover {
   display: flex;
   width: 80vw;
   justify-content: center;
-  padding: 0 5vw;
+  padding: 5vh 5vw;
   max-width: 100%;
-  min-height: 80vw;
   gap: 3vw;
 }
 
@@ -998,7 +997,9 @@ footer div ul li:hover {
   font-size: 2.1rem;
   font-family: var(--text-poppins);
   font-weight: 600;
+  color: var(--text-color);
 }
+
 .box-cart2 {
   height: 5rem;
   display: flex;
@@ -1023,6 +1024,17 @@ footer div ul li:hover {
 
 .box-add-to-cart {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-add-to-cart img {
+  width: auto;
+  height: 75px;
+}
+
+.cart-box {
+  display: flex;
   align-items: center;
   gap: 2vw;
 }
@@ -1034,6 +1046,7 @@ footer div ul li:hover {
 #svg2 {
   display: none;
   animation: bounce 0.5s 1;
+  color: var(--btn2-color);
 }
 
 .dropdown-box {
@@ -1053,7 +1066,6 @@ footer div ul li:hover {
   color: var(--border-color);
 }
 
-/* Style for the dropdown container */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -1061,7 +1073,6 @@ footer div ul li:hover {
   height: 100%;
 }
 
-/* Button inside the dropdown */
 .dropdown-button {
   color: #000;
   border: none;
@@ -1072,7 +1083,6 @@ footer div ul li:hover {
   cursor: pointer;
 }
 
-/* Dropdown content container */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -1086,7 +1096,6 @@ footer div ul li:hover {
   border-radius: 8px;
 }
 
-/* Links inside the dropdown content */
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -1099,7 +1108,6 @@ footer div ul li:hover {
   background-color: #f1f1f1;
 }
 
-/* Show the dropdown content on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }

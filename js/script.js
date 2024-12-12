@@ -34,4 +34,17 @@ document.getElementById("svg2").addEventListener("click", function () {
     document.getElementById("svg2").style.display = "none"
     document.getElementById("svg1").style.display = "block"
 });
+document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        const isActive = header.classList.contains('active');
 
+        document.querySelectorAll('.accordion-header').forEach(item => item.classList.remove('active'));
+        document.querySelectorAll('.accordion-content').forEach(item => item.style.display = 'none');
+
+        if (!isActive) {
+            header.classList.add('active');
+            content.style.display = 'block';
+        }
+    });
+});
