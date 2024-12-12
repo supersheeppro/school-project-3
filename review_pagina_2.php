@@ -21,7 +21,7 @@
       <meta name="opdracht" content="Deze pagina is gemaakt door Kaya Altona">
 
       <!-- De titel van de pagina, deze verschijnt op het tabblad, geef hieraan waar de pagina over gaat  -->
-      <title>Gamestars - Homepage</title>
+      <title>Gamestars - Game Review 1</title>
 
       <!-- Favicon kleine afbeelding die wordt weergegeven in de browser-tabbladen -->
       <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -67,6 +67,7 @@
           $foto_pegi_lijst = array(
               "12" => "images/pegi_12.svg",
               "18" => "images/pegi_18.jpg",
+              "7" => "images/pegi_7.svg",
           );
 
           $ratings = array(
@@ -83,7 +84,7 @@
                 "detail" => "Fortnite is een populaire battle royale-game waarin spelers vechten op een eiland tot één winnaar overblijft. Het combineert schieten, bouwen en overleven in kleurrijke omgevingen. Met regelmatige updates, samenwerkingen en verschillende spelmodi blijft het geliefd bij gamers wereldwijd.",
                 "img" => "images/fortnite.jpg",
 								"rating" => $ratings["2"],
-								"pegi" => $foto_pegi_lijst["12"]
+								"pegi" => $foto_pegi_lijst["7"]
             ]
         );
         foreach ($games_lijst as $game => $game_info){
