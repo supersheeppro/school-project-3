@@ -150,7 +150,7 @@ form svg {
 
 main {
   background: var(--background-color);
-  height: 194.5vh;
+
   justify-content: center;
 }
 
@@ -1092,7 +1092,7 @@ footer div ul li:hover {
   right: 0;
   min-width: 1580%;
   margin-top: 1vh;
-  border-left: solid 2px var(--border-color);
+  border: solid 2px var(--border-color);
   border-radius: 8px;
 }
 
@@ -1102,6 +1102,7 @@ footer div ul li:hover {
   text-decoration: none;
   display: block;
   font-family: var(--text-poppins);
+  border-radius: 8px;
 }
 
 .dropdown-content a:hover {
