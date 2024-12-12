@@ -82,8 +82,23 @@
                 "Titel" => "Fortnite",
                 "detail" => "Fortnite is een populaire battle royale-game waarin spelers vechten op een eiland tot één winnaar overblijft. Het combineert schieten, bouwen en overleven in kleurrijke omgevingen. Met regelmatige updates, samenwerkingen en verschillende spelmodi blijft het geliefd bij gamers wereldwijd.",
                 "img" => "images/fortnite.jpg",
-								"rating" => $ratings["2"],
-								"pegi" => $foto_pegi_lijst["12"]
+				"rating" => $ratings["2"],
+				"pegi" => $foto_pegi_lijst["12"]
+            ],
+            "Minecraft" => [
+                "Titel" => "Minecraft",
+                "detail" => "Minecraft is een creatief sandbox-spel waarin spelers een wereld van blokken verkennen, bouwen en overleven. Het biedt verschillende spelmodi, zoals Survival, Creative en Adventure, en laat spelers onbeperkt bouwen en ontdekken in een procedureel gegenereerde wereld met biomen, vijanden en dimensies. Dankzij de grote vrijheid, een actieve gemeenschap en educatieve toepassingen is Minecraft geschikt voor alle leeftijden en blijft het wereldwijd populair.",
+                "img" => "images/minecraft.webp",
+                "rating" => $ratings["4"],
+                "pegi" => $foto_pegi_lijst["12"]
+
+            ],
+            "Forest" => [
+                "Titel" => "Forest",
+                "detail" => "Forest",
+                "img" => "imgpath",
+                "rating" => $ratings["4"],
+                "pegi" => $foto_pegi_lijst["18"]
             ]
         );
         foreach ($games_lijst as $game => $game_info){
