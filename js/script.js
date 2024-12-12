@@ -34,17 +34,18 @@ document.getElementById("svg2").addEventListener("click", function () {
     document.getElementById("svg2").style.display = "none"
     document.getElementById("svg1").style.display = "block"
 });
-document.querySelectorAll('.accordion-header').forEach(header => {
-    header.addEventListener('click', () => {
-        const content = header.nextElementSibling;
-        const isActive = header.classList.contains('active');
 
-        document.querySelectorAll('.accordion-header').forEach(item => item.classList.remove('active'));
-        document.querySelectorAll('.accordion-content').forEach(item => item.style.display = 'none');
+document.addEventListener('DOMContentLoaded', () => {
 
-        if (!isActive) {
-            header.classList.add('active');
-            content.style.display = 'block';
-        }
-    });
+})
+document.getElementById("dropdownbtn").addEventListener("click", function (){
+    document.getElementById("dropdowncnt").style.display =
+        document.getElementById("dropdowncnt").style.display === 'block' ? 'none' : 'block';
+})
+
+
+document.addEventListener('click', (event) => {
+    if (!document.getElementById("dropdownbtn").contains(event.target) && !document.getElementById("dropdowncnt").contains(event.target)) {
+        document.getElementById("dropdowncnt").style.display = 'none';
+    }
 });
