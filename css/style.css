@@ -359,7 +359,7 @@ section svg:hover {
 }
 
 .main3 {
-  height: 215vh;
+  height: 274vh;
 }
 
 .top-games {
@@ -1099,10 +1099,7 @@ footer div ul li:hover {
   background-color: #f1f1f1;
 }
 
-/* Show the dropdown content on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+
 
 .dropdown:hover .dropdown-button svg {
   fill: var(--btn2-color);

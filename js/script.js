@@ -35,3 +35,17 @@ document.getElementById("svg2").addEventListener("click", function () {
     document.getElementById("svg1").style.display = "block"
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+
+})
+document.getElementById("dropdownbtn").addEventListener("click", function (){
+    document.getElementById("dropdowncnt").style.display =
+        document.getElementById("dropdowncnt").style.display === 'block' ? 'none' : 'block';
+})
+
+
+document.addEventListener('click', (event) => {
+    if (!document.getElementById("dropdownbtn").contains(event.target) && !document.getElementById("dropdowncnt").contains(event.target)) {
+        document.getElementById("dropdowncnt").style.display = 'none';
+    }
+});
