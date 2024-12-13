@@ -84,7 +84,8 @@
                 "detail" => "Fortnite is een populaire battle royale-game waarin spelers vechten op een eiland tot één winnaar overblijft. Het combineert schieten, bouwen en overleven in kleurrijke omgevingen. Met regelmatige updates, samenwerkingen en verschillende spelmodi blijft het geliefd bij gamers wereldwijd.",
                 "img" => "images/fortnite.jpg",
 								"rating" => $ratings["2"],
-								"pegi" => $foto_pegi_lijst["7"]
+								"pegi" => $foto_pegi_lijst["12"],
+								"opties" => ["Save The World", "Battle Royale", "Lego Fortnite", "Fortnite Ballistic"]
             ]
         );
         foreach ($games_lijst as $game => $game_info){
@@ -125,8 +126,17 @@
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
 									</button>
 										<div id="dropdowncnt" class="dropdown-content">
-										<a href="#">Battle Royale</a>
-										<a href="#">Save The World</a>
+											<?php
+
+                      foreach ($games_lijst as $game => $game_info){
+                          if ($game == $game_titel){
+                             foreach ($game_info["opties"] as $optie){
+																echo "<a href='#'>$optie</a>";
+                             }
+                          }
+                      }
+
+											?>
 									</div>
 								</div>
 							</div>
