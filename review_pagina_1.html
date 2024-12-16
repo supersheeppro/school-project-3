@@ -15,13 +15,13 @@
         <meta name="keywords" content="Games, rating, game, videogames, advise">
 
         <!-- Author de naam van de developer van de pagina.  -->
-        <meta name="author" content="Kaya Altona">
+        <meta name="author" content="Devi van Riet">
 
         <!-- De Opdracht van de huidige pagina.  -->
-        <meta name="opdracht" content="Deze pagina is gemaakt door Kaya Altona">
+        <meta name="opdracht" content="Deze pagina is gemaakt door Devi van Riet">
 
         <!-- De titel van de pagina, deze verschijnt op het tabblad, geef hieraan waar de pagina over gaat  -->
-        <title>Gamestars - Homepage</title>
+        <title>Gamestars - Game Review 1</title>
 
         <!-- Favicon kleine afbeelding die wordt weergegeven in de browser-tabbladen -->
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -54,27 +54,43 @@
 </header>
 <main>
     <section class="container-game-detail">
-        <figure>
-            <img>
+        <figure id="image-game-cover">
         </figure>
         <div class="game-info">
             <h1 id="pagina_titel"></h1>
-            <div>
-                <p></p>
-                <p></p>
+            <div class="rating-box">
+                <p id="rating" class='rating-games-info'></p>
+                <p class="rating-box-p">4 Reviews</p>
             </div>
             <hr>
-            <div>
-                <h2>
+            <div class="box-prijs">
+                <h2 id="prijs"></h2>
+                <div class="dropdown-box">
+                    <p>Select, Model</p>
+                    <div class="dropdown">
+                        <button id="dropdownbtn" class="dropdown-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+                        </button>
+                        <div id="dropdowncnt" class="dropdown-content">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class=tekst-game-detail-2 id="pagina_detail"></p>
+            <div class="box-add-to-cart">
+                <div class="cart-box">
+                    <div class="box-cart2">
+                        <a href="#" class="button-cart2">
+                            <p>Add To Cart</p>
+                        </a>
+                    </div>
+                    <svg id="svg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 48C0 21.5 21.5 0 48 0l0 48 0 393.4 130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4 336 48 48 48 48 0 336 0c26.5 0 48 21.5 48 48l0 440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488L0 48z"/></svg>
+                    <svg id="svg2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z"/></svg>
+                </div>
+                <div id="pegirating">
 
-                </h2>
-                <input type="text">
-            </div>
-            <hr>
-            <p id="pagina_detail"></p>
-            <div>
-                <button></button>
-                <svg></svg>
+                </div>
             </div>
         </div>
     </section>
@@ -122,24 +138,61 @@
 <script>
     const urlParams = new URLSearchParams(window.location.search);
     let titel = urlParams.get('titel');
+    let foto_pegi_lijst = {
+        "12":"images/PEGI_12.svg",
+        "18":"images/PEGI_18.jpg",
+        "7":"images/PEGI_7.svg"
+    }
+    let ratings = {
+        "1":"★☆☆☆☆",
+        "2":"★★☆☆☆",
+        "3":"★★★☆☆",
+        "4":"★★★★☆",
+        "5":"★★★★★"
+    }
     let game1 = {
         "Titel":"Minecraft",
-        "detail":"Minecraft is een creatief sandbox-spel waarin spelers een wereld van blokken verkennen, bouwen en overleven. Het biedt verschillende spelmodi, zoals Survival, Creative en Adventure, en laat spelers onbeperkt bouwen en ontdekken in een procedureel gegenereerde wereld met biomen, vijanden en dimensies. Dankzij de grote vrijheid, een actieve gemeenschap en educatieve toepassingen is Minecraft geschikt voor alle leeftijden en blijft het wereldwijd populair."
+        "detail":"Minecraft is een creatief sandbox-spel waarin spelers een wereld van blokken verkennen, bouwen en overleven. Het biedt verschillende spelmodi, zoals Survival, Creative en Adventure, en laat spelers onbeperkt bouwen en ontdekken in een procedureel gegenereerde wereld met biomen, vijanden en dimensies. Dankzij de grote vrijheid, een actieve gemeenschap en educatieve toepassingen is Minecraft geschikt voor alle leeftijden en blijft het wereldwijd populair.",
+        "imagegamecover":"images/minecraft.webp",
+        "rating":ratings["4"],
+        "pegi" : foto_pegi_lijst["12"],
+        "opties": ["Java Edition", "Bedrock Edition", "Legends", "Dungeons"],
+        "prijs": "20$"
+
     }
     let game2 = {
-        "Titel":"Forest",
-        "detail":"Forest"
+        "Titel":"The Forest",
+        "detail":"The Forest is een survival-horror game waarin spelers een mysterieus eiland verkennen na een vliegtuigcrash. Je neemt de rol aan van een overlevende die zijn zoon probeert te redden terwijl je geconfronteerd wordt met een gevaarlijke omgeving en kannibalistische mutanten. De game biedt zowel een boeiende singleplayer-ervaring als een coöperatieve multiplayer-modus.",
+        "imagegamecover":"images/theforest.jpg",
+        "rating":ratings["4"],
+        "pegi" : foto_pegi_lijst["12"],
+        "opties": ["The Forest"],
+        "prijs": "10$"
     }
     switch (titel) {
         case game1["Titel"]:
             document.getElementById("pagina_titel").innerHTML = game1["Titel"]
             document.getElementById("pagina_detail").innerHTML = game1["detail"]
+            document.getElementById("image-game-cover").innerHTML = `<img src="${game1["imagegamecover"]}">`
+            document.getElementById("rating").innerHTML =  game1["rating"]
+            document.getElementById("pegirating").innerHTML =  `<img src="${game1["pegi"]}">`
+            document.getElementById("prijs").innerHTML =  game1["prijs"]
+            for (let optie of game1["opties"]) {
+                document.getElementById("dropdowncnt").innerHTML += `<a>${optie}</a>`
+            }
             console.log(game1["Titel"])
             break
 
         case game2["Titel"]:
             document.getElementById("pagina_titel").innerHTML = game2["Titel"]
             document.getElementById("pagina_detail").innerHTML = game2["detail"]
+            document.getElementById("image-game-cover").innerHTML = `<img src="${game2["imagegamecover"]}">`
+            document.getElementById("rating").innerHTML =  game2["rating"]
+            document.getElementById("pegirating").innerHTML =  `<img src="${game2["pegi"]}">`
+            document.getElementById("prijs").innerHTML =  game2["prijs"]
+            for (let optie of game2["opties"]) {
+                document.getElementById("dropdowncnt").innerHTML += `<a>${optie}</a>`
+            }
             console.log(game2["Titel"])
             break
         default:
@@ -151,5 +204,6 @@
 
 
 </script>
+<script src="js/script.js"></script>
 <body>
 

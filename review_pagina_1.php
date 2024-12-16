@@ -21,7 +21,7 @@
         <meta name="opdracht" content="Deze pagina is gemaakt door Devi van Riet">
 
         <!-- De titel van de pagina, deze verschijnt op het tabblad, geef hieraan waar de pagina over gaat  -->
-        <title>Gamestars - Game review 1</title>
+        <title>Gamestars - Game Review 1</title>
 
         <!-- Favicon kleine afbeelding die wordt weergegeven in de browser-tabbladen -->
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -67,6 +67,7 @@
             $foto_pegi_lijst = array(
                 "12" => "images/pegi_12.svg",
                 "18" => "images/pegi_18.jpg",
+                "7" => "images/pegi_7.svg",
             );
 
             $ratings = array(
@@ -78,35 +79,26 @@
             );
 
             $games_lijst = array(
-                "Fortnite" => [
-                    "Titel" => "Fortnite",
+                "The Forest" => [
+                    "Titel" => "The Forest",
                     "detail" => "Fortnite is een populaire battle royale-game waarin spelers vechten op een eiland tot één winnaar overblijft. Het combineert schieten, bouwen en overleven in kleurrijke omgevingen. Met regelmatige updates, samenwerkingen en verschillende spelmodi blijft het geliefd bij gamers wereldwijd.",
-                    "img" => "images/fortnite.jpg",
-                    "rating" => $ratings["2"],
-                    "pegi" => $foto_pegi_lijst["12"]
+                    "img" => "images/theforest.jpg",
+                    "rating" => $ratings["4"],
+                    "pegi" => $foto_pegi_lijst["12"],
+                    "opties" => ["The Forest"],
+                    "prijs" => "10$"
+
                 ],
                 "Minecraft" => [
                     "Titel" => "Minecraft",
                     "detail" => "Minecraft is een creatief sandbox-spel waarin spelers een wereld van blokken verkennen, bouwen en overleven. Het biedt verschillende spelmodi, zoals Survival, Creative en Adventure, en laat spelers onbeperkt bouwen en ontdekken in een procedureel gegenereerde wereld met biomen, vijanden en dimensies. Dankzij de grote vrijheid, een actieve gemeenschap en educatieve toepassingen is Minecraft geschikt voor alle leeftijden en blijft het wereldwijd populair.",
                     "img" => "images/minecraft.webp",
                     "rating" => $ratings["4"],
-                    "pegi" => $foto_pegi_lijst["12"]
+                    "pegi" => $foto_pegi_lijst["12"],
+                    "opties" => ["Java Edition", "Bedrock Edition", "Legends", "Dungeons"],
+                    "prijs" => "20$"
 
                 ],
-                "Forest" => [
-                    "Titel" => "Forest",
-                    "detail" => "Forest",
-                    "img" => "imgpath",
-                    "rating" => $ratings["4"],
-                    "pegi" => $foto_pegi_lijst["18"]
-                ],
-                "roblox" => [
-                    "Titel" => "roblox",
-                    "detail" => "roblox",
-                    "img" => "imgpath",
-                    "rating" => $ratings["4"],
-                    "pegi" => $foto_pegi_lijst["12"]
-                ]
             );
             foreach ($games_lijst as $game => $game_info){
                 if ($game == $game_titel){
@@ -138,7 +130,13 @@
             </div>
             <hr>
             <div class="box-prijs">
-                <h2>Gratis</h2>
+                <?php
+                foreach ($games_lijst as $game => $games_info) {
+                    if ($game == $game_titel) {
+                        echo "<h2>$games_info[prijs]</h2>";
+                    }
+                }
+                ?>
                 <div class="dropdown-box">
                     <p>Select, Model</p>
                     <div class="dropdown">
@@ -146,10 +144,17 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
                         </button>
                         <div id="dropdowncnt" class="dropdown-content">
-                            <a href="#">Java Edition</a>
-                            <a href="#">Bedrock Edition</a>
-                            <a href="#">Dungeons Edition</a>
-                            <a href="#">Legends Edition</a>
+                            <?php
+
+                            foreach ($games_lijst as $game => $game_info){
+                                if ($game == $game_titel){
+                                    foreach ($game_info["opties"] as $optie){
+                                        echo "<a href='#'>$optie</a>";
+                                    }
+                                }
+                            }
+
+                            ?>
                         </div>
                     </div>
                 </div>
