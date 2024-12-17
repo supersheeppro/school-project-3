@@ -8,7 +8,7 @@
     <!-- SEO (search engine optimation) Metagegevens -->
 
     <!-- Description voor zoekmachines en sociale media, omschrijft kort de inhoud van de pagina. -->
-    <meta name="description" content="Een pagina met de games en de ratings ervan">
+    <meta name="description" content="Een pagina met de games en de ratingseeeervanallokan ikditcomitten">
 
     <!-- Keywords Helpt zoekmachines begrijpen waar de pagina over gaat. -->
     <meta name="keywords" content="Games, rating, game, videogames, advise">
