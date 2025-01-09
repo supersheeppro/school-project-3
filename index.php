@@ -53,8 +53,7 @@
     </div>
   </nav>
 </header>
-
-    <main>
+      <main>
       <div class="box-slideshow">
         <article class="content-slideshow">
           <h1>
@@ -111,7 +110,7 @@
           </div>
           <div class="game-item4">
               <img src="images\flight_simulator.jpg" alt="Flight Simulator 2024">
-              <p>FLIGHT SIMULATOR 2020</p>
+              <p>FLIGHT SIMULATOR 2024</p>
               <div class="rating">
                   ★★★★☆
               </div>

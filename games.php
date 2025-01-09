@@ -10,7 +10,7 @@
     <!-- Description voor zoekmachines en sociale media, omschrijft kort de inhoud van de pagina. -->
     <meta name="description" content="Een pagina met de games en de ratings ervan">
 
-    <!-- Keywords Helpt zoekmachines begrijpen waar de pagina over gaat. -->
+    <!-- Keywords Helpt zoekmachines begrijpen waar de pagina over gaat. -->hoi
     <meta name="keywords" content="Games, rating, game, videogames, advise">
 
     <!-- Author de naam van de developer van de pagina.  -->

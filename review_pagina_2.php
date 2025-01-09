@@ -61,13 +61,13 @@
           if (isset($_GET['titel'])){
             $game_titel = $_GET['titel'];
         } else {
-            $game_titel = "Gamestars";
+            $game_titel = "Fortnite";
         }
 
           $foto_pegi_lijst = array(
-              "12" => "images/pegi_12.svg",
+              "12" => "images/pegi_12.jpg",
               "18" => "images/pegi_18.jpg",
-              "7" => "images/pegi_7.svg",
+              "7" => "images/pegi_7.jpg",
           );
 
           $ratings = array(
@@ -77,24 +77,23 @@
               "4" => "★★★★☆",
               "5" => "★★★★★",
           );
-
         $games_lijst = array(
             "Fortnite" => [
                 "Titel" => "Fortnite",
                 "detail" => "Fortnite is een populaire battle royale-game waarin spelers vechten op een eiland tot één winnaar overblijft. Het combineert schieten, bouwen en overleven in kleurrijke omgevingen. Met regelmatige updates, samenwerkingen en verschillende spelmodi blijft het geliefd bij gamers wereldwijd.",
                 "img" => "images/fortnite.jpg",
-				"rating" => $ratings["2"],
-				"pegi" => $foto_pegi_lijst["12"],
-				"opties" => ["Save The World", "Battle Royale", "Lego Fortnite", "Fortnite Ballistic"],
+                "rating" => $ratings["2"],
+                "pegi" => $foto_pegi_lijst["12"],
+                "opties" => ["Save The World", "Battle Royale", "Lego Fortnite", "Fortnite Ballistic"],
                 "prijs" => "Gratis"
 
             ],
             "Minecraft" => [
                 "Titel" => "Minecraft",
                 "detail" => "Minecraft is een creatief sandbox-spel waarin spelers een wereld van blokken verkennen, bouwen en overleven. Het biedt verschillende spelmodi, zoals Survival, Creative en Adventure, en laat spelers onbeperkt bouwen en ontdekken in een procedureel gegenereerde wereld met biomen, vijanden en dimensies. Dankzij de grote vrijheid, een actieve gemeenschap en educatieve toepassingen is Minecraft geschikt voor alle leeftijden en blijft het wereldwijd populair.",
-                "img" => "images/minecraft.webp",
+                "img" => "images/minecraft-breed.webp",
                 "rating" => $ratings["4"],
-                "pegi" => $foto_pegi_lijst["12"],
+                "pegi" => $foto_pegi_lijst["7"],
                 "opties" => ["Java Edition", "Bedrock Edition", "Legends", "Dungeons"],
                 "prijs" => "20$"
 

@@ -61,13 +61,13 @@
             if (isset($_GET['titel'])){
                 $game_titel = $_GET['titel'];
             } else {
-                $game_titel = "The Forest";
+                $game_titel = "Minecraft";
             }
 
             $foto_pegi_lijst = array(
-                "12" => "images/pegi_12.jgp",
+                "12" => "images/pegi_12.jpg",
                 "18" => "images/pegi_18.jpg",
-                "7" => "images/pegi_7.jgp",
+                "7" => "images/pegi_7.jpg",
             );
 
             $ratings = array(
@@ -83,23 +83,92 @@
                     "Titel" => "The Forest",
                     "detail" => "Fortnite is een populaire battle royale-game waarin spelers vechten op een eiland tot één winnaar overblijft. Het combineert schieten, bouwen en overleven in kleurrijke omgevingen. Met regelmatige updates, samenwerkingen en verschillende spelmodi blijft het geliefd bij gamers wereldwijd.",
                     "img" => "images/theforest.jpg",
-                    "rating" => $ratings["4"],
                     "pegi" => $foto_pegi_lijst["18"],
                     "opties" => ["The Forest"],
-                    "prijs" => "10$"
+                    "prijs" => "10$",
+                    "reviews" => [
+                        "jhon doe" => [
+                            "date" => "aug 14, 2024",
+                            "description" => "good but simple and creative game",
+                            "stars" => 4,
+                            "profileimage" => "images/profile_default.jpg",
+                        ]
+                    ]
 
                 ],
                 "Minecraft" => [
                     "Titel" => "Minecraft",
                     "detail" => "Minecraft is een creatief sandbox-spel waarin spelers een wereld van blokken verkennen, bouwen en overleven. Het biedt verschillende spelmodi, zoals Survival, Creative en Adventure, en laat spelers onbeperkt bouwen en ontdekken in een procedureel gegenereerde wereld met biomen, vijanden en dimensies. Dankzij de grote vrijheid, een actieve gemeenschap en educatieve toepassingen is Minecraft geschikt voor alle leeftijden en blijft het wereldwijd populair.",
                     "img" => "images/minecraft-breed.webp",
-                    "rating" => $ratings["4"],
-                    "pegi" => $foto_pegi_lijst["7"],
+                    "pegi" => $foto_pegi_lijst["18"],
                     "opties" => ["Java Edition", "Bedrock Edition", "Legends", "Dungeons"],
-                    "prijs" => "20$"
+                    "prijs" => "20$",
+                    "reviews" => [
+                        "alex smith" => [
+                            "date" => "Jan 5, 2025",
+                            "description" => "An endlessly creative sandbox that sparks your imagination! Whether you're building massive castles or exploring deep caves, Minecraft never runs out of surprises. Truly a masterpiece for all ages.",
+                            "stars" => 3,
+                            "profileimage" => "images/profile_default.jpg",
+                        ],
+                        "sarah miller" => [
+                            "date" => "Dec 28, 2024",
+                            "description" => "I love how Minecraft allows me to unwind after a long day. The mix of survival and creativity modes is perfect. However, the lack of official mods in the base game can be limiting unless you dive into community content.",
+                            "stars" => 4,
+                            "profileimage" => "images/profile_default.jpg",
+                        ],
+                        "mike johnson" => [
+                            "date" => "Nov 15, 2024",
+                            "description" => "While the game is fun and engaging, the graphics might feel outdated for new players. That said, its charm lies in its simplicity, and it's great to play with friends!",
+                            "stars" => 3,
+                            "profileimage" => "images/profile_default.jpg",
+                        ],
+                        "lily evans" => [
+                            "date" => "Oct 30, 2024",
+                            "description" => "I've been playing Minecraft for years, and it still amazes me. The community servers and mods bring endless possibilities. Perfect for kids and adults alike!",
+                            "stars" => 3,
+                            "profileimage" => "images/profile_default.jpg",
+                        ],
+                        "ryan cooper" => [
+                            "date" => "Sep 21, 2024",
+                            "description" => "The exploration aspect is amazing, especially after the Caves & Cliffs update. My only complaint is the lack of clear instructions for beginners. Still, one of the best games I've played.",
+                            "stars" => 4,
+                            "profileimage" => "images/profile_default.jpg",
+                        ],
+                    ]
+
 
                 ],
             );
+
+            function berekenGemiddeldeSterrenEnAantal($reviews) {
+                $totaalSterren = 0;
+                $aantalReviews = count($reviews);
+            
+                if ($aantalReviews === 0) {
+                    return [
+                        'gemiddelde' => 0,  
+                        'aantal' => 0       
+                    ];
+                }
+            
+                foreach ($reviews as $review) {
+                    $totaalSterren += $review['stars'];
+                }
+                $gemiddelde = round($totaalSterren / $aantalReviews);
+            
+                return [
+                    'gemiddelde' => $gemiddelde,
+                    'aantal' => $aantalReviews
+                ];
+            }
+            
+            if (isset($games_lijst[$game_titel]['reviews'])) {
+                $resultaat = berekenGemiddeldeSterrenEnAantal($games_lijst[$game_titel]['reviews']);
+                $gemiddeldeSterren = $resultaat['gemiddelde'];
+                $aantalRatings = $resultaat['aantal'];
+            }
+            
+
             foreach ($games_lijst as $game => $game_info){
                 if ($game == $game_titel){
                     echo "<img src=$game_info[img]>";
@@ -120,12 +189,14 @@
                 <?php
                 foreach ($games_lijst as $game => $games_info) {
                     if ($game == $game_titel) {
-                        echo "<p class='rating-games-info'>$games_info[rating]</p>";
+                        echo "<p class='rating-games-info'>$ratings[$gemiddeldeSterren]</p>";
                     }
                 }
                 ?>
                 <p class="rating-box-p">
-                    4 Reviews
+                    <?php
+                    echo "$aantalRatings Reviews"
+                    ?>
                 </p>
             </div>
             <hr>
@@ -190,6 +261,30 @@
             </div>
         </div>
     </section>
+    <hr>
+    <h1 class="reviews-header">Reviews</h1>
+    <div id="reviews-container">
+    <?php
+        foreach ($games_lijst as $game => $game_info){
+            if ($game == $game_titel){
+                foreach ($game_info["reviews"] as $name => $review){
+                $stars = $review["stars"];
+                echo "<div class=reviewappendcontainer>
+                        <img class=profileimage src=$review[profileimage]>
+                        <div class=profileinfo>
+                            <h4>$name</h4>
+                            <p class=date>$review[date]</p>
+                            <p class=stars>$ratings[$stars]</p>
+                        </div>
+                        <p>$review[description]</p>
+                </div>"
+                ;
+            }
+        }
+    }
+        ?>      
+
+    </div>
 </main>
 
 <footer>

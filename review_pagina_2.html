@@ -55,6 +55,8 @@
 <main>
     <section class="container-game-detail">
         <figure id="image-game-cover">
+            <figure id="image-game-cover-cover"></figure>
+            <figure id="image-game-cover-cover2"></figure>
         </figure>
         <div class="game-info">
             <h1 id="pagina_titel"></h1>
@@ -139,9 +141,11 @@
     const urlParams = new URLSearchParams(window.location.search);
     let titel = urlParams.get('titel');
     let foto_pegi_lijst = {
-        "12":"images/PEGI_12.svg",
+        "12":"images/PEGI_12.jpg",
         "18":"images/PEGI_18.jpg",
-        "7":"images/PEGI_7.svg"
+        "7":"images/PEGI_7.jgp",
+        "3":"images/PEGI_3.jpg",
+        "16":"images/PEGI_16.jpg"
     }
     let ratings = {
         "1":"★☆☆☆☆",
@@ -151,29 +155,34 @@
         "5":"★★★★★"
     }
     let game1 = {
-        "Titel":"Fortnite",
+        "Titel":"Fortnite Save The World",
         "detail":"Fortnite is een populaire battle royale-game waarin spelers vechten op een eiland tot één winnaar overblijft. Het combineert schieten, bouwen en overleven in kleurrijke omgevingen. Met regelmatige updates, samenwerkingen en verschillende spelmodi blijft het geliefd bij gamers wereldwijd.",
-        "imagegamecover":"images/fortnite.jpg",
+        "imagegamecover":"images/fortnite-savetheworld-cover.jpeg",
         "rating":ratings["2"],
         "pegi" : foto_pegi_lijst["12"],
-        "opties": ["Save The World", "Battle Royale", "Lego Fortnite", "Fortnite Ballistic"],
-        "prijs": "Gratis"
-
+        "opties": ["Save The World", "Battle Royale", "Lego Fortnite"],
+        "prijs": "€39,99",
+        "imagegamecover2":"images/fortnite-battle-royale-cover.jpeg",
+        "imagegamecover3":"images/fortnite-lego-cover.jpeg",
     }
     let game2 = {
         "Titel":"Ark",
         "detail":"ARK: Survival Evolved is een open-wereld survivalgame waarin spelers zich in een prehistorische omgeving bevinden, vol met dinosaurussen, mythische wezens en gevaren. Je begint gestrande en zonder uitrusting op een mysterieus eiland genaamd ARK, waar overleven de belangrijkste uitdaging is.",
-        "imagegamecover":"images/doom.jpg",
+        "imagegamecover":"images/ark-cover.webp",
         "rating":ratings["5"],
-        "pegi" : foto_pegi_lijst["12"],
-        "opties": ["The Forest"],
-        "prijs": "40$"
+        "pegi" : foto_pegi_lijst["16"],
+        "opties": ["Survival Evolved", "Survival Ascended"],
+        "prijs": "€14,79",
+        "imagegamecover2":"images/ark-cover2.jpg",
+        "imagegamecover3":"images/ark-cover3.jpg",
     }
     switch (titel) {
         case game1["Titel"]:
             document.getElementById("pagina_titel").innerHTML = game1["Titel"]
             document.getElementById("pagina_detail").innerHTML = game1["detail"]
-            document.getElementById("image-game-cover").innerHTML = `<img src="${game1["imagegamecover"]}">`
+            document.getElementById("image-game-cover-cover").innerHTML = `<img src="${game1["imagegamecover2"]}">`
+            document.getElementById("image-game-cover-cover2").innerHTML = `<img src="${game1["imagegamecover3"]}">`
+            document.getElementById("image-game-cover").style.backgroundImage = `url(${game1["imagegamecover"]})`
             document.getElementById("rating").innerHTML =  game1["rating"]
             document.getElementById("pegirating").innerHTML =  `<img src="${game1["pegi"]}">`
             document.getElementById("prijs").innerHTML =  game1["prijs"]
@@ -186,7 +195,9 @@
         case game2["Titel"]:
             document.getElementById("pagina_titel").innerHTML = game2["Titel"]
             document.getElementById("pagina_detail").innerHTML = game2["detail"]
-            document.getElementById("image-game-cover").innerHTML = `<img src="${game2["imagegamecover"]}">`
+            document.getElementById("image-game-cover-cover").innerHTML = `<img src="${game2["imagegamecover2"]}">`
+            document.getElementById("image-game-cover-cover2").innerHTML = `<img src="${game2["imagegamecover3"]}">`
+            document.getElementById("image-game-cover").style.backgroundImage = `url(${game2["imagegamecover"]})`
             document.getElementById("rating").innerHTML =  game2["rating"]
             document.getElementById("pegirating").innerHTML =  `<img src="${game2["pegi"]}">`
             document.getElementById("prijs").innerHTML =  game2["prijs"]

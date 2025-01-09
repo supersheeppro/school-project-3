@@ -50,7 +50,7 @@
         </div>
     </nav>
 </header>
-<main class="main3">
+<main class="main4">
     <!-- Horizontale rij met 6 foto's en titels -->
     <section class="top-games">
         <figure>
