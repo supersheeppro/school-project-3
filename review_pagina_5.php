@@ -55,11 +55,11 @@
 </header>
 <?php 
             switch (isset($_GET['titel']) ? $_GET['titel'] : null) {
-                case null: // Geen titel meegegeven
+                case null: 
                     $game_titel = "Skull and Bones";
                     break;
 
-                default: // Titel is aanwezig
+                default: 
                     $game_titel = $_GET['titel'];
                     break;
             }
