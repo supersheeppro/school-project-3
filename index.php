@@ -74,9 +74,12 @@
         <div class="product-list">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
             <div class="product">
+            <a href="review_pagina_5.php?titel=Skull and Bones">
               <img src="images/skull_and_bones.jpg" alt="Skull and Bones">
+            </a>
               <p>Skull and Bones</p>
             </div>
+            
             <div class="product">
               <img src="images/super_mario.jpg" alt="Super Mario">
               <p>Super Mario</p>
@@ -87,55 +90,73 @@
 
       <section class="box-game-gallery">
         <div class="game-gallery">
-          <div class="game-item1">
+            <div class="game-item1">
+            <a href="review_pagina_1.html?titel=Minecraft Java / Bedrock">
               <img src="images/minecraft.webp" alt="Minecraft">
+            </a>
               <p>MINECRAFT</p>
               <div class="rating">
                   ★★★★★
               </div>
-          </div>
-          <div class="game-item2">
-              <img src="images/fortnite3.jpg" alt="Fortnite">
-              <p>FORTNITE</p>
-              <div class="rating">
-                  ★★★★☆
-              </div>
-          </div>
-          <div class="game-item3">
-              <img src="images\red_dead.jpg" alt="Red Dead Redemption II">
-              <p>RED DEAD II</p>
-              <div class="rating">
-                  ★★★★★
-              </div>
-          </div>
-          <div class="game-item4">
-              <img src="images\flight_simulator.jpg" alt="Flight Simulator 2024">
-              <p>FLIGHT SIMULATOR 2024</p>
-              <div class="rating">
-                  ★★★★☆
-              </div>
-          </div>
-          <div class="game-item5">
-              <img src="images\far_cry.jpg" alt="Far Cry 4">
-              <p>FARCRY 4</p>
-              <div class="rating">
-                  ★★★★☆
-              </div>
-          </div>
-          <div class="game-item6">
-              <img src="images\spider_man.jpg" alt="Spider-Man 2">
-              <p>SPIDER MAN 2</p>
-              <div class="rating">
-                  ★★★★☆
-              </div>
-          </div>
-          <div class="game-item7">
-              <img src="images\assasins_creed.jpg" alt="Assassin's Creed">
-              <p>ASSASSIN'S CREED</p>
-              <div class="rating">
-                  ★★★★☆
-              </div>
-          </div>
+            </div>
+          
+            <div class="game-item2">
+              <a href="review_pagina_2.html?titel=Fortnite Save The World">
+                <img src="images/fortnite3.jpg" alt="Fortnite">
+              </a>
+                <p>FORTNITE</p>
+                <div class="rating">
+                    ★★★★☆
+                </div>
+            </div>
+        
+            <div class="game-item3">
+              <a href="review_pagina_5.html?titel=Red Dead Redemption II">
+                <img src="images\red_dead.jpg" alt="Red Dead Redemption II">
+              </a>
+                <p>RED DEAD II</p>
+                <div class="rating">
+                    ★★★★★
+                </div>
+            </div>
+          
+          
+            <div class="game-item4">
+              <a href="review_pagina_4.html?titel=Microsoft Flight Simulator 2024">
+                <img src="images\flight_simulator.jpg" alt="Flight Simulator 2024">
+              </a>
+                <p>FLIGHT SIMULATOR 2024</p>
+                <div class="rating">
+                    ★★★★☆
+                </div>
+            </div>
+         
+            <div class="game-item5">
+                <img src="images\far_cry.jpg" alt="Far Cry 4">
+                <p>FARCRY 4</p>
+                <div class="rating">
+                    ★★★★☆
+                </div>
+            </div>
+          
+            <div class="game-item6">
+                <img src="images\spider_man.jpg" alt="Spider-Man 2">
+                <p>SPIDER MAN 2</p>
+                <div class="rating">
+                    ★★★★☆
+                </div>
+            </div>
+          
+            <div class="game-item7">
+              <a href="review_pagina_5.html?titel=Assassin's Creed">
+                <img src="images\assasins_creed.jpg" alt="Assassin's Creed">
+              </a>
+                <p>ASSASSIN'S CREED</p>
+                <div class="rating">
+                    ★★★★☆
+                </div>
+            </div>
+          
         </div>
       </section>
     </main>

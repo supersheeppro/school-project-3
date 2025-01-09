@@ -53,21 +53,23 @@
         </div>
     </nav>
 </header>
+<?php 
+            switch (isset($_GET['titel']) ? $_GET['titel'] : null) {
+                case null: // Geen titel meegegeven
+                    $game_titel = "Skull and Bones";
+                    break;
 
-<main>
-    <section class="container-game-detail">
-        <figure>
-            <?php
-            if (isset($_GET['titel'])){
-                $game_titel = $_GET['titel'];
-            } else {
-                $game_titel = "Minecraft";
+                default: // Titel is aanwezig
+                    $game_titel = $_GET['titel'];
+                    break;
             }
 
+
             $foto_pegi_lijst = array(
-                "12" => "images/pegi_12.jpg",
-                "18" => "images/pegi_18.jpg",
-                "7" => "images/pegi_7.jpg",
+                "12" => "images/PEGI_12.jgp",
+                "18" => "images/PEGI_18.jpg",
+                "7" => "images/PEGI_7.jpg",
+                "16" => "images/PEGI_3.jpg"
             );
 
             $ratings = array(
@@ -79,58 +81,45 @@
             );
 
             $games_lijst = array(
-                "The Forest" => [
-                    "Titel" => "The Forest",
-                    "detail" => "Fortnite is een populaire battle royale-game waarin spelers vechten op een eiland tot één winnaar overblijft. Het combineert schieten, bouwen en overleven in kleurrijke omgevingen. Met regelmatige updates, samenwerkingen en verschillende spelmodi blijft het geliefd bij gamers wereldwijd.",
-                    "img" => "images/theforest.jpg",
+                "Far Cry 4" => [
+                    "Titel" => "Far Cry 4",
+                    "detail" => "Far Cry 4 is een open-wereld actie-avonturenspel waarin spelers Kyrat verkennen, een fictief Himalayagebied vol gevaar en schoonheid. Als Ajay Ghale strijd je tegen de tirannieke heerser Pagan Min. De game combineert intense gevechten, crafting en boeiende missies met prachtige omgevingen, keuzevrijheid en een meeslepend verhaal vol verrassende wendingen.",
+                    "img" => "images/far-cry4-cover.jpg",
+                    "imagegamecover3" => "images/far-cry5-cover2.jpg",
+                    "imagegamecover2" => "images/far-cry6-cover3.jpg",
+                    "rating" => $ratings["4"],
                     "pegi" => $foto_pegi_lijst["18"],
-                    "opties" => ["The Forest"],
-                    "prijs" => "10$",
-                    "reviews" => [
-                        "jhon doe" => [
-                            "date" => "aug 14, 2024",
-                            "description" => "good but simple and creative game",
-                            "stars" => 4,
-                            "profileimage" => "images/profile_default.jpg",
-                        ]
-                    ]
-
-                ],
-                "Minecraft" => [
-                    "Titel" => "Minecraft",
-                    "detail" => "Minecraft is een creatief sandbox-spel waarin spelers een wereld van blokken verkennen, bouwen en overleven. Het biedt verschillende spelmodi, zoals Survival, Creative en Adventure, en laat spelers onbeperkt bouwen en ontdekken in een procedureel gegenereerde wereld met biomen, vijanden en dimensies. Dankzij de grote vrijheid, een actieve gemeenschap en educatieve toepassingen is Minecraft geschikt voor alle leeftijden en blijft het wereldwijd populair.",
-                    "img" => "images/minecraft-breed.webp",
-                    "pegi" => $foto_pegi_lijst["18"],
-                    "opties" => ["Java Edition", "Bedrock Edition", "Legends", "Dungeons"],
-                    "prijs" => "20$",
+                    "opties" => ["Far Cry 4", "Far Cry 5", "Far Cry 6"],
+                    "prijs" => "€29,99",
+                    "video" => "https://www.youtube.com/embed/xI6uV47jKME?si=YcKgGW79PjsmNf8h",
                     "reviews" => [
                         "alex smith" => [
-                            "date" => "Jan 5, 2025",
-                            "description" => "An endlessly creative sandbox that sparks your imagination! Whether you're building massive castles or exploring deep caves, Minecraft never runs out of surprises. Truly a masterpiece for all ages.",
+                            "date" => "Jan 5, 2023",
+                            "description" => "Far Cry 4 biedt een prachtige open wereld in Kyrat met talloze activiteiten en boeiende gameplay. Het verhaal rondom Pagan Min is meeslepend, maar de keuzes voelen soms oppervlakkig. De mix van stealth en actie houdt de gameplay fris. Een must-play voor fans van actie-avonturen en open-wereldspellen.",
                             "stars" => 3,
                             "profileimage" => "images/profile_default.jpg",
                         ],
                         "sarah miller" => [
-                            "date" => "Dec 28, 2024",
-                            "description" => "I love how Minecraft allows me to unwind after a long day. The mix of survival and creativity modes is perfect. However, the lack of official mods in the base game can be limiting unless you dive into community content.",
+                            "date" => "Feb 28, 2024",
+                            "description" => "De graphics en sfeer van Far Cry 4 zijn adembenemend, en Kyrat voelt levendig aan. Het verhaal is interessant, maar niet zo krachtig als verwacht. Gameplay en wapens zijn uitstekend, maar sommige missies herhalen zichzelf. Een geweldige game voor liefhebbers van verkennen en intensievere actie.",
                             "stars" => 4,
                             "profileimage" => "images/profile_default.jpg",
                         ],
                         "mike johnson" => [
                             "date" => "Nov 15, 2024",
-                            "description" => "While the game is fun and engaging, the graphics might feel outdated for new players. That said, its charm lies in its simplicity, and it's great to play with friends!",
+                            "description" => "Met Far Cry 4 krijg je een prachtig vormgegeven wereld die uitnodigt tot verkenning. De gameplay is gevarieerd, maar de AI van vijanden laat soms te wensen over. Pagan Min is een sterke antagonist, maar zijn rol had meer diepgang kunnen krijgen. Toch een indrukwekkende open-wereldervaring.",
                             "stars" => 3,
                             "profileimage" => "images/profile_default.jpg",
                         ],
                         "lily evans" => [
-                            "date" => "Oct 30, 2024",
-                            "description" => "I've been playing Minecraft for years, and it still amazes me. The community servers and mods bring endless possibilities. Perfect for kids and adults alike!",
+                            "date" => "Jun 30, 2021",
+                            "description" => "Far Cry 4 is een sterke opvolger in de serie met een meeslepende wereld en uitdagende gameplay. De combinatie van stealth, actie en crafting houdt het boeiend. Het verhaal is goed, maar niet spectaculair. Een aanrader voor spelers die genieten van creatieve vrijheid en intens gevechtsscenario's.",
                             "stars" => 3,
                             "profileimage" => "images/profile_default.jpg",
                         ],
                         "ryan cooper" => [
-                            "date" => "Sep 21, 2024",
-                            "description" => "The exploration aspect is amazing, especially after the Caves & Cliffs update. My only complaint is the lack of clear instructions for beginners. Still, one of the best games I've played.",
+                            "date" => "Sep 21, 2022",
+                            "description" => "Far Cry 4 is een indrukwekkende mix van actie, avontuur en verkenning in een prachtig vormgegeven Himalaya-setting. De gameplay biedt vrijheid, van stealth tot explosieve actie, met talloze activiteiten zoals jagen en crafting. Hoewel het verhaal rond Pagan Min sterk begint, voelt het soms onderontwikkeld. De dynamische wereld en gameplay maken het echter een geweldige ervaring voor open-wereldfans.",
                             "stars" => 4,
                             "profileimage" => "images/profile_default.jpg",
                         ],
@@ -138,8 +127,52 @@
 
 
                 ],
-            );
+                "Skull and Bones" => [
+                    "Titel" => "Skull and Bones",
+                    "detail" => "Skull and Bones is een open-wereldactiegame waarin spelers de rol aannemen van piraten in de Gouden Eeuw van de Piraterij. Het spel draait om zeegevechten, handel en het verkennen van uitgestrekte oceanen. Spelers kunnen schepen aanpassen, vijandige piraten bevechten en bondgenootschappen smeden. Het combineert strategie, actie en avontuur met een focus op multiplayer-ervaringen.",
+                    "img" => "images/skullandbones-cover.jpg",
+                    "imagegamecover3" => "images/skullandbones-cover2.jpg",
+                    "imagegamecover2" => "images/skullandbones-cover3.png",
+                    "rating" => $ratings["4"],
+                    "pegi" => $foto_pegi_lijst["7"],
+                    "opties" => ["Standard Edition", "Deluxe Edition", "Premium Edition"],
+                    "prijs" => "€39,99",
+                    "video" => "https://www.youtube.com/embed/gmA6MrX81z4?si=VO_5xvp6TGywS5S-",
+                    "reviews" => [
+                        "alex smith" => [
+                            "date" => "Jan 5, 2018",
+                            "description" => "Skull and Bones is een open-wereldactiegame waarin spelers de rol aannemen van piraten in de Gouden Eeuw van de Piraterij. Het spel draait om zeegevechten, handel en het verkennen van uitgestrekte oceanen. Spelers kunnen schepen aanpassen, vijandige piraten bevechten en bondgenootschappen smeden. Het combineert strategie, actie en avontuur met een focus op multiplayer-ervaringen.",
+                            "stars" => 3,
+                            "profileimage" => "images/profile_default.jpg",
+                        ],
+                        "sarah miller" => [
+                            "date" => "Dec 28, 2024",
+                            "description" => "De sfeer van Skull and Bones is indrukwekkend, met realistische scheepsmechanica en prachtige oceaangrafics. Multiplayer missies zijn leuk, maar solo-spelers kunnen zich snel vervelen. Het gebrek aan een sterk verhaal laat een leegte achter, maar de actie en customization maken veel goed. Een solide keuze voor liefhebbers van strategische piratenavonturen.",
+                            "stars" => 4,
+                            "profileimage" => "images/profile_default.jpg",
+                        ],
+                        "mike johnson" => [
+                            "date" => "Mar 15, 2021",
+                            "description" => "Skull and Bones voelt als een stap in de juiste richting voor piratenspellen, met zijn verbluffende graphics en intense gevechten. Helaas wordt de ervaring beperkt door repetitieve gameplay en een gebrek aan diepgang in de missies. Voor wie vooral multiplayergevechten waardeert, is het een aanrader, maar solo-avonturiers kunnen beter verder zoeken.",
+                            "stars" => 3,
+                            "profileimage" => "images/profile_default.jpg",
+                        ],
+                        "lily evans" => [
+                            "date" => "Oct 30, 2023",
+                            "description" => "Als je droomt van het kapen van schepen en verkennen van open zeeën, levert Skull and Bones precies dat. Het spel biedt realistische gameplay en adembenemende graphics, maar het mist een sterk verhaal en betekenisvolle progressie. Voor piratenfans is het een vermakelijke ervaring, maar niet de revolutie waar velen op hoopten.",
+                            "stars" => 3,
+                            "profileimage" => "images/profile_default.jpg",
+                        ],
+                        "ryan cooper" => [
+                            "date" => "Apr 21, 2023",
+                            "description" => "Het spel schittert met zijn indrukwekkende visuals en meeslepende zeegevechten. Scheepsaanpassingen en samenwerking met vrienden geven extra plezier. Toch voelt de gameplay soms herhalend aan, en het gebrek aan een meeslepend verhaal maakt het minder memorabel. Skull and Bones is leuk, maar mist de epische grandeur die je zou verwachten van een piratenspel. ",                           
+                            "stars" => 4,
+                            "profileimage" => "images/profile_default.jpg",
+                        ],
+                    ]
 
+                ],
+            );
             function berekenGemiddeldeSterrenEnAantal($reviews) {
                 $totaalSterren = 0;
                 $aantalReviews = count($reviews);
@@ -161,22 +194,81 @@
                     'aantal' => $aantalReviews
                 ];
             }
-            
+
             if (isset($games_lijst[$game_titel]['reviews'])) {
                 $resultaat = berekenGemiddeldeSterrenEnAantal($games_lijst[$game_titel]['reviews']);
                 $gemiddeldeSterren = $resultaat['gemiddelde'];
                 $aantalRatings = $resultaat['aantal'];
             }
-            
-
+?>
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span id="closePopupBtn" class="close-btn">&times;</span>
+        <?php
             foreach ($games_lijst as $game => $game_info){
                 if ($game == $game_titel){
-                    echo "<img src=$game_info[img]>";
+                    echo "<iframe id=video src=$game_info[video] title=YouTube video player frameborder=0 allow=accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share referrerpolicy=strict-origin-when-cross-origin allowfullscreen></iframe>";
                 }
             }
+        ?>
+    </div>
+</div>
+<div id="popup2" class="popup2-content">
+    <div class="popup2">
+        <div class="popup-content2">
+            <div class="popup2-section">
+                <img class="logoImg" src="images/logo_breed_wit.png" alt="logo-wit">
+            </div>
+            <h3 class="heading1">Voor deze pagina moet je 18+ zijn</h3>
+            <p class="bodyText">Verifieer jezelf hieronder</p>
+            <div class="btn-age-verification">
+                <button id="close" class="age-verification">Ik ben 18 of ouder - Enter</button>
+                <a href="index.php"><button class="tweede-btn age-verification">Ik ben onder 18 - Exit</button></a>
+            </div>
+            <p class="bottomText">
+                Op onze pagina over <a href="#">ouderlijk toezicht</a> wordt uitgelegd hoe u eenvoudig<br>
+                de toegang tot deze site kunt blokkeren.
+            </p>
+            <div class="disclaimer-wrapper">
+                <span class="copyright">© Gamestars.com, 2025</span>
+                <img src="images/logo_kopie.png" alt="disclaimer-image">
+            </div>
+        </div>
+    </div>
+</div>
 
-            ?>
-        </figure>
+
+<main>
+    <section class="container-game-detail">
+        <?php
+            foreach ($games_lijst as $game => $game_info){
+                if ($game == $game_titel){
+                    echo "<figure id=image-game-cover style='background-image: url($game_info[img]);'>"
+                    ?>
+                    <figure id="image-game-cover-cover">
+                        <?php
+                            foreach ($games_lijst as $game => $game_info){
+                                if ($game == $game_titel){
+                                    echo "<img id=image1 src=$game_info[imagegamecover2]>";
+                                }
+                            }
+                        ?>
+                    </figure>
+                    <figure id="image-game-cover-cover2">
+                        <?php
+                            foreach ($games_lijst as $game => $game_info){
+                                if ($game == $game_titel){
+                                    echo "<img id=image2 src=$game_info[imagegamecover3]>";
+                                }
+                            }
+                        ?>
+                    </figure>
+
+                    <?php
+                    echo"</figure>";
+                }
+            }
+        ?>
         <div class="game-info">
             <?php
             foreach ($games_lijst as $game => $game_info){
@@ -219,8 +311,8 @@
 
                             foreach ($games_lijst as $game => $game_info){
                                 if ($game == $game_titel){
-                                    foreach ($game_info["opties"] as $optie){
-                                        echo "<a href='#'>$optie</a>";
+                                    foreach ($game_info["opties"] as $index => $optie) {
+                                        echo "<a class='optielink' data='$index' href='#'>$optie</a>";
                                     }
                                 }
                             }
@@ -246,9 +338,9 @@
                 </div>
                 <?php
 
-                foreach ($games_lijst as $game => $game_info){
-                    if ($game == $game_titel){
-                        echo "<img src=$game_info[pegi]>";
+                foreach ($games_lijst as $game => $game_info) {
+                    if ($game == $game_titel) {
+                        echo "<img src='" . $game_info["pegi"] ."'>";
                     }
                 }
 
