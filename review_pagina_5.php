@@ -137,7 +137,7 @@
                     "pegi" => $foto_pegi_lijst["7"],
                     "opties" => ["Standard Edition", "Deluxe Edition", "Premium Edition"],
                     "prijs" => "€39,99",
-                    "video" => "https://www.youtube.com/embed/gmA6MrX81z4?si=VO_5xvp6TGywS5S-",
+                    "video" => "https://www.youtube.com/embed/OmDYo7MbQxo?si=Ztaw2KFEeMYasO6G",
                     "reviews" => [
                         "alex smith" => [
                             "date" => "Jan 5, 2018",
@@ -240,6 +240,7 @@
 
 <main>
     <section class="container-game-detail">
+    <img class="game-detail-img" src="images/game.png">
         <?php
             foreach ($games_lijst as $game => $game_info){
                 if ($game == $game_titel){

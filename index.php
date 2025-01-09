@@ -132,7 +132,9 @@
             </div>
          
             <div class="game-item5">
+              <a href="review_pagina_5.php?titel=Far Cry 4">
                 <img src="images\far_cry.jpg" alt="Far Cry 4">
+              </a>
                 <p>FARCRY 4</p>
                 <div class="rating">
                     ★★★★☆

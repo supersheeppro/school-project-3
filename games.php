@@ -146,14 +146,18 @@
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/fortnite2.jpg"  alt="Game 10">
+                <a href="review_pagina_2.html?titel=Fortnite Save The World">
+                    <img src="images/fortnite2.jpg"  alt="Game 10">
+                </a>
                 <figcaption>
                     <p>FORTNITE</p>
                     <p class="stars">★★★☆☆</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/gtav.jpg" alt="Game 11">
+                <a href="review_pagina_4.html?titel=Grand Theft Auto V">
+                    <img src="images/gtav.jpg" alt="Game 11">
+                </a>
                 <figcaption>
                     <p>GTA V</p>
                     <p class="stars">★★★☆☆</p>
@@ -190,7 +194,9 @@
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/farcry.jpg" alt="Game 11">
+                <a href="review_pagina_5.php?titel=Far Cry 4">
+                    <img src="images/farcry.jpg" alt="Game 11">
+                </a> 
                 <figcaption>
                     <p>FAR CRY</p>
                     <p class="stars">★★★☆☆</p>
@@ -199,7 +205,9 @@
         </div>
         <div class="game-list">
             <figure>
-                <img src="images/rdr2.jpg" alt="Game 7">
+                <a href="review_pagina_5.html?titel=Red Dead Redemption II">
+                    <img src="images/rdr2.jpg" alt="Game 7">
+                </a>   
                 <figcaption>
                     <p>RED DEAD<br> REDEMPTION 2</p>
                     <p class="stars">★★★☆☆</p>
@@ -247,7 +255,9 @@
         <h1>Now Popular</h1>
         <div class="popular-list">
             <figure>
-                <img src="images/minecraft3.jpg" alt="Game 7">
+                <a href="review_pagina_1.html?titel=Minecraft Java / Bedrock">
+                    <img src="images/minecraft3.jpg" alt="Game 7">
+                </a>
                 <figcaption>
                     <p>MINECRAFT</p>
                     <p class="stars">★★★☆☆</p>

@@ -6,7 +6,7 @@ const images = [
     "../images/far_cry.jpg"
 ];
 const popup = document.getElementById('popup');
-const openPopupBtn = document.getElementById('image-game-cover');
+const openPopupBtn = document.querySelector('.game-detail-img');
 const closePopupBtn = document.getElementById('closePopupBtn');
 let currentImageIndex = 0;
 
