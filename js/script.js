@@ -56,7 +56,7 @@ const button = document.getElementById('close');
 const container = document.getElementById('popup2');
 
  if (localStorage.getItem('isHidden') === 'true') {
-     container.style.display = 'none';
+     container.style.display = 'block';
 }
 
 button.addEventListener('click', function() {

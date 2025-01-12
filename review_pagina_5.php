@@ -134,7 +134,7 @@
                     "imagegamecover3" => "images/skullandbones-cover2.jpg",
                     "imagegamecover2" => "images/skullandbones-cover3.png",
                     "rating" => $ratings["4"],
-                    "pegi" => $foto_pegi_lijst["7"],
+                    "pegi" => $foto_pegi_lijst["18"],
                     "opties" => ["Standard Edition", "Deluxe Edition", "Premium Edition"],
                     "prijs" => "€39,99",
                     "video" => "https://www.youtube.com/embed/OmDYo7MbQxo?si=Ztaw2KFEeMYasO6G",
