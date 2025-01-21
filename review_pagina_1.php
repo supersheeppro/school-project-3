@@ -100,6 +100,16 @@
                 "prijs" => "20$"
 
             ],
+            "The Forest" => [
+                "Titel" => "The Forest",
+                "detail" => "Fortnite is een populaire battle royale-game waarin spelers vechten op een eiland tot één winnaar overblijft. Het combineert schieten, bouwen en overleven in kleurrijke omgevingen. Met regelmatige updates, samenwerkingen en verschillende spelmodi blijft het geliefd bij gamers wereldwijd.",
+                "img" => "images/theforest.jpg",
+                "rating" => $ratings["4"],
+                "pegi" => $foto_pegi_lijst["18"],
+                "opties" => ["The Forest"],
+                "prijs" => "10$"
+
+            ]
         );
         foreach ($games_lijst as $game => $game_info){
             if ($game == $game_titel){

@@ -6,6 +6,7 @@ const images = [
     "../images/far_cry.jpg"
 ];
 const popup = document.getElementById('popup');
+const popup3 = document.getElementById('popup3');
 const openPopupBtn = document.querySelector('.game-detail-img');
 const closePopupBtn = document.getElementById('closePopupBtn');
 let currentImageIndex = 0;
@@ -55,10 +56,11 @@ document.addEventListener('click', (event) => {
 const button = document.getElementById('close');
 const container = document.getElementById('popup2');
 
- if (localStorage.getItem('isHidden') === 'true') {
+/*
+if (localStorage.getItem('isHidden') === 'true') {
      container.style.display = 'block';
 }
-
+ */
 button.addEventListener('click', function() {
     container.style.display = 'none';
 
@@ -123,4 +125,17 @@ document.querySelectorAll(".optielink").forEach(optielink => {
         
         console.log("Geklikte optie:", data);
     });
+});
+
+document.getElementById("reviewaddbutton").addEventListener("click", function() {
+    document.getElementById("popup3").style.display = "flex"
+})
+
+document.getElementById("close-popup-button").addEventListener("click", function() {
+    document.getElementById("popup3").style.display = "none"
+})
+window.addEventListener('click', function(event) {
+    if (event.target === popup3) {
+        popup3.style.display = 'none';
+    }
 });

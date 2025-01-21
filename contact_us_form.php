@@ -31,7 +31,9 @@
 <body>
 <header>
     <nav>
-        <img src="images/logo_breed_wit.png" alt="logo">
+        <a href="index.php">
+            <img src="images/logo_breed_wit.png" alt="logo">
+        </a>
         <ul>
             <a href="index.php">Home</a>
             <a href="games.php">Games</a>

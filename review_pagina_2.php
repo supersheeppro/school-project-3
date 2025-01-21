@@ -60,11 +60,14 @@
     <section class="container-game-detail">
         <figure>
             <?php
-            if (isset($_GET['titel'])){
-                $game_titel = $_GET['titel'];
-            } else {
-                $game_titel = "Minecraft";
+            switch (true) {
+                case isset($_GET['titel']):
+                    $game_titel = $_GET['titel'];
+                    break;
+                default:
+                    $game_titel = "Minecraft";
             }
+
 
             $foto_pegi_lijst = array(
                 "12" => "images/pegi_12.jpg",

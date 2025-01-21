@@ -30,11 +30,12 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
-
 <body>
 <header>
     <nav>
-        <img src="images/logo_breed_wit.png" alt="logo">
+        <a href="index.php">
+            <img src="images/logo_breed_wit.png" alt="logo">
+        </a>
         <form id="form">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
             <input type="search" id="query" name="q" placeholder="Search">
@@ -67,10 +68,11 @@
 
 
             $foto_pegi_lijst = array(
-                "12" => "images/PEGI_12.jgp",
+                "12" => "images/PEGI_12.jpg",
                 "18" => "images/PEGI_18.jpg",
                 "7" => "images/PEGI_7.jpg",
-                "16" => "images/PEGI_3.jpg"
+                "16" => "images/PEGI_16.jpg",
+                "3" => "images/PEGI_3.jpg"
             );
 
             $ratings = array(
@@ -89,7 +91,7 @@
                     "imagegamecover3" => "images/far-cry5-cover2.jpg",
                     "imagegamecover2" => "images/far-cry6-cover3.jpg",
                     "rating" => $ratings["4"],
-                    "pegi" => $foto_pegi_lijst["18"],
+                    "pegi" => 18,
                     "opties" => ["Far Cry 4", "Far Cry 5", "Far Cry 6"],
                     "prijs" => "€29,99",
                     "video" => "https://www.youtube.com/embed/xI6uV47jKME?si=YcKgGW79PjsmNf8h",
@@ -98,30 +100,35 @@
                             "date" => "Jan 5, 2023",
                             "description" => "Far Cry 4 biedt een prachtige open wereld in Kyrat met talloze activiteiten en boeiende gameplay. Het verhaal rondom Pagan Min is meeslepend, maar de keuzes voelen soms oppervlakkig. De mix van stealth en actie houdt de gameplay fris. Een must-play voor fans van actie-avonturen en open-wereldspellen.",
                             "stars" => 3,
+                            "pegi" => 18,
                             "profileimage" => "images/profile_default.jpg",
                         ],
                         "sarah miller" => [
                             "date" => "Feb 28, 2024",
                             "description" => "De graphics en sfeer van Far Cry 4 zijn adembenemend, en Kyrat voelt levendig aan. Het verhaal is interessant, maar niet zo krachtig als verwacht. Gameplay en wapens zijn uitstekend, maar sommige missies herhalen zichzelf. Een geweldige game voor liefhebbers van verkennen en intensievere actie.",
                             "stars" => 4,
+                            "pegi" => 18,
                             "profileimage" => "images/profile_default.jpg",
                         ],
                         "mike johnson" => [
                             "date" => "Nov 15, 2024",
                             "description" => "Met Far Cry 4 krijg je een prachtig vormgegeven wereld die uitnodigt tot verkenning. De gameplay is gevarieerd, maar de AI van vijanden laat soms te wensen over. Pagan Min is een sterke antagonist, maar zijn rol had meer diepgang kunnen krijgen. Toch een indrukwekkende open-wereldervaring.",
                             "stars" => 3,
+                            "pegi" => 18,
                             "profileimage" => "images/profile_default.jpg",
                         ],
                         "lily evans" => [
                             "date" => "Jun 30, 2021",
                             "description" => "Far Cry 4 is een sterke opvolger in de serie met een meeslepende wereld en uitdagende gameplay. De combinatie van stealth, actie en crafting houdt het boeiend. Het verhaal is goed, maar niet spectaculair. Een aanrader voor spelers die genieten van creatieve vrijheid en intens gevechtsscenario's.",
                             "stars" => 3,
+                            "pegi" => 12,
                             "profileimage" => "images/profile_default.jpg",
                         ],
                         "ryan cooper" => [
                             "date" => "Sep 21, 2022",
                             "description" => "Far Cry 4 is een indrukwekkende mix van actie, avontuur en verkenning in een prachtig vormgegeven Himalaya-setting. De gameplay biedt vrijheid, van stealth tot explosieve actie, met talloze activiteiten zoals jagen en crafting. Hoewel het verhaal rond Pagan Min sterk begint, voelt het soms onderontwikkeld. De dynamische wereld en gameplay maken het echter een geweldige ervaring voor open-wereldfans.",
                             "stars" => 4,
+                            "pegi" => 7,
                             "profileimage" => "images/profile_default.jpg",
                         ],
                     ],
@@ -143,7 +150,7 @@
                     "imagegamecover3" => "images/skullandbones-cover2.jpg",
                     "imagegamecover2" => "images/skullandbones-cover3.png",
                     "rating" => $ratings["4"],
-                    "pegi" => $foto_pegi_lijst["18"],
+                    "pegi" => 18,
                     "opties" => ["Standard Edition", "Deluxe Edition", "Premium Edition"],
                     "prijs" => "€39,99",
                     "video" => "https://www.youtube.com/embed/OmDYo7MbQxo?si=Ztaw2KFEeMYasO6G",
@@ -152,8 +159,24 @@
                             "date" => "Jan 5, 2018",
                             "description" => "Skull and Bones is een open-wereldactiegame waarin spelers de rol aannemen van piraten in de Gouden Eeuw van de Piraterij. Het spel draait om zeegevechten, handel en het verkennen van uitgestrekte oceanen. Spelers kunnen schepen aanpassen, vijandige piraten bevechten en bondgenootschappen smeden. Het combineert strategie, actie en avontuur met een focus op multiplayer-ervaringen.",
                             "stars" => 3,
+                            "pegi" => 18,
                             "profileimage" => "images/profile_default.jpg",
-                    ]],    
+                    ],
+                        "lily evans" => [
+                            "date" => "Jun 30, 2021",
+                            "description" => "Far Cry 4 is een sterke opvolger in de serie met een meeslepende wereld en uitdagende gameplay. De combinatie van stealth, actie en crafting houdt het boeiend. Het verhaal is goed, maar niet spectaculair. Een aanrader voor spelers die genieten van creatieve vrijheid en intens gevechtsscenario's.",
+                            "stars" => 3,
+                            "pegi" => 12,
+                            "profileimage" => "images/profile_default.jpg",
+                        ],
+                        "ryan cooper" => [
+                            "date" => "Sep 21, 2022",
+                            "description" => "Far Cry 4 is een indrukwekkende mix van actie, avontuur en verkenning in een prachtig vormgegeven Himalaya-setting. De gameplay biedt vrijheid, van stealth tot explosieve actie, met talloze activiteiten zoals jagen en crafting. Hoewel het verhaal rond Pagan Min sterk begint, voelt het soms onderontwikkeld. De dynamische wereld en gameplay maken het echter een geweldige ervaring voor open-wereldfans.",
+                            "stars" => 4,
+                            "pegi" => 7,
+                            "profileimage" => "images/profile_default.jpg",
+                        ]
+                    ],
                     "genre"=> "Actiespel, avonturenspel, open-wereldspel, westerngame",
                     "platforms"=> [
                         "PlayStation"=> "PlayStation 4 (PS4) Speelbaar op PlayStation 5 (PS5) via backward compatibility",
@@ -181,6 +204,7 @@
                         "date" => date("M, d, Y"),
                         "description" => $beschrijving,
                         "stars" => $rating,
+                        "pegi" => 18,
                         "profileimage" => "images/profile_default.jpg",
                     ];
                     
@@ -243,28 +267,40 @@
         ?>
     </div>
 </div>
-<div id="popup2" class="popup2-content">
-    <div class="popup2">
-        <div class="popup-content2">
-            <div class="popup2-section">
-                <img class="logoImg" src="images/logo_breed_wit.png" alt="logo-wit">
-            </div>
-            <h3 class="heading1">Voor deze pagina moet je 18+ zijn</h3>
-            <p class="bodyText">Verifieer jezelf hieronder</p>
-            <div class="btn-age-verification">
-                <button id="close" class="age-verification">Ik ben 18 of ouder - Enter</button>
-                <a href="index.php"><button class="tweede-btn age-verification">Ik ben onder 18 - Exit</button></a>
-            </div>
-            <p class="bottomText">
-                Op onze pagina over <a href="#">ouderlijk toezicht</a> wordt uitgelegd hoe u eenvoudig<br>
-                de toegang tot deze site kunt blokkeren.
-            </p>
-            <div class="disclaimer-wrapper">
-                <span class="copyright">© Gamestars.com, 2025</span>
-                <img src="images/logo_kopie.png" alt="disclaimer-image">
-            </div>
+<?php
+foreach ($games_lijst as $game => &$game_info){
+    if ($game == $game_titel){
+        if ($game_info["pegi"] >= 16) {
+            echo '<div id="popup2" style="display: block" class="popup2-content">';
+        }
+        else {
+            echo '<div id="popup2" class="popup2-content">';
+        }
+    }
+}
+
+?>
+<div class="popup2">
+    <div class="popup-content2">
+        <div class="popup2-section">
+            <img class="logoImg" src="images/logo_breed_wit.png" alt="logo-wit">
+        </div>
+        <h3 class="heading1">Voor deze pagina moet je 16+ zijn</h3>
+        <p class="bodyText">Verifieer jezelf hieronder</p>
+        <div class="btn-age-verification">
+            <button id="close" class="age-verification">Ik ben 16 of ouder - Enter</button>
+            <a href="index.php"><button class="tweede-btn age-verification">Ik ben onder 16 - Exit</button></a>
+        </div>
+        <p class="bottomText">
+            Op onze pagina over <a href="#">ouderlijk toezicht</a> wordt uitgelegd hoe u eenvoudig<br>
+            de toegang tot deze site kunt blokkeren.
+        </p>
+        <div class="disclaimer-wrapper">
+            <span class="copyright">© Gamestars.com, 2025</span>
+            <img src="images/logo_kopie.png" alt="disclaimer-image">
         </div>
     </div>
+</div>
 </div>
 <div id="popup3">
     <div class="popup3">
@@ -411,7 +447,7 @@
 
                 foreach ($games_lijst as $game => &$game_info) {
                     if ($game == $game_titel) {
-                        echo "<img src='" . $game_info["pegi"] ."'>";
+                        echo "<img src='" . $foto_pegi_lijst[$game_info["pegi"]] ."'>";
                     }
                 }
 
@@ -447,7 +483,7 @@
                 }
             }
 
-?>
+            ?>
             </div>
 
             <div id="item-game-detail-maker">
@@ -460,19 +496,10 @@
                  }
             }
 
-?>
+            ?>
             </div>
         </div>
     </section>
-    <hr>
-    <section class="main-slideshow-ctn">
-        <div id="slideshow-container">
-            <img class="slideshow-php" id="slideshow" src="images/PEGI_18.jpg" alt="Slideshow">
-        </div>
-        <label for="imageUpload" class="custom-file-btn">Kies een afbeelding</label>
-        <input type="file" id="imageUpload" accept="Z:\images\*">
-        <button onclick="openPrompt()" class="custom-file-btn">Kies een afbeelding (prompt)</button>
-    </section>  
     <hr>
     <div class="review-title-container">
         <h1 class="reviews-header">Reviews</h1>
@@ -485,27 +512,31 @@
             </a>
         </div>
     </div>
-    <section id="reviews-container">    
-    <?php
-        foreach ($games_lijst as $game => &$game_info){
-            if ($game == $game_titel){
-                foreach ($game_info["reviews"] as $name => $review){
-                $stars = $review["stars"];
-                echo "<div class=reviewappendcontainer>
-                        <img class=profileimage src=$review[profileimage]>
-                        <div class=profileinfo>
-                            <h4>$name</h4>
-                            <p class=date>$review[date]</p>
-                            <p class=stars>$ratings[$stars]</p>
-                        </div>
-                        <p>$review[description]</p>
-                </div>"
-                ;
+    <section id="reviews-container-latest">
+        <div class="slideshow">
+            <?php
+            foreach ($games_lijst as $game => &$game_info) {
+                if ($game == $game_titel) {
+                    foreach ($game_info["reviews"] as $name => $review) {
+                        if ($review["pegi"] >= 16) {
+                            $stars = $review["stars"];
+                            echo "<div class='review-slide'>
+                            <img class='profileimage' src='$review[profileimage]'>
+                            <div class='profileinfo'>
+                                <h4>$name</h4>
+                                <p class='date'>$review[date]</p>
+                                <p class='stars'>$ratings[$stars]</p>
+                            </div>
+                            <p class='description'>$review[description]</p>
+                          </div>";
+                        }
+                    }
+                }
             }
-        }
-    }
-        ?>      
-
+            ?>
+        </div>
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
     </section>
 </main>
 
@@ -548,6 +579,46 @@
         Disclaimer: This website is not responsible for any mistakes
     </p>
 </footer>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const slideshow = document.querySelector(".slideshow");
+        const slides = document.querySelectorAll(".review-slide");
+        const prevButton = document.querySelector(".prev");
+        const nextButton = document.querySelector(".next");
+
+        let currentIndex = 0;
+        const intervalTime = 7000; // 7 seconden
+
+        function updateSlidePosition() {
+            slideshow.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        function showNextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateSlidePosition();
+        }
+
+        // Handmatig navigeren
+        nextButton.addEventListener("click", () => {
+            showNextSlide();
+            resetAutoSlide();
+        });
+
+        prevButton.addEventListener("click", () => {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            updateSlidePosition();
+            resetAutoSlide();
+        });
+
+        // Automatisch navigeren
+        let autoSlide = setInterval(showNextSlide, intervalTime);
+
+        function resetAutoSlide() {
+            clearInterval(autoSlide);
+            autoSlide = setInterval(showNextSlide, intervalTime);
+        }
+    });
+</script>
 <script src="js/script.js"></script>
 </body>
 </html>

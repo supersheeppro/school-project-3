@@ -265,7 +265,10 @@
                 gemiddeldeSterren1 = Math.round(totaalSterren1 / aantalReviews1);
                 console.log(gemiddeldeSterren1)
                 document.getElementById("reviewscount").innerText = `${aantalReviews1} Reviews`
-            } 
+            }
+            else {
+                console.log("er zijn geen reviews")
+            }
             document.getElementById("pagina_titel").innerHTML = games['game1']["Titel"]
             document.getElementById("pagina_detail").innerHTML = games['game1']["detail"]
             document.getElementById("image-game-cover-cover").innerHTML = `<img src="${games['game1']["imagegamecover2"]}">`

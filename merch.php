@@ -31,7 +31,9 @@
 <body>
 <header>
     <nav>
-        <img src="images/logo_breed_wit.png" alt="logo">
+        <a href="index.php">
+            <img src="images/logo_breed_wit.png" alt="logo">
+        </a>
         <form id="form">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
             <input type="search" id="query" name="q" placeholder="Search">
@@ -106,31 +108,41 @@
                 <img src="images/smartmockups_m3yeh93c.jpg" alt="tea cup">
                 <figcaption>
                     <p>Tea Cup</p>
+                    <button>Bestel</button>
                 </figcaption>
+                <p class="price">$19.99</p>
             </figure>
             <figure>
                 <img src="images/smartmockups_m3yejw8b.jpg"  alt="coffee cup">
                 <figcaption>
                     <p>Coffee Cup</p>
+                    <button>Bestel</button>
                 </figcaption>
+                <p class="price">$19.99</p>
             </figure>
             <figure>
                 <img src="images/smartmockups_m3yelell.jpg"  alt="t-shirt">
                 <figcaption>
                     <p>Regular T-shirt</p>
+                    <button>Bestel</button>
                 </figcaption>
+                <p class="price">$19.99</p>
             </figure>
             <figure>
                 <img src="images/smartmockups_m3yfm07t.jpg"  alt="compression shirt">
                 <figcaption>
                     <p>Compression Shirt</p>
+                    <button>Bestel</button>
                 </figcaption>
+                <p class="price">$19.99</p>
             </figure>
             <figure>
                 <img src="images/smartmockups_m3yg1l09.jpg" alt="book covers">
                 <figcaption>
                     <p>Book Covers</p>
+                    <button>Bestel</button>
                 </figcaption>
+                <p class="price">$19.99</p>
             </figure>
         </div>
         <div class="game-list">
@@ -138,31 +150,41 @@
                 <img src="images/smartmockups_m3yg9r8p.jpg" alt="t-shirt black">
                 <figcaption>
                     <p>T-shirt | Black</p>
+                    <button>Bestel</button>
                 </figcaption>
+                <p class="price">$19.99</p>
             </figure>
             <figure>
                 <img src="images/smartmockups_m3yg65fg.jpg"  alt="t-shirt white">
                 <figcaption>
                     <p>T-shirt | White</p>
+                    <button>Bestel</button>
                 </figcaption>
+                <p class="price">$19.99</p>
             </figure>
             <figure>
                 <img src="images/smartmockups_m3yg80co.jpg"  alt="t-shirt black">
                 <figcaption>
                     <p>T-shirt | Black</p>
+                    <button>Bestel</button>
                 </figcaption>
+                <p class="price">$19.99</p>
             </figure>
             <figure>
                 <img src="images/smartmockups_m3ygbdg5.jpg"  alt="combo cups">
                 <figcaption>
                     <p>Combo Cups</p>
+                    <button>Bestel</button>
                 </figcaption>
+                <p class="price">$19.99</p>
             </figure>
             <figure>
                 <img src="images/smartmockups_m3yeh93c.jpg" alt="coffee cup">
                 <figcaption>
                     <p>Coffee Cup</p>
+                    <button>Bestel</button>
                 </figcaption>
+                <p class="price">$19.99</p>
             </figure>
         </div>
         <div class="game-list">
@@ -170,31 +192,41 @@
                 <img src="images/smartmockups_m3yg9r8p.jpg" alt="t-shirt">
                 <figcaption>
                     <p>Regular T-shirt</p>
+                    <button>Bestel</button>
                 </figcaption>
+                <p class="price">$19.99</p>
             </figure>
             <figure>
                 <img src="images/smartmockups_m3yg1l09.jpg"  alt="book covers">
                 <figcaption>
                     <p>Book Covers</p>
+                    <button>Bestel</button>
                 </figcaption>
+                <p class="price">$19.99</p>
             </figure>
             <figure>
                 <img src="images/smartmockups_m3yeh93c.jpg"  alt="tea cup">
                 <figcaption>
                     <p>Tea Cup</p>
+                    <button>Bestel</button>
                 </figcaption>
+                <p class="price">$19.99</p>
             </figure>
             <figure>
                 <img src="images/smartmockups_m3yg65fg.jpg"  alt="compression shirt">
                 <figcaption>
                     <p>Compression Shirt</p>
+                    <button>Bestel</button>
                 </figcaption>
+                <p class="price">$19.99</p>
             </figure>
             <figure>
                 <img src="images/smartmockups_m3yelell.jpg" alt="t-shirt black">
                 <figcaption>
                     <p>T-shirt | Black</p>
+                    <button>Bestel</button>
                 </figcaption>
+                <p class="price">$19.99</p>
             </figure>
         </div>
         <div class="pagination">

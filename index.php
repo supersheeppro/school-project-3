@@ -34,7 +34,9 @@
 <body>
 <header>
   <nav>
-    <img src="images/logo_breed_wit.png" alt="logo">
+        <a href="index.php">
+            <img src="images/logo_breed_wit.png" alt="logo">
+        </a>
       <form id="form">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
           <input type="search" id="query" name="q" placeholder="Search">
@@ -74,7 +76,7 @@
         <div class="product-list">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
             <div class="product">
-            <a href="review_pagina_5.php?titel=Skull and Bones">
+            <a href="review_pagina_3.php?titel=Skull and Bones">
               <img src="images/skull_and_bones.jpg" alt="Skull and Bones">
             </a>
               <p>Skull and Bones</p>
@@ -111,7 +113,7 @@
             </div>
         
             <div class="game-item3">
-              <a href="review_pagina_5.html?titel=Red Dead Redemption II">
+              <a href="review_pagina_3.html?titel=Red Dead Redemption II">
                 <img src="images\red_dead.jpg" alt="Red Dead Redemption II">
               </a>
                 <p>RED DEAD II</p>
@@ -132,7 +134,7 @@
             </div>
          
             <div class="game-item5">
-              <a href="review_pagina_5.php?titel=Far Cry 4">
+              <a href="review_pagina_3.php?titel=Far Cry 4">
                 <img src="images\far_cry.jpg" alt="Far Cry 4">
               </a>
                 <p>FARCRY 4</p>
@@ -150,7 +152,7 @@
             </div>
           
             <div class="game-item7">
-              <a href="review_pagina_5.html?titel=Assassin's Creed">
+              <a href="review_pagina_3.html?titel=Assassin's Creed">
                 <img src="images\assasins_creed.jpg" alt="Assassin's Creed">
               </a>
                 <p>ASSASSIN'S CREED</p>

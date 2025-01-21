@@ -173,6 +173,29 @@
         "imagegamecover2":"images/ark-cover2.jpg",
         "imagegamecover3":"images/ark-cover3.jpg",
     }
+    let game3 = {
+        "Titel":"Minecraft Java / Bedrock",
+        "detail":"Minecraft is een creatief sandbox-spel waarin spelers een wereld van blokken verkennen, bouwen en overleven. Het biedt verschillende spelmodi, zoals Survival, Creative en Adventure, en laat spelers onbeperkt bouwen en ontdekken in een procedureel gegenereerde wereld met biomen, vijanden en dimensies. Dankzij de grote vrijheid, een actieve gemeenschap en educatieve toepassingen is Minecraft geschikt voor alle leeftijden en blijft het wereldwijd populair.",
+        "imagegamecover":"images/minecraft-breed.webp",
+        "rating":ratings["4"],
+        "pegi" : foto_pegi_lijst["7"],
+        "opties": ["Java & Bedrock Edition", "Legends", "Dungeons"],
+        "prijs": "€29,99",
+        "imagegamecover2":"images/minecraft-legends.jpg",
+        "imagegamecover3":"images/minecraft-dungeons.jpg",
+
+    }
+    let game4 = {
+        "Titel":"The Forest",
+        "detail":"The Forest is een survival-horror game waarin spelers een mysterieus eiland verkennen na een vliegtuigcrash. Je neemt de rol aan van een overlevende die zijn zoon probeert te redden terwijl je geconfronteerd wordt met een gevaarlijke omgeving en kannibalistische mutanten. De game biedt zowel een boeiende singleplayer-ervaring als een coöperatieve multiplayer-modus.",
+        "imagegamecover":"images/theforest-breed.jpg",
+        "rating":ratings["4"],
+        "pegi" : foto_pegi_lijst["18"],
+        "opties": ["The Forest"],
+        "prijs": "€16,79",
+        "imagegamecover2":"images/theforest-cover.jpg",
+        "imagegamecover3":"images/theforest-cover2.jpg",
+    }
     switch (titel) {
         case game1["Titel"]:
             document.getElementById("pagina_titel").innerHTML = game1["Titel"]
@@ -202,6 +225,35 @@
                 document.getElementById("dropdowncnt").innerHTML += `<a>${optie}</a>`
             }
             console.log(game2["Titel"])
+            break
+        case game3["Titel"]:
+            document.getElementById("pagina_titel").innerHTML = game3["Titel"]
+            document.getElementById("pagina_detail").innerHTML = game3["detail"]
+            document.getElementById("image-game-cover-cover").innerHTML = `<img src="${game3["imagegamecover2"]}">`
+            document.getElementById("image-game-cover-cover2").innerHTML = `<img src="${game3["imagegamecover3"]}">`
+            document.getElementById("image-game-cover").style.backgroundImage = `url(${game3["imagegamecover"]})`
+            document.getElementById("rating").innerHTML =  game3["rating"]
+            document.getElementById("pegirating").innerHTML =  `<img src="${game3["pegi"]}">`
+            document.getElementById("prijs").innerHTML =  game3["prijs"]
+            for (let optie of game3["opties"]) {
+                document.getElementById("dropdowncnt").innerHTML += `<a>${optie}</a>`
+            }
+            console.log(game3["Titel"])
+            break
+
+        case game4["Titel"]:
+            document.getElementById("pagina_titel").innerHTML = game4["Titel"]
+            document.getElementById("pagina_detail").innerHTML = game4["detail"]
+            document.getElementById("image-game-cover-cover").innerHTML = `<img src="${game4["imagegamecover2"]}">`
+            document.getElementById("image-game-cover-cover2").innerHTML = `<img src="${game4["imagegamecover3"]}">`
+            document.getElementById("image-game-cover").style.backgroundImage = `url(${game4["imagegamecover"]})`
+            document.getElementById("rating").innerHTML =  game4["rating"]
+            document.getElementById("pegirating").innerHTML =  `<img src="${game4["pegi"]}">`
+            document.getElementById("prijs").innerHTML =  game4["prijs"]
+            for (let optie of game4["opties"]) {
+                document.getElementById("dropdowncnt").innerHTML += `<a>${optie}</a>`
+            }
+            console.log(game4["Titel"])
             break
         default:
             document.getElementById("pagina_titel").innerHTML = "Gamestars"
