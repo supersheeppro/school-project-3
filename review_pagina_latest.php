@@ -21,7 +21,7 @@
         <meta name="opdracht" content="Deze pagina is gemaakt door Devi van Riet">
 
         <!-- De titel van de pagina, deze verschijnt op het tabblad, geef hieraan waar de pagina over gaat  -->
-        <title>Gamestars - Game Review 1</title>
+        <title>Gamestars - Game Review 4</title>
 
         <!-- Favicon kleine afbeelding die wordt weergegeven in de browser-tabbladen -->
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -53,6 +53,7 @@
         </div>
     </nav>
 </header>
+
 <?php 
             switch (isset($_GET['titel']) ? $_GET['titel'] : null) {
                 case null: 
@@ -123,7 +124,15 @@
                             "stars" => 4,
                             "profileimage" => "images/profile_default.jpg",
                         ],
-                    ]
+                    ],
+                    "genre"=> "Actiespel, avonturenspel, open-wereldspel, westerngame",
+                    "platforms"=> [
+                        "PlayStation"=> "PlayStation 4 (PS4) Speelbaar op PlayStation 5 (PS5) via backward compatibility",
+                        "Xbox"=> "Xbox One Xbox Series X en Series S (via backward compatibility)",
+                        "PC"=> "Windows (via platforms zoals Steam, Epic Games Store, en Rockstar Games Launcher)",
+                        "Google Stadia"=> " Het spel was beschikbaar via Google Stadia, maar dit platform is in januari 2023 beëindigd",
+                    ],
+                    "maker"=> "Red Dead Redemption 2 is ontwikkeld door Rockstar Games, een wereldberoemde gameontwikkelaar en uitgever. Specifieker: Ontwikkelaar: Rockstar Studios, een samenwerkingsverband tussen meerdere Rockstar-studio's wereldwijd, waaronder Rockstar North (Verenigd Koninkrijk), Rockstar San Diego (VS), en andere teams in bijvoorbeeld Toronto, India, en Leeds. Uitgever: Rockstar Games, het moederbedrijf dat verantwoordelijk is voor de distributie en marketing van de game. Rockstar Games staat bekend om hun expertise in open-wereldspellen en is ook verantwoordelijk voor andere iconische titels zoals de Grand Theft Auto (GTA)-serie.",
 
 
                 ],
@@ -144,35 +153,54 @@
                             "description" => "Skull and Bones is een open-wereldactiegame waarin spelers de rol aannemen van piraten in de Gouden Eeuw van de Piraterij. Het spel draait om zeegevechten, handel en het verkennen van uitgestrekte oceanen. Spelers kunnen schepen aanpassen, vijandige piraten bevechten en bondgenootschappen smeden. Het combineert strategie, actie en avontuur met een focus op multiplayer-ervaringen.",
                             "stars" => 3,
                             "profileimage" => "images/profile_default.jpg",
-                        ],
-                        "sarah miller" => [
-                            "date" => "Dec 28, 2024",
-                            "description" => "De sfeer van Skull and Bones is indrukwekkend, met realistische scheepsmechanica en prachtige oceaangrafics. Multiplayer missies zijn leuk, maar solo-spelers kunnen zich snel vervelen. Het gebrek aan een sterk verhaal laat een leegte achter, maar de actie en customization maken veel goed. Een solide keuze voor liefhebbers van strategische piratenavonturen.",
-                            "stars" => 4,
-                            "profileimage" => "images/profile_default.jpg",
-                        ],
-                        "mike johnson" => [
-                            "date" => "Mar 15, 2021",
-                            "description" => "Skull and Bones voelt als een stap in de juiste richting voor piratenspellen, met zijn verbluffende graphics en intense gevechten. Helaas wordt de ervaring beperkt door repetitieve gameplay en een gebrek aan diepgang in de missies. Voor wie vooral multiplayergevechten waardeert, is het een aanrader, maar solo-avonturiers kunnen beter verder zoeken.",
-                            "stars" => 3,
-                            "profileimage" => "images/profile_default.jpg",
-                        ],
-                        "lily evans" => [
-                            "date" => "Oct 30, 2023",
-                            "description" => "Als je droomt van het kapen van schepen en verkennen van open zeeën, levert Skull and Bones precies dat. Het spel biedt realistische gameplay en adembenemende graphics, maar het mist een sterk verhaal en betekenisvolle progressie. Voor piratenfans is het een vermakelijke ervaring, maar niet de revolutie waar velen op hoopten.",
-                            "stars" => 3,
-                            "profileimage" => "images/profile_default.jpg",
-                        ],
-                        "ryan cooper" => [
-                            "date" => "Apr 21, 2023",
-                            "description" => "Het spel schittert met zijn indrukwekkende visuals en meeslepende zeegevechten. Scheepsaanpassingen en samenwerking met vrienden geven extra plezier. Toch voelt de gameplay soms herhalend aan, en het gebrek aan een meeslepend verhaal maakt het minder memorabel. Skull and Bones is leuk, maar mist de epische grandeur die je zou verwachten van een piratenspel. ",                           
-                            "stars" => 4,
-                            "profileimage" => "images/profile_default.jpg",
-                        ],
-                    ]
-
+                    ]],    
+                    "genre"=> "Actiespel, avonturenspel, open-wereldspel, westerngame",
+                    "platforms"=> [
+                        "PlayStation"=> "PlayStation 4 (PS4) Speelbaar op PlayStation 5 (PS5) via backward compatibility",
+                        "Xbox"=> "Xbox One Xbox Series X en Series S (via backward compatibility)",
+                        "PC"=> "Windows (via platforms zoals Steam, Epic Games Store, en Rockstar Games Launcher)",
+                        "Google Stadia"=> " Het spel was beschikbaar via Google Stadia, maar dit platform is in januari 2023 beëindigd",
+                    ],
+                    "maker"=> "Red Dead Redemption 2 is ontwikkeld door Rockstar Games, een wereldberoemde gameontwikkelaar en uitgever. Specifieker: Ontwikkelaar: Rockstar Studios, een samenwerkingsverband tussen meerdere Rockstar-studio's wereldwijd, waaronder Rockstar North (Verenigd Koninkrijk), Rockstar San Diego (VS), en andere teams in bijvoorbeeld Toronto, India, en Leeds. Uitgever: Rockstar Games, het moederbedrijf dat verantwoordelijk is voor de distributie en marketing van de game. Rockstar Games staat bekend om hun expertise in open-wereldspellen en is ook verantwoordelijk voor andere iconische titels zoals de Grand Theft Auto (GTA)-serie.",
                 ],
             );
+
+
+            try {
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    if (!isset($_POST['naam'], $_POST['beschrijving'], $_POST['rating'])) {
+                        throw new Exception("Niet alle velden zijn correct ingevuld.");
+                    }
+                    
+                    
+                    $naam = htmlspecialchars($_POST['naam']);
+                    $beschrijving = htmlspecialchars($_POST['beschrijving']);
+                    $rating = htmlspecialchars($_POST['rating']);
+
+                    $new_review = [
+                        "date" => date("M, d, Y"),
+                        "description" => $beschrijving,
+                        "stars" => $rating,
+                        "profileimage" => "images/profile_default.jpg",
+                    ];
+                    
+
+                    foreach ($games_lijst as $game => &$game_info){
+                        if ($game == $game_titel){
+                            $game_info['reviews'][$naam] = $new_review;
+                        };
+
+                    }
+            
+                    if (!in_array($rating, ["1", "2", "3", "4", "5"])) {
+                        throw new Exception("Ongeldige ratingwaarde.");
+                    }
+                }
+            } catch (Exception $e) {
+                $foutmelding = $e->getMessage();
+            }
+
+
             function berekenGemiddeldeSterrenEnAantal($reviews) {
                 $totaalSterren = 0;
                 $aantalReviews = count($reviews);
@@ -201,11 +229,13 @@
                 $aantalRatings = $resultaat['aantal'];
             }
 ?>
+
+
 <div id="popup" class="popup">
     <div class="popup-content">
         <span id="closePopupBtn" class="close-btn">&times;</span>
         <?php
-            foreach ($games_lijst as $game => $game_info){
+            foreach ($games_lijst as $game => &$game_info){
                 if ($game == $game_titel){
                     echo "<iframe id=video src=$game_info[video] title=YouTube video player frameborder=0 allow=accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share referrerpolicy=strict-origin-when-cross-origin allowfullscreen></iframe>";
                 }
@@ -236,28 +266,67 @@
         </div>
     </div>
 </div>
+<div id="popup3">
+    <div class="popup3">
+        <form method="POST" action="">
+            <label class="popup3-titel" for="naam">Naam:</label><br>
+            <input type="text" id="naam" name="naam" required placeholder="Vul hier je naam in"><br><br>
 
+            <label class="popup3-titel" for="beschrijving">Beschrijving:</label><br>
+            <textarea id="beschrijving" name="beschrijving" rows="4" cols="50" required placeholder="Beschrijf je antwoord hier..."></textarea><br><br>
+
+            <labe class="popup3-titel">Rating:</labe>
+            <div class="popup3-radio-list">
+                <div class="ctn-radio">
+                    <input type="radio" id="rating1" name="rating" value="1" required>
+                    <label for="rating1"><p>★☆☆☆☆</p></label>
+                </div>
+                <div class="ctn-radio">
+                    <input type="radio" id="rating2" name="rating" value="2">
+                    <label for="rating2"><p>★★☆☆☆</p></label>
+                </div>  
+                <div class="ctn-radio">
+                    <input type="radio" id="rating3" name="rating" value="3">
+                    <label for="rating3"><p>★★★☆☆</p></label>
+                </div>    
+                <div class="ctn-radio">
+                    <input type="radio" id="rating4" name="rating" value="4">
+                    <label for="rating4"><p>★★★★☆</p></label>
+                </div>
+                <div class="ctn-radio">
+                    <input type="radio" id="rating5" name="rating" value="5">
+                    <label for="rating5"><p>★★★★★</p></label>
+                </div>
+            </div>
+            <div class="ctn-popup3-btn">
+                <button type="submit">Verstuur Review ></button>
+                <button type="button" id="close-popup-button">Sluiten</button>
+            </div>
+        </form>
+    </div>
+</div>
 
 <main>
     <section class="container-game-detail">
     <img class="game-detail-img" src="images/game.png">
         <?php
-            foreach ($games_lijst as $game => $game_info){
+            foreach ($games_lijst as $game => &$game_info){
                 if ($game == $game_titel){
                     echo "<figure id=image-game-cover style='background-image: url($game_info[img]);'>"
                     ?>
                     <figure id="image-game-cover-cover">
                         <?php
-                            foreach ($games_lijst as $game => $game_info){
+                            foreach ($games_lijst as $game => &$game_info){
                                 if ($game == $game_titel){
                                     echo "<img id=image1 src=$game_info[imagegamecover2]>";
                                 }
                             }
                         ?>
                     </figure>
+                    
                     <figure id="image-game-cover-cover2">
                         <?php
-                            foreach ($games_lijst as $game => $game_info){
+                            foreach ($games_lijst as $game => &$game_info){
                                 if ($game == $game_titel){
                                     echo "<img id=image2 src=$game_info[imagegamecover3]>";
                                 }
@@ -270,9 +339,10 @@
                 }
             }
         ?>
+        
         <div class="game-info">
             <?php
-            foreach ($games_lijst as $game => $game_info){
+            foreach ($games_lijst as $game => &$game_info){
                 if ($game == $game_titel){
                     echo "<h1>$game_info[Titel]</h1>";
                 }
@@ -280,7 +350,7 @@
             ?>
             <div class="rating-box">
                 <?php
-                foreach ($games_lijst as $game => $games_info) {
+                foreach ($games_lijst as $game => &$games_info) {
                     if ($game == $game_titel) {
                         echo "<p class='rating-games-info'>$ratings[$gemiddeldeSterren]</p>";
                     }
@@ -295,7 +365,7 @@
             <hr>
             <div class="box-prijs">
                 <?php
-                foreach ($games_lijst as $game => $games_info) {
+                foreach ($games_lijst as $game => &$games_info) {
                     if ($game == $game_titel) {
                         echo "<h2>$games_info[prijs]</h2>";
                     }
@@ -310,7 +380,7 @@
                         <div id="dropdowncnt" class="dropdown-content">
                             <?php
 
-                            foreach ($games_lijst as $game => $game_info){
+                            foreach ($games_lijst as $game => &$game_info){
                                 if ($game == $game_titel){
                                     foreach ($game_info["opties"] as $index => $optie) {
                                         echo "<a class='optielink' data='$index' href='#'>$optie</a>";
@@ -325,7 +395,7 @@
             </div>
             <hr>
             <?php
-            foreach ($games_lijst as $game => $game_info){
+            foreach ($games_lijst as $game => &$game_info){
                 if ($game == $game_titel){
                     echo "<p class=tekst-game-detail-2>$game_info[detail]</p>";
                 }
@@ -339,7 +409,7 @@
                 </div>
                 <?php
 
-                foreach ($games_lijst as $game => $game_info) {
+                foreach ($games_lijst as $game => &$game_info) {
                     if ($game == $game_titel) {
                         echo "<img src='" . $game_info["pegi"] ."'>";
                     }
@@ -350,10 +420,74 @@
         </div>
     </section>
     <hr>
-    <h1 class="reviews-header">Reviews</h1>
-    <section id="reviews-container">
+    <section class="ctn-game-details">
+        <div class="container-game-details">
+            <div id="item-game-detail-genre">
+            <h1>Genre</h1>
+                <?php
+
+                foreach ($games_lijst as $game => &$game_info) {
+                    if ($game == $game_titel) {
+                        echo "<p>$game_info[genre]</p>";
+                    }
+                }
+
+                ?>
+                </div>
+
+            <div id="item-game-detail-platforms">
+            <h1>Platforms</h1>
+            <?php
+
+            foreach ($games_lijst as $game => &$game_info) {
+                if ($game == $game_titel) {
+                    foreach ($game_info["platforms"] as $titel => $detail) {
+                        echo "<div class=platform><h4>&bull; $titel</h4><p>$detail</p></div>";
+                    }
+                }
+            }
+
+?>
+            </div>
+
+            <div id="item-game-detail-maker">
+            <h1>Maker</h1>
+            <?php
+
+            foreach ($games_lijst as $game => &$game_info) {
+                 if ($game == $game_titel) {
+                    echo "<p>$game_info[maker]</p>";
+                 }
+            }
+
+?>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="main-slideshow-ctn">
+        <div id="slideshow-container">
+            <img class="slideshow-php" id="slideshow" src="images/PEGI_18.jpg" alt="Slideshow">
+        </div>
+        <label for="imageUpload" class="custom-file-btn">Kies een afbeelding</label>
+        <input type="file" id="imageUpload" accept="Z:\images\*">
+        <button onclick="openPrompt()" class="custom-file-btn">Kies een afbeelding (prompt)</button>
+    </section>  
+    <hr>
+    <div class="review-title-container">
+        <h1 class="reviews-header">Reviews</h1>
+        <div class="box-cart2">
+            <a href="#" id="reviewaddbutton" class="button-cart2">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                    <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z"/>
+                </svg>
+                <p>Write a Review</p>
+            </a>
+        </div>
+    </div>
+    <section id="reviews-container">    
     <?php
-        foreach ($games_lijst as $game => $game_info){
+        foreach ($games_lijst as $game => &$game_info){
             if ($game == $game_titel){
                 foreach ($game_info["reviews"] as $name => $review){
                 $stars = $review["stars"];

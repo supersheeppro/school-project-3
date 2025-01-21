@@ -21,7 +21,7 @@
         <meta name="opdracht" content="Deze pagina is gemaakt door Devi van Riet">
 
         <!-- De titel van de pagina, deze verschijnt op het tabblad, geef hieraan waar de pagina over gaat  -->
-        <title>Gamestars - Game Review 1</title>
+        <title>Gamestars - Game Review 4</title>
 
         <!-- Favicon kleine afbeelding die wordt weergegeven in de browser-tabbladen -->
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -34,7 +34,9 @@
 <body>
 <header>
     <nav>
-        <img src="images/logo_breed_wit.png" alt="logo">
+        <a href="index.php">
+            <img src="images/logo_breed_wit.png" alt="logo">
+        </a>
         <form id="form">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
             <input type="search" id="query" name="q" placeholder="Search">
@@ -54,20 +56,24 @@
     </nav>
 </header>
 
-<main>
-    <section class="container-game-detail">
-        <figure>
-            <?php
-            if (isset($_GET['titel'])){
-                $game_titel = $_GET['titel'];
-            } else {
-                $game_titel = "The Forest";
+<?php 
+            switch (isset($_GET['titel']) ? $_GET['titel'] : null) {
+                case null: 
+                    $game_titel = "Skull and Bones";
+                    break;
+
+                default: 
+                    $game_titel = $_GET['titel'];
+                    break;
             }
 
+
             $foto_pegi_lijst = array(
-                "12" => "images/pegi_12.jgp",
-                "18" => "images/pegi_18.jpg",
-                "7" => "images/pegi_7.jgp",
+                "12" => "images/PEGI_12.jpg",
+                "18" => "images/PEGI_18.jpg",
+                "7" => "images/PEGI_7.jpg",
+                "16" => "images/PEGI_16.jpg",
+                "3" => "images/PEGI_3.jpg"
             );
 
             $ratings = array(
@@ -79,38 +85,279 @@
             );
 
             $games_lijst = array(
-                "The Forest" => [
-                    "Titel" => "The Forest",
-                    "detail" => "Fortnite is een populaire battle royale-game waarin spelers vechten op een eiland tot één winnaar overblijft. Het combineert schieten, bouwen en overleven in kleurrijke omgevingen. Met regelmatige updates, samenwerkingen en verschillende spelmodi blijft het geliefd bij gamers wereldwijd.",
-                    "img" => "images/theforest.jpg",
+                "Far Cry 4" => [
+                    "Titel" => "Far Cry 4",
+                    "detail" => "Far Cry 4 is een open-wereld actie-avonturenspel waarin spelers Kyrat verkennen, een fictief Himalayagebied vol gevaar en schoonheid. Als Ajay Ghale strijd je tegen de tirannieke heerser Pagan Min. De game combineert intense gevechten, crafting en boeiende missies met prachtige omgevingen, keuzevrijheid en een meeslepend verhaal vol verrassende wendingen.",
+                    "img" => "images/far-cry4-cover.jpg",
+                    "imagegamecover3" => "images/far-cry5-cover2.jpg",
+                    "imagegamecover2" => "images/far-cry6-cover3.jpg",
                     "rating" => $ratings["4"],
-                    "pegi" => $foto_pegi_lijst["18"],
-                    "opties" => ["The Forest"],
-                    "prijs" => "10$"
+                    "pegi" => 18,
+                    "opties" => ["Far Cry 4", "Far Cry 5", "Far Cry 6"],
+                    "prijs" => "€29,99",
+                    "video" => "https://www.youtube.com/embed/xI6uV47jKME?si=YcKgGW79PjsmNf8h",
+                    "reviews" => [
+                        "alex smith" => [
+                            "date" => "Jan 5, 2023",
+                            "description" => "Far Cry 4 biedt een prachtige open wereld in Kyrat met talloze activiteiten en boeiende gameplay. Het verhaal rondom Pagan Min is meeslepend, maar de keuzes voelen soms oppervlakkig. De mix van stealth en actie houdt de gameplay fris. Een must-play voor fans van actie-avonturen en open-wereldspellen.",
+                            "stars" => 3,
+                            "profileimage" => "images/profile_default.jpg",
+                        ],
+                        "sarah miller" => [
+                            "date" => "Feb 28, 2024",
+                            "description" => "De graphics en sfeer van Far Cry 4 zijn adembenemend, en Kyrat voelt levendig aan. Het verhaal is interessant, maar niet zo krachtig als verwacht. Gameplay en wapens zijn uitstekend, maar sommige missies herhalen zichzelf. Een geweldige game voor liefhebbers van verkennen en intensievere actie.",
+                            "stars" => 4,
+                            "profileimage" => "images/profile_default.jpg",
+                        ],
+                        "mike johnson" => [
+                            "date" => "Nov 15, 2024",
+                            "description" => "Met Far Cry 4 krijg je een prachtig vormgegeven wereld die uitnodigt tot verkenning. De gameplay is gevarieerd, maar de AI van vijanden laat soms te wensen over. Pagan Min is een sterke antagonist, maar zijn rol had meer diepgang kunnen krijgen. Toch een indrukwekkende open-wereldervaring.",
+                            "stars" => 3,
+                            "profileimage" => "images/profile_default.jpg",
+                        ],
+                        "lily evans" => [
+                            "date" => "Jun 30, 2021",
+                            "description" => "Far Cry 4 is een sterke opvolger in de serie met een meeslepende wereld en uitdagende gameplay. De combinatie van stealth, actie en crafting houdt het boeiend. Het verhaal is goed, maar niet spectaculair. Een aanrader voor spelers die genieten van creatieve vrijheid en intens gevechtsscenario's.",
+                            "stars" => 3,
+                            "profileimage" => "images/profile_default.jpg",
+                        ],
+                        "ryan cooper" => [
+                            "date" => "Sep 21, 2022",
+                            "description" => "Far Cry 4 is een indrukwekkende mix van actie, avontuur en verkenning in een prachtig vormgegeven Himalaya-setting. De gameplay biedt vrijheid, van stealth tot explosieve actie, met talloze activiteiten zoals jagen en crafting. Hoewel het verhaal rond Pagan Min sterk begint, voelt het soms onderontwikkeld. De dynamische wereld en gameplay maken het echter een geweldige ervaring voor open-wereldfans.",
+                            "stars" => 4,
+                            "profileimage" => "images/profile_default.jpg",
+                        ],
+                    ],
+                    "genre"=> "Actiespel, avonturenspel, open-wereldspel, westerngame",
+                    "platforms"=> [
+                        "PlayStation"=> "PlayStation 4 (PS4) Speelbaar op PlayStation 5 (PS5) via backward compatibility",
+                        "Xbox"=> "Xbox One Xbox Series X en Series S (via backward compatibility)",
+                        "PC"=> "Windows (via platforms zoals Steam, Epic Games Store, en Rockstar Games Launcher)",
+                        "Google Stadia"=> " Het spel was beschikbaar via Google Stadia, maar dit platform is in januari 2023 beëindigd",
+                    ],
+                    "maker"=> "Red Dead Redemption 2 is ontwikkeld door Rockstar Games, een wereldberoemde gameontwikkelaar en uitgever. Specifieker: Ontwikkelaar: Rockstar Studios, een samenwerkingsverband tussen meerdere Rockstar-studio's wereldwijd, waaronder Rockstar North (Verenigd Koninkrijk), Rockstar San Diego (VS), en andere teams in bijvoorbeeld Toronto, India, en Leeds. Uitgever: Rockstar Games, het moederbedrijf dat verantwoordelijk is voor de distributie en marketing van de game. Rockstar Games staat bekend om hun expertise in open-wereldspellen en is ook verantwoordelijk voor andere iconische titels zoals de Grand Theft Auto (GTA)-serie.",
+
 
                 ],
-                "Minecraft" => [
-                    "Titel" => "Minecraft",
-                    "detail" => "Minecraft is een creatief sandbox-spel waarin spelers een wereld van blokken verkennen, bouwen en overleven. Het biedt verschillende spelmodi, zoals Survival, Creative en Adventure, en laat spelers onbeperkt bouwen en ontdekken in een procedureel gegenereerde wereld met biomen, vijanden en dimensies. Dankzij de grote vrijheid, een actieve gemeenschap en educatieve toepassingen is Minecraft geschikt voor alle leeftijden en blijft het wereldwijd populair.",
-                    "img" => "images/minecraft-breed.webp",
+                "Skull and Bones" => [
+                    "Titel" => "Skull and Bones",
+                    "detail" => "Skull and Bones is een open-wereldactiegame waarin spelers de rol aannemen van piraten in de Gouden Eeuw van de Piraterij. Het spel draait om zeegevechten, handel en het verkennen van uitgestrekte oceanen. Spelers kunnen schepen aanpassen, vijandige piraten bevechten en bondgenootschappen smeden. Het combineert strategie, actie en avontuur met een focus op multiplayer-ervaringen.",
+                    "img" => "images/skullandbones-cover.jpg",
+                    "imagegamecover3" => "images/skullandbones-cover2.jpg",
+                    "imagegamecover2" => "images/skullandbones-cover3.png",
                     "rating" => $ratings["4"],
-                    "pegi" => $foto_pegi_lijst["7"],
-                    "opties" => ["Java Edition", "Bedrock Edition", "Legends", "Dungeons"],
-                    "prijs" => "20$"
-
+                    "pegi" => 18,
+                    "opties" => ["Standard Edition", "Deluxe Edition", "Premium Edition"],
+                    "prijs" => "€39,99",
+                    "video" => "https://www.youtube.com/embed/OmDYo7MbQxo?si=Ztaw2KFEeMYasO6G",
+                    "reviews" => [
+                        "alex smith" => [
+                            "date" => "Jan 5, 2018",
+                            "description" => "Skull and Bones is een open-wereldactiegame waarin spelers de rol aannemen van piraten in de Gouden Eeuw van de Piraterij. Het spel draait om zeegevechten, handel en het verkennen van uitgestrekte oceanen. Spelers kunnen schepen aanpassen, vijandige piraten bevechten en bondgenootschappen smeden. Het combineert strategie, actie en avontuur met een focus op multiplayer-ervaringen.",
+                            "stars" => 3,
+                            "profileimage" => "images/profile_default.jpg",
+                    ]],    
+                    "genre"=> "Actiespel, avonturenspel, open-wereldspel, westerngame",
+                    "platforms"=> [
+                        "PlayStation"=> "PlayStation 4 (PS4) Speelbaar op PlayStation 5 (PS5) via backward compatibility",
+                        "Xbox"=> "Xbox One Xbox Series X en Series S (via backward compatibility)",
+                        "PC"=> "Windows (via platforms zoals Steam, Epic Games Store, en Rockstar Games Launcher)",
+                        "Google Stadia"=> " Het spel was beschikbaar via Google Stadia, maar dit platform is in januari 2023 beëindigd",
+                    ],
+                    "maker"=> "Red Dead Redemption 2 is ontwikkeld door Rockstar Games, een wereldberoemde gameontwikkelaar en uitgever. Specifieker: Ontwikkelaar: Rockstar Studios, een samenwerkingsverband tussen meerdere Rockstar-studio's wereldwijd, waaronder Rockstar North (Verenigd Koninkrijk), Rockstar San Diego (VS), en andere teams in bijvoorbeeld Toronto, India, en Leeds. Uitgever: Rockstar Games, het moederbedrijf dat verantwoordelijk is voor de distributie en marketing van de game. Rockstar Games staat bekend om hun expertise in open-wereldspellen en is ook verantwoordelijk voor andere iconische titels zoals de Grand Theft Auto (GTA)-serie.",
                 ],
             );
-            foreach ($games_lijst as $game => $game_info){
-                if ($game == $game_titel){
-                    echo "<img src=$game_info[img]>";
+
+
+            try {
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    if (!isset($_POST['naam'], $_POST['beschrijving'], $_POST['rating'])) {
+                        throw new Exception("Niet alle velden zijn correct ingevuld.");
+                    }
+                    
+                    
+                    $naam = htmlspecialchars($_POST['naam']);
+                    $beschrijving = htmlspecialchars($_POST['beschrijving']);
+                    $rating = htmlspecialchars($_POST['rating']);
+
+                    $new_review = [
+                        "date" => date("M, d, Y"),
+                        "description" => $beschrijving,
+                        "stars" => $rating,
+                        "profileimage" => "images/profile_default.jpg",
+                    ];
+                    
+
+                    foreach ($games_lijst as $game => &$game_info){
+                        if ($game == $game_titel){
+                            $game_info['reviews'][$naam] = $new_review;
+                        };
+
+                    }
+            
+                    if (!in_array($rating, ["1", "2", "3", "4", "5"])) {
+                        throw new Exception("Ongeldige ratingwaarde.");
+                    }
                 }
+            } catch (Exception $e) {
+                $foutmelding = $e->getMessage();
             }
 
-            ?>
-        </figure>
+
+            function berekenGemiddeldeSterrenEnAantal($reviews) {
+                $totaalSterren = 0;
+                $aantalReviews = count($reviews);
+            
+                if ($aantalReviews === 0) {
+                    return [
+                        'gemiddelde' => 0,  
+                        'aantal' => 0       
+                    ];
+                }
+            
+                foreach ($reviews as $review) {
+                    $totaalSterren += $review['stars'];
+                }
+                $gemiddelde = round($totaalSterren / $aantalReviews);
+            
+                return [
+                    'gemiddelde' => $gemiddelde,
+                    'aantal' => $aantalReviews
+                ];
+            }
+
+            if (isset($games_lijst[$game_titel]['reviews'])) {
+                $resultaat = berekenGemiddeldeSterrenEnAantal($games_lijst[$game_titel]['reviews']);
+                $gemiddeldeSterren = $resultaat['gemiddelde'];
+                $aantalRatings = $resultaat['aantal'];
+            }
+?>
+
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span id="closePopupBtn" class="close-btn">&times;</span>
+        <?php
+            foreach ($games_lijst as $game => &$game_info){
+                if ($game == $game_titel){
+                    echo "<iframe id=video src=$game_info[video] title=YouTube video player frameborder=0 allow=accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share referrerpolicy=strict-origin-when-cross-origin allowfullscreen></iframe>";
+                }
+            }
+        ?>
+    </div>
+</div>
+<?php
+foreach ($games_lijst as $game => &$game_info){
+    if ($game == $game_titel){
+        if ($game_info["pegi"] >= 16) {
+            echo '<div id="popup2" style="display: block" class="popup2-content">';
+        }
+        else {
+            echo '<div id="popup2" class="popup2-content">';
+        }
+    }
+}
+
+?>
+<div class="popup2">
+    <div class="popup-content2">
+        <div class="popup2-section">
+            <img class="logoImg" src="images/logo_breed_wit.png" alt="logo-wit">
+        </div>
+        <h3 class="heading1">Voor deze pagina moet je 16+ zijn</h3>
+        <p class="bodyText">Verifieer jezelf hieronder</p>
+        <div class="btn-age-verification">
+            <button id="close" class="age-verification">Ik ben 16 of ouder - Enter</button>
+            <a href="index.php"><button class="tweede-btn age-verification">Ik ben onder 16 - Exit</button></a>
+        </div>
+        <p class="bottomText">
+            Op onze pagina over <a href="#">ouderlijk toezicht</a> wordt uitgelegd hoe u eenvoudig<br>
+            de toegang tot deze site kunt blokkeren.
+        </p>
+        <div class="disclaimer-wrapper">
+            <span class="copyright">© Gamestars.com, 2025</span>
+            <img src="images/logo_kopie.png" alt="disclaimer-image">
+        </div>
+    </div>
+</div>
+</div>
+<div id="popup3">
+    <div class="popup3">
+        <form method="POST" action="">
+            <label class="popup3-titel" for="naam">Naam:</label><br>
+            <input type="text" id="naam" name="naam" required placeholder="Vul hier je naam in"><br><br>
+
+            <label class="popup3-titel" for="beschrijving">Beschrijving:</label><br>
+            <textarea id="beschrijving" name="beschrijving" rows="4" cols="50" required placeholder="Beschrijf je antwoord hier..."></textarea><br><br>
+
+            <labe class="popup3-titel">Rating:</labe>
+            <div class="popup3-radio-list">
+                <div class="ctn-radio">
+                    <input type="radio" id="rating1" name="rating" value="1" required>
+                    <label for="rating1"><p>★☆☆☆☆</p></label>
+                </div>
+                <div class="ctn-radio">
+                    <input type="radio" id="rating2" name="rating" value="2">
+                    <label for="rating2"><p>★★☆☆☆</p></label>
+                </div>  
+                <div class="ctn-radio">
+                    <input type="radio" id="rating3" name="rating" value="3">
+                    <label for="rating3"><p>★★★☆☆</p></label>
+                </div>    
+                <div class="ctn-radio">
+                    <input type="radio" id="rating4" name="rating" value="4">
+                    <label for="rating4"><p>★★★★☆</p></label>
+                </div>
+                <div class="ctn-radio">
+                    <input type="radio" id="rating5" name="rating" value="5">
+                    <label for="rating5"><p>★★★★★</p></label>
+                </div>
+            </div>
+            <div class="ctn-popup3-btn">
+                <button type="submit">Verstuur Review ></button>
+                <button type="button" id="close-popup-button">Sluiten</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<main>
+    <section class="container-game-detail">
+    <img class="game-detail-img" src="images/game.png">
+        <?php
+            foreach ($games_lijst as $game => &$game_info){
+                if ($game == $game_titel){
+                    echo "<figure id=image-game-cover style='background-image: url($game_info[img]);'>"
+                    ?>
+                    <figure id="image-game-cover-cover">
+                        <?php
+                            foreach ($games_lijst as $game => &$game_info){
+                                if ($game == $game_titel){
+                                    echo "<img id=image1 src=$game_info[imagegamecover2]>";
+                                }
+                            }
+                        ?>
+                    </figure>
+                    
+                    <figure id="image-game-cover-cover2">
+                        <?php
+                            foreach ($games_lijst as $game => &$game_info){
+                                if ($game == $game_titel){
+                                    echo "<img id=image2 src=$game_info[imagegamecover3]>";
+                                }
+                            }
+                        ?>
+                    </figure>
+
+                    <?php
+                    echo"</figure>";
+                }
+            }
+        ?>
+        
         <div class="game-info">
             <?php
-            foreach ($games_lijst as $game => $game_info){
+            foreach ($games_lijst as $game => &$game_info){
                 if ($game == $game_titel){
                     echo "<h1>$game_info[Titel]</h1>";
                 }
@@ -118,20 +365,22 @@
             ?>
             <div class="rating-box">
                 <?php
-                foreach ($games_lijst as $game => $games_info) {
+                foreach ($games_lijst as $game => &$games_info) {
                     if ($game == $game_titel) {
-                        echo "<p class='rating-games-info'>$games_info[rating]</p>";
+                        echo "<p class='rating-games-info'>$ratings[$gemiddeldeSterren]</p>";
                     }
                 }
                 ?>
                 <p class="rating-box-p">
-                    4 Reviews
+                    <?php
+                    echo "$aantalRatings Reviews"
+                    ?>
                 </p>
             </div>
             <hr>
             <div class="box-prijs">
                 <?php
-                foreach ($games_lijst as $game => $games_info) {
+                foreach ($games_lijst as $game => &$games_info) {
                     if ($game == $game_titel) {
                         echo "<h2>$games_info[prijs]</h2>";
                     }
@@ -146,10 +395,10 @@
                         <div id="dropdowncnt" class="dropdown-content">
                             <?php
 
-                            foreach ($games_lijst as $game => $game_info){
+                            foreach ($games_lijst as $game => &$game_info){
                                 if ($game == $game_titel){
-                                    foreach ($game_info["opties"] as $optie){
-                                        echo "<a href='#'>$optie</a>";
+                                    foreach ($game_info["opties"] as $index => $optie) {
+                                        echo "<a class='optielink' data='$index' href='#'>$optie</a>";
                                     }
                                 }
                             }
@@ -161,7 +410,7 @@
             </div>
             <hr>
             <?php
-            foreach ($games_lijst as $game => $game_info){
+            foreach ($games_lijst as $game => &$game_info){
                 if ($game == $game_titel){
                     echo "<p class=tekst-game-detail-2>$game_info[detail]</p>";
                 }
@@ -175,15 +424,102 @@
                 </div>
                 <?php
 
-                foreach ($games_lijst as $game => $game_info){
-                    if ($game == $game_titel){
-                        echo "<img src=$game_info[pegi]>";
+                foreach ($games_lijst as $game => &$game_info) {
+                    if ($game == $game_titel) {
+                        echo "<img src='" . $foto_pegi_lijst[$game_info["pegi"]] ."'>";
                     }
                 }
 
                 ?>
             </div>
         </div>
+    </section>
+    <hr>
+    <section class="ctn-game-details">
+        <div class="container-game-details">
+            <div id="item-game-detail-genre">
+            <h1>Genre</h1>
+                <?php
+
+                foreach ($games_lijst as $game => &$game_info) {
+                    if ($game == $game_titel) {
+                        echo "<p>$game_info[genre]</p>";
+                    }
+                }
+
+                ?>
+                </div>
+
+            <div id="item-game-detail-platforms">
+            <h1>Platforms</h1>
+            <?php
+
+            foreach ($games_lijst as $game => &$game_info) {
+                if ($game == $game_titel) {
+                    foreach ($game_info["platforms"] as $titel => $detail) {
+                        echo "<div class=platform><h4>&bull; $titel</h4><p>$detail</p></div>";
+                    }
+                }
+            }
+
+?>
+            </div>
+
+            <div id="item-game-detail-maker">
+            <h1>Maker</h1>
+            <?php
+
+            foreach ($games_lijst as $game => &$game_info) {
+                 if ($game == $game_titel) {
+                    echo "<p>$game_info[maker]</p>";
+                 }
+            }
+
+?>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="main-slideshow-ctn">
+        <div id="slideshow-container">
+            <img class="slideshow-php" id="slideshow" src="images/PEGI_18.jpg" alt="Slideshow">
+        </div>
+        <label for="imageUpload" class="custom-file-btn">Kies een afbeelding</label>
+        <input type="file" id="imageUpload" accept="Z:\images\*">
+        <button onclick="openPrompt()" class="custom-file-btn">Kies een afbeelding (prompt)</button>
+    </section>  
+    <hr>
+    <div class="review-title-container">
+        <h1 class="reviews-header">Reviews</h1>
+        <div class="box-cart2">
+            <a href="#" id="reviewaddbutton" class="button-cart2">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                    <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z"/>
+                </svg>
+                <p>Write a Review</p>
+            </a>
+        </div>
+    </div>
+    <section id="reviews-container">    
+    <?php
+        foreach ($games_lijst as $game => &$game_info){
+            if ($game == $game_titel){
+                foreach ($game_info["reviews"] as $name => $review){
+                $stars = $review["stars"];
+                echo "<div class=reviewappendcontainer>
+                        <img class=profileimage src=$review[profileimage]>
+                        <div class=profileinfo>
+                            <h4>$name</h4>
+                            <p class=date>$review[date]</p>
+                            <p class=stars>$ratings[$stars]</p>
+                        </div>
+                        <p>$review[description]</p>
+                </div>"
+                ;
+            }
+        }
+    }
+        ?>
     </section>
 </main>
 
@@ -226,6 +562,56 @@
         Disclaimer: This website is not responsible for any mistakes
     </p>
 </footer>
+<script>
+    // Array met 5 afbeeldingen
+    let fotos = [
+        "images/ark-cover2.jpg",
+        "images/assasins_creed-cover2.jpg",
+        "images/far-cry4-cover.jpg",
+        "images/flight_simulator-cover1.jpg",
+        "images/red-dead-redemption-2-cover1.avif",
+    ];
+
+    // Variabelen voor slideshow
+    let currentIndex = 0;
+    const slideshowImage = document.getElementById("slideshow");
+
+    // Functie om de afbeelding te veranderen
+    function changeImage() {
+        slideshowImage.src = fotos[currentIndex];
+        currentIndex = (currentIndex + 1) % fotos.length; // Loopt door de array heen
+    }
+
+    // Start de slideshow (verandert elke 2,5 seconden)
+    setInterval(changeImage, 2500);
+
+    // Functie om een afbeelding toe te voegen via file input
+    document.getElementById("imageUpload").addEventListener("change", function(event) {
+        let file = event.target.files[0];
+
+        if (file) {
+            let reader = new FileReader();
+            reader.onload = function(e) {
+                fotos.push(e.target.result); // Voeg het bestand toe als een base64-string
+                alert("Afbeelding toegevoegd!");
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+
+    function openPrompt() {
+        let filePath = prompt("Voer het pad van de afbeelding in:");
+        if (filePath) {
+            if (!fotos.includes(filePath)) {
+                fotos.push(filePath);
+                alert("Afbeelding toegevoegd aan de lijst!");
+            }
+            let imgElement = document.getElementById("imageDisplay");
+            imgElement.src = filePath;
+            imgElement.style.display = "block";
+        }
+    }
+</script>
 <script src="js/script.js"></script>
 </body>
 </html>
