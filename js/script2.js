@@ -1,46 +1,31 @@
-const images = [
-    "../images/skull_and_bones.jpg",
-    "../images/red_dead_slide.jpg",
-    "../images/spider_man.jpg",
-    "../images/fortnite.jpg",
-    "../images/far_cry.jpg"
-];
+
 const popup = document.getElementById('popup');
 const popup3 = document.getElementById('popup3');
 const openPopupBtn = document.querySelector('.game-detail-img');
 const closePopupBtn = document.getElementById('closePopupBtn');
-let currentImageIndex = 0;
 
-function changeBackground() {
-    const nextImageIndex = (currentImageIndex + 1) % images.length;
-    const slideshow = document.querySelector('.content-slideshow');
+try {
+    document.getElementById("svg1").addEventListener("click", function () {
+        try {
+            document.getElementById("svg2").style.display = "block";
+            document.getElementById("svg1").style.display = "none";
+        } catch (error) {
+            console.error("Fout bij het wijzigen van de display-stijl voor svg1 of svg2:", error);
+        }
+    });
 
-    slideshow.style.setProperty('--next-slideshow-bg', `url("${images[nextImageIndex]}")`);
-
-    slideshow.classList.add('fade-in');
-
-    setTimeout(() => {
-        slideshow.style.setProperty('--slideshow-bg', `url("${images[nextImageIndex]}")`);
-        slideshow.classList.remove('fade-in');
-        currentImageIndex = nextImageIndex;
-    }, 1500);
+    document.getElementById("svg2").addEventListener("click", function () {
+        try {
+            document.getElementById("svg2").style.display = "none";
+            document.getElementById("svg1").style.display = "block";
+        } catch (error) {
+            console.error("Fout bij het wijzigen van de display-stijl voor svg1 of svg2:", error);
+        }
+    });
+} catch (error) {
+    console.error("Fout bij het toevoegen van event listeners:", error);
 }
 
-
-setInterval(changeBackground, 5000);
-
-document.getElementById("svg1").addEventListener("click", function () {
-    document.getElementById("svg2").style.display = "block"
-    document.getElementById("svg1").style.display = "none"
-});
-document.getElementById("svg2").addEventListener("click", function () {
-    document.getElementById("svg2").style.display = "none"
-    document.getElementById("svg1").style.display = "block"
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-
-})
 document.getElementById("dropdownbtn").addEventListener("click", function (){
     document.getElementById("dropdowncnt").style.display =
         document.getElementById("dropdowncnt").style.display === 'block' ? 'none' : 'block';
