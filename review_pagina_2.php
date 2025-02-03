@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <head>
-        <meta charset="UTF-8">
-        <!-- Zorgt ervoor dat de pagina correct wordt weergegeven op mobiele apparaten. -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- SEO (search engine optimation) Metagegevens -->
+    <meta charset="UTF-8">
+    <!-- Zorgt ervoor dat de pagina correct wordt weergegeven op mobiele apparaten. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- SEO (search engine optimation) Metagegevens -->
 
-        <!-- Description voor zoekmachines en sociale media, omschrijft kort de inhoud van de pagina. -->
-        <meta name="description" content="Een pagina voor de home van gamestars">
+    <!-- Description voor zoekmachines en sociale media, omschrijft kort de inhoud van de pagina. -->
+    <meta name="description" content="Een pagina voor de home van gamestars">
 
-        <!-- Keywords Helpt zoekmachines begrijpen waar de pagina over gaat. -->
-        <meta name="keywords" content="Games, rating, game, videogames, advise">
+    <!-- Keywords Helpt zoekmachines begrijpen waar de pagina over gaat. -->
+    <meta name="keywords" content="Games, rating, game, videogames, advise">
 
-        <!-- Author de naam van de developer van de pagina.  -->
-        <meta name="author" content="Devi van Riet">
+    <!-- Author de naam van de developer van de pagina.  -->
+    <meta name="author" content="Devi van Riet, Kaya Altona">
 
-        <!-- De Opdracht van de huidige pagina.  -->
-        <meta name="opdracht" content="Deze pagina is gemaakt door Devi van Riet">
+    <!-- De Opdracht van de huidige pagina.  -->
+    <meta name="opdracht" content="Deze pagina is gemaakt door Devi van Riet en Kaya Altona">
 
-        <!-- De titel van de pagina, deze verschijnt op het tabblad, geef hieraan waar de pagina over gaat  -->
-        <title>Gamestars - Game Review 1</title>
+    <!-- De titel van de pagina, deze verschijnt op het tabblad, geef hieraan waar de pagina over gaat  -->
+    <title>Gamestars - Game Review 2</title>
 
-        <!-- Favicon kleine afbeelding die wordt weergegeven in de browser-tabbladen -->
-        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Favicon kleine afbeelding die wordt weergegeven in de browser-tabbladen -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-        <!--  link naar de stylesheet -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-
+    <!--  link naar de stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 <body>
 <header>
     <nav>
@@ -326,6 +324,6 @@
         Disclaimer: This website is not responsible for any mistakes
     </p>
 </footer>
-<script src="js/script.js"></script>
+<script src="js/script1.js"></script>
 </body>
 </html>

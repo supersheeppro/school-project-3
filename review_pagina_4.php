@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <head>
-        <meta charset="UTF-8">
-        <!-- Zorgt ervoor dat de pagina correct wordt weergegeven op mobiele apparaten. -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- SEO (search engine optimation) Metagegevens -->
+    <meta charset="UTF-8">
+    <!-- Zorgt ervoor dat de pagina correct wordt weergegeven op mobiele apparaten. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- SEO (search engine optimation) Metagegevens -->
 
-        <!-- Description voor zoekmachines en sociale media, omschrijft kort de inhoud van de pagina. -->
-        <meta name="description" content="Een pagina voor de home van gamestars">
+    <!-- Description voor zoekmachines en sociale media, omschrijft kort de inhoud van de pagina. -->
+    <meta name="description" content="Een pagina voor de home van gamestars">
 
-        <!-- Keywords Helpt zoekmachines begrijpen waar de pagina over gaat. -->
-        <meta name="keywords" content="Games, rating, game, videogames, advise">
+    <!-- Keywords Helpt zoekmachines begrijpen waar de pagina over gaat. -->
+    <meta name="keywords" content="Games, rating, game, videogames, advise">
 
-        <!-- Author de naam van de developer van de pagina.  -->
-        <meta name="author" content="Devi van Riet">
+    <!-- Author de naam van de developer van de pagina.  -->
+    <meta name="author" content="Devi van Riet, Kaya Altona">
 
-        <!-- De Opdracht van de huidige pagina.  -->
-        <meta name="opdracht" content="Deze pagina is gemaakt door Devi van Riet">
+    <!-- De Opdracht van de huidige pagina.  -->
+    <meta name="opdracht" content="Deze pagina is gemaakt door Devi van Riet en Kaya Altona">
 
-        <!-- De titel van de pagina, deze verschijnt op het tabblad, geef hieraan waar de pagina over gaat  -->
-        <title>Gamestars - Game Review 4</title>
+    <!-- De titel van de pagina, deze verschijnt op het tabblad, geef hieraan waar de pagina over gaat  -->
+    <title>Gamestars - Game Review 4</title>
 
-        <!-- Favicon kleine afbeelding die wordt weergegeven in de browser-tabbladen -->
-        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Favicon kleine afbeelding die wordt weergegeven in de browser-tabbladen -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-        <!--  link naar de stylesheet -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-
+    <!--  link naar de stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 <body>
 <header>
     <nav>
@@ -562,56 +560,7 @@ foreach ($games_lijst as $game => &$game_info){
         Disclaimer: This website is not responsible for any mistakes
     </p>
 </footer>
-<script>
-    // Array met 5 afbeeldingen
-    let fotos = [
-        "images/ark-cover2.jpg",
-        "images/assasins_creed-cover2.jpg",
-        "images/far-cry4-cover.jpg",
-        "images/flight_simulator-cover1.jpg",
-        "images/red-dead-redemption-2-cover1.avif",
-    ];
-
-    // Variabelen voor slideshow
-    let currentIndex = 0;
-    const slideshowImage = document.getElementById("slideshow");
-
-    // Functie om de afbeelding te veranderen
-    function changeImage() {
-        slideshowImage.src = fotos[currentIndex];
-        currentIndex = (currentIndex + 1) % fotos.length; // Loopt door de array heen
-    }
-
-    // Start de slideshow (verandert elke 2,5 seconden)
-    setInterval(changeImage, 2500);
-
-    // Functie om een afbeelding toe te voegen via file input
-    document.getElementById("imageUpload").addEventListener("change", function(event) {
-        let file = event.target.files[0];
-
-        if (file) {
-            let reader = new FileReader();
-            reader.onload = function(e) {
-                fotos.push(e.target.result); // Voeg het bestand toe als een base64-string
-                alert("Afbeelding toegevoegd!");
-            };
-            reader.readAsDataURL(file);
-        }
-    });
-
-    function openPrompt() {
-        let filePath = prompt("Voer het pad van de afbeelding in:");
-        if (filePath) {
-            if (!fotos.includes(filePath)) {
-                fotos.push(filePath);
-                alert("Afbeelding toegevoegd aan de lijst!");
-            }
-            let imgElement = document.getElementById("imageDisplay");
-            imgElement.src = filePath;
-            imgElement.style.display = "block";
-        }
-    }
-</script>
-<script src="js/script.js"></script>
+<script src="js/review_pagina_4.js"></script>
+<script src="js/script3.js"></script>
 </body>
 </html>

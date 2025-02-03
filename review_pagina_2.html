@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <head>
-        <meta charset="UTF-8">
-        <!-- Zorgt ervoor dat de pagina correct wordt weergegeven op mobiele apparaten. -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- SEO (search engine optimation) Metagegevens -->
+    <meta charset="UTF-8">
+    <!-- Zorgt ervoor dat de pagina correct wordt weergegeven op mobiele apparaten. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- SEO (search engine optimation) Metagegevens -->
 
-        <!-- Description voor zoekmachines en sociale media, omschrijft kort de inhoud van de pagina. -->
-        <meta name="description" content="Een pagina voor de home van gamestars">
+    <!-- Description voor zoekmachines en sociale media, omschrijft kort de inhoud van de pagina. -->
+    <meta name="description" content="Een pagina voor de home van gamestars">
 
-        <!-- Keywords Helpt zoekmachines begrijpen waar de pagina over gaat. -->
-        <meta name="keywords" content="Games, rating, game, videogames, advise">
+    <!-- Keywords Helpt zoekmachines begrijpen waar de pagina over gaat. -->
+    <meta name="keywords" content="Games, rating, game, videogames, advise">
 
-        <!-- Author de naam van de developer van de pagina.  -->
-        <meta name="author" content="Devi van Riet">
+    <!-- Author de naam van de developer van de pagina.  -->
+    <meta name="author" content="Devi van Riet, Kaya Altona">
 
-        <!-- De Opdracht van de huidige pagina.  -->
-        <meta name="opdracht" content="Deze pagina is gemaakt door Devi van Riet">
+    <!-- De Opdracht van de huidige pagina.  -->
+    <meta name="opdracht" content="Deze pagina is gemaakt door Devi van Riet en Kaya Altona">
 
-        <!-- De titel van de pagina, deze verschijnt op het tabblad, geef hieraan waar de pagina over gaat  -->
-        <title>Gamestars - Game Review 1</title>
+    <!-- De titel van de pagina, deze verschijnt op het tabblad, geef hieraan waar de pagina over gaat  -->
+    <title>Gamestars - Game Review 2</title>
 
-        <!-- Favicon kleine afbeelding die wordt weergegeven in de browser-tabbladen -->
-        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Favicon kleine afbeelding die wordt weergegeven in de browser-tabbladen -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-        <!--  link naar de stylesheet -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
+    <!--  link naar de stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 <body>
 <header>
     <nav>
@@ -139,310 +138,7 @@
         Disclaimer: This website is not responsible for any mistakes
     </p>
 </footer>
-<script>
-    const urlParams = new URLSearchParams(window.location.search);
-    let titel = urlParams.get('titel');
-    let foto_pegi_lijst = {
-        "12":"images/PEGI_12.jpg",
-        "18":"images/PEGI_18.jpg",
-        "7":"images/PEGI_7.jpg",
-        "16":"images/PEGI_3.jpg"
-    }
-    let ratings = {
-        "1":"★☆☆☆☆",
-        "2":"★★☆☆☆",
-        "3":"★★★☆☆",
-        "4":"★★★★☆",
-        "5":"★★★★★"
-    }
-    games = {
-        'game1' : {
-            "Titel":"Read Dead Redemption II",
-            "detail":"Red Dead Redemption 2 is een actie-avonturengame waarin spelers een uitgestrekte, realistische open wereld verkennen in het Wilde Westen. Als Arthur Morgan, lid van de Van der Linde-bende, bepaal je met jouw keuzes het lot van de groep. De game biedt jagen, vissen, paardrijden en missies, gecombineerd met een meeslepend verhaal en dynamische interacties. Dankzij adembenemende graphics en diepe thema's blijft het een favoriet onder liefhebbers van realistische en verhaalgedreven games.",
-            "imagegamecover":"images/red-dead-redemption-2-cover1.avif",
-            "pegi" : foto_pegi_lijst["18"],
-            "opties": ["Read Dead Redemption I", "Read Dead Redemption II", "Read Dead Online"],
-            "prijs": "€59,99",
-            "imagegamecover3":"images/red-dead-redemption-2-cover2.avif",
-            "imagegamecover2":"images/red-dead-redemption-2-cover3.jpg",
-            "reviews": {"Jhon doe": {
-                "date": "aug 14, 2024",
-                "description": "good but simple and creative game",
-                "stars": 2,
-                "profileimage": "images/profile_default.jpg",
-            },
-            "Jhon doe2": {
-                "date": "aug 14, 2024",
-                "description": "good but simple and creative game",
-                "stars": 2,
-                "profileimage": "images/profile_default.jpg",
-            }
-
-            }
-        },
-        'game2' : {
-            "Titel":"Assasins Creed",
-            "detail":"The Forest is een survival-horror game waarin spelers een mysterieus eiland verkennen na een vliegtuigcrash. Je neemt de rol aan van een overlevende die zijn zoon probeert te redden terwijl je geconfronteerd wordt met een gevaarlijke omgeving en kannibalistische mutanten. De game biedt zowel een boeiende singleplayer-ervaring als een coöperatieve multiplayer-modus.",
-            "imagegamecover":"images/assasins_creed-cover.jpg",
-            "pegi" : foto_pegi_lijst["18"],
-            "opties": ["Assasins Creed I", "Assasins Creed II", "Assasins Creed Odyssey"],
-            "prijs": "€19,99",
-            "imagegamecover2":"images/assasins_creed-cover2.jpg",
-            "imagegamecover3":"images/assasins_creed-cover3.jpg",
-            "reviews": {"Jhon doe": {
-                "date": "aug 14, 2024",
-                "description": "good but simple and creative game",
-                "stars": 2,
-                "profileimage": "images/profile_default.jpg",
-            }
-            },
-        },
-        'game3' : {
-            "Titel":"Microsoft Flight Simulator 2024",
-            "detail":"Microsoft Flight Simulator 2024 is een realistische simulatiegame waarin spelers de wereld vanuit de cockpit van diverse vliegtuigen verkennen. Met een uitgebreide selectie aan vliegtuigen, real-time weersimulaties en levensechte landschappen biedt de game een ongeëvenaarde vliegervaring. Of je nu missies voltooit, nieuwe gebieden ontdekt of je vliegvaardigheden verfijnt, elke vlucht voelt authentiek. Dankzij verbluffende graphics, dynamische uitdagingen en gedetailleerde simulaties blijft Microsoft Flight Simulator 2024 een favoriet voor zowel casual spelers als serieuze luchtvaartliefhebbers.",
-            "imagegamecover":"images/flight_simulator-cover1.jpg",
-            "rating":ratings["4"],
-            "pegi" : foto_pegi_lijst["3"],
-            "opties": ["Microsoft Flight Simulator 2020", "Microsoft Flight Simulator 2024"],
-            "prijs": "€79,99",
-            "imagegamecover2":"images/flight-simulator-cover2.jpeg",
-            "imagegamecover3":"images/flight_simulator-cover3.jpg",
-            "reviews": {"Jhon doe": {
-                    "date": "aug 14, 2024",
-                    "description": "good but simple and creative game",
-                    "stars": 2,
-                    "profileimage": "images/profile_default.jpg",
-                },
-                "Jhon doe2": {
-                    "date": "aug 14, 2024",
-                    "description": "good but simple and creative game",
-                    "stars": 2,
-                    "profileimage": "images/profile_default.jpg",
-                }
-
-            }
-        },
-        'game4' : {
-            "Titel":"Grand Theft Auto V",
-            "detail":"Grand Theft Auto V is een actie-avonturengame waarin spelers een uitgestrekte, levendige open wereld verkennen in de fictieve staat San Andreas. Als Michael, Franklin en Trevor, drie unieke personages met verweven verhalen, voer je missies uit en maak je keuzes die hun levens beïnvloeden. De game biedt autoraces, heists, vrije exploratie en talloze activiteiten, gecombineerd met een spannend verhaal en interactieve gameplay. Dankzij indrukwekkende graphics, zwarte humor en rijke details blijft het een favoriet onder fans van open-wereld en verhaalgedreven games.",
-            "imagegamecover":"images/gtav-cover.jpg",
-            "rating":ratings["4"],
-            "pegi" : foto_pegi_lijst["18"],
-            "opties": ["Grand Theft Auto IV", "Grand Theft Auto V", "Grand Theft Auto Online"],
-            "prijs": "€14,80",
-            "imagegamecover2":"images/gtav-cover2.jpg",
-            "imagegamecover3":"images/gtav-cover3.jpg",
-            "reviews": {"Jhon doe": {
-                    "date": "aug 14, 2024",
-                    "description": "good but simple and creative game",
-                    "stars": 2,
-                    "profileimage": "images/profile_default.jpg",
-                },
-                "Jhon doe2": {
-                    "date": "aug 14, 2024",
-                    "description": "good but simple and creative game",
-                    "stars": 2,
-                    "profileimage": "images/profile_default.jpg",
-                }
-
-            }
-        }
-    }
-
-
-    switch (titel) {
-        case games['game1']['Titel']:
-            let reviews1 = games['game1'].reviews; 
-
-            let totaalSterren1 = 0;
-            let aantalReviews1 = Object.keys(reviews1).length;
-            let gemiddeldeSterren1 = 0;
-
-            if (aantalReviews1 > 0) {
-                for (let reviewer in reviews1) {
-                    totaalSterren1 += reviews1[reviewer].stars;
-                }
-                gemiddeldeSterren1 = Math.round(totaalSterren1 / aantalReviews1);
-                console.log(gemiddeldeSterren1)
-                document.getElementById("reviewscount").innerText = `${aantalReviews1} Reviews`
-            }
-            else {
-                console.log("er zijn geen reviews")
-            }
-            document.getElementById("pagina_titel").innerHTML = games['game1']["Titel"]
-            document.getElementById("pagina_detail").innerHTML = games['game1']["detail"]
-            document.getElementById("image-game-cover-cover").innerHTML = `<img src="${games['game1']["imagegamecover2"]}">`
-            document.getElementById("image-game-cover-cover2").innerHTML = `<img src="${games['game1']["imagegamecover3"]}">`
-            document.getElementById("image-game-cover").style.backgroundImage = `url(${games['game1']["imagegamecover"]})`
-            document.getElementById("rating").innerHTML =  ratings[gemiddeldeSterren1]
-            document.getElementById("pegirating").innerHTML =  `<img src="${games['game1']["pegi"]}">`
-            document.getElementById("prijs").innerHTML =  games['game1']["prijs"]
-            for (let optie of games['game1']["opties"]) {
-                document.getElementById("dropdowncnt").innerHTML += `<a>${optie}</a>`
-            }
-
-            for (let [reviewerName, reviewDetails] of Object.entries(games['game1'].reviews)) {
-                let reviewcontainer = document.createElement("div") 
-                reviewcontainer.classList.add("reviewappendcontainer")
-                reviewcontainer.innerHTML = `
-                <img class=profileimage src=${reviewDetails.profileimage}>
-                <div class=profileinfo>
-                    <h4>${reviewerName}</h4>
-                    <p class=date>${reviewDetails.date}</p>
-                    <p class=stars>${ratings[reviewDetails.stars]}</p>
-                </div>
-                <p>${reviewDetails.description}</p>
-                `
-                document.getElementById("reviews-container").append(reviewcontainer)
-                console.log(reviewerName)
-                console.log(reviewDetails.description)
-            }
-            console.log(games['game1']["Titel"])
-            break
-
-        case games['game2']["Titel"]:
-            let reviews2 = games['game1'].reviews; 
-
-            let totaalSterren2 = 0;
-            let aantalReviews2 = Object.keys(reviews2).length;
-            let gemiddeldeSterren2 = 0;
-
-            if (aantalReviews2 > 0) {
-                for (let reviewer in reviews2) {
-                    totaalSterren2 += reviews2[reviewer].stars;
-                }
-                gemiddeldeSterren2 = Math.round(totaalSterren2 / aantalReviews2);
-                console.log(gemiddeldeSterren2)
-                document.getElementById("reviewscount").innerText = `${aantalReviews2} Reviews`
-            } 
-            document.getElementById("pagina_titel").innerHTML = games['game2']["Titel"]
-            document.getElementById("pagina_detail").innerHTML = games['game2']["detail"]
-            document.getElementById("image-game-cover-cover").innerHTML = `<img src="${games['game2']["imagegamecover2"]}">`
-            document.getElementById("image-game-cover-cover2").innerHTML = `<img src="${games['game2']["imagegamecover3"]}">`
-            document.getElementById("image-game-cover").style.backgroundImage = `url(${games['game2']["imagegamecover"]})`
-            document.getElementById("rating").innerHTML =  ratings[gemiddeldeSterren2]
-            document.getElementById("pegirating").innerHTML =  `<imgeg src="${games['game2']["pegi"]}">`
-            document.getElementById("prijs").innerHTML =  games['game2']["prijs"]
-            for (let optie of games['game2']["opties"]) {
-                document.getElementById("dropdowncnt").innerHTML += `<a>${optie}</a>`
-            }
-            for (let [reviewerName, reviewDetails] of Object.entries(games['game1'].reviews)) {
-                let reviewcontainer = document.createElement("div") 
-                reviewcontainer.classList.add("reviewappendcontainer")
-                reviewcontainer.innerHTML = `
-                <img class=profileimage src=${reviewDetails.profileimage}>
-                <div class=profileinfo>
-                    <h4>${reviewerName}</h4>
-                    <p class=date>${reviewDetails.date}</p>
-                    <p class=stars>${ratings[reviewDetails.stars]}</p>
-                </div>
-                <p>${reviewDetails.description}</p>
-                `
-                document.getElementById("reviews-container").append(reviewcontainer)
-                console.log(reviewerName)
-                console.log(reviewDetails.description)
-            }
-            console.log(games['game2']["Titel"])
-            break
-        case games['game3']['Titel']:
-            let reviews3 = games['game3'].reviews;
-
-            let totaalSterren3 = 0;
-            let aantalReviews3 = Object.keys(reviews1).length;
-            let gemiddeldeSterren3 = 0;
-
-            if (aantalReviews3 > 0) {
-                for (let reviewer in reviews3) {
-                    totaalSterren3 += reviews3[reviewer].stars;
-                }
-                gemiddeldeSterren1 = Math.round(totaalSterren3 / aantalReviews3);
-                console.log(gemiddeldeSterren3)
-                document.getElementById("reviewscount").innerText = `${aantalReviews3} Reviews`
-            }
-            document.getElementById("pagina_titel").innerHTML = games['game3']["Titel"]
-            document.getElementById("pagina_detail").innerHTML = games['game3']["detail"]
-            document.getElementById("image-game-cover-cover").innerHTML = `<img src="${games['game3']["imagegamecover2"]}">`
-            document.getElementById("image-game-cover-cover2").innerHTML = `<img src="${games['game3']["imagegamecover3"]}">`
-            document.getElementById("image-game-cover").style.backgroundImage = `url(${games['game3']["imagegamecover"]})`
-            document.getElementById("rating").innerHTML =  ratings[gemiddeldeSterren1]
-            document.getElementById("pegirating").innerHTML =  `<img src="${games['game3']["pegi"]}">`
-            document.getElementById("prijs").innerHTML =  games['game3']["prijs"]
-            for (let optie of games['game3']["opties"]) {
-                document.getElementById("dropdowncnt").innerHTML += `<a>${optie}</a>`
-            }
-
-            for (let [reviewerName, reviewDetails] of Object.entries(games['game3'].reviews)) {
-                let reviewcontainer = document.createElement("div")
-                reviewcontainer.classList.add("reviewappendcontainer")
-                reviewcontainer.innerHTML = `
-                <img class=profileimage src=${reviewDetails.profileimage}>
-                <div class=profileinfo>
-                    <h4>${reviewerName}</h4>
-                    <p class=date>${reviewDetails.date}</p>
-                    <p class=stars>${ratings[reviewDetails.stars]}</p>
-                </div>
-                <p>${reviewDetails.description}</p>
-                `
-                document.getElementById("reviews-container").append(reviewcontainer)
-                console.log(reviewerName)
-                console.log(reviewDetails.description)
-            }
-            console.log(games['game3']["Titel"])
-            break
-
-        case games['game4']["Titel"]:
-            let reviews4 = games['game4'].reviews;
-
-            let totaalSterren4 = 0;
-            let aantalReviews4 = Object.keys(reviews4).length;
-            let gemiddeldeSterren4 = 0;
-
-            if (aantalReviews4 > 0) {
-                for (let reviewer in reviews4) {
-                    totaalSterren4 += reviews4[reviewer].stars;
-                }
-                gemiddeldeSterren4 = Math.round(totaalSterren4 / aantalReviews4);
-                console.log(gemiddeldeSterren4)
-                document.getElementById("reviewscount").innerText = `${aantalReviews4} Reviews`
-            }
-            document.getElementById("pagina_titel").innerHTML = games['game4']["Titel"]
-            document.getElementById("pagina_detail").innerHTML = games['game4']["detail"]
-            document.getElementById("image-game-cover-cover").innerHTML = `<img src="${games['game4']["imagegamecover2"]}">`
-            document.getElementById("image-game-cover-cover2").innerHTML = `<img src="${games['game4']["imagegamecover3"]}">`
-            document.getElementById("image-game-cover").style.backgroundImage = `url(${games['game4']["imagegamecover"]})`
-            document.getElementById("rating").innerHTML =  ratings[gemiddeldeSterren4]
-            document.getElementById("pegirating").innerHTML =  `<imgeg src="${games['game4']["pegi"]}">`
-            document.getElementById("prijs").innerHTML =  games['game4']["prijs"]
-            for (let optie of games['game4']["opties"]) {
-                document.getElementById("dropdowncnt").innerHTML += `<a>${optie}</a>`
-            }
-            for (let [reviewerName, reviewDetails] of Object.entries(games['game4'].reviews)) {
-                let reviewcontainer = document.createElement("div")
-                reviewcontainer.classList.add("reviewappendcontainer")
-                reviewcontainer.innerHTML = `
-                <img class=profileimage src=${reviewDetails.profileimage}>
-                <div class=profileinfo>
-                    <h4>${reviewerName}</h4>
-                    <p class=date>${reviewDetails.date}</p>
-                    <p class=stars>${ratings[reviewDetails.stars]}</p>
-                </div>
-                <p>${reviewDetails.description}</p>
-                `
-                document.getElementById("reviews-container").append(reviewcontainer)
-                console.log(reviewerName)
-                console.log(reviewDetails.description)
-            }
-            console.log(games['game4']["Titel"])
-            break
-        default:
-            document.getElementById("pagina_titel").innerHTML = "Gamestars"
-            document.getElementById("pagina_detail").innerHTML = "Gamestars"
-            console.log("Err: geen game getoont")
-            break
-    }
-
-
-</script>
-<script src="js/script.js"></script>
+<script src="js/review_pagina_2.js"></script>
+<script src="js/script1.js"></script>
 <body>
 

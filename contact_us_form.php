@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <!-- Zorgt ervoor dat de pagina correct wordt weergegeven op mobiele apparaten. -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- SEO (search engine optimation) Metagegevens -->
+	<meta charset="UTF-8">
+	<!-- Zorgt ervoor dat de pagina correct wordt weergegeven op mobiele apparaten. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Description voor zoekmachines en sociale media, omschrijft kort de inhoud van de pagina. -->
-    <meta name="description" content="Een pagina over de contact gegevens van gamestars en een contact formulier">
+	<!-- SEO (Search Engine Optimization) metadata -->
+	<meta name="description" content="Een pagina over de contact gegevens van gamestars en een contact formulier">
+	<meta name="keywords" content="contact, form, info, gamestars">
+	<meta name="author" content="Kaya Altona">
+	<meta name="opdracht" content="Deze pagina is gemaakt door Kaya Altona">
 
-    <!-- Keywords Helpt zoekmachines begrijpen waar de pagina over gaat. -->
-    <meta name="keywords" content="contact, form, info, gamestars">
+	<!-- Titel van de pagina die zichtbaar is in de browser-tab -->
+	<title>Gamestars - Contact us</title>
 
-    <!-- Author de naam van de developer van de pagina.  -->
-    <meta name="author" content="Kaya Altona">
+	<!-- Favicon voor de pagina, kleine afbeelding die zichtbaar is in de browser-tab -->
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-    <!-- De Opdracht van de huidige pagina.  -->
-    <meta name="opdracht" content="Deze pagina is gemaakt door Kaya Altona">
+	<!-- Link naar de externe stylesheet voor opmaak -->
+	<link rel="stylesheet" href="css/style.css">
 
-    <!-- De titel van de pagina, deze verschijnt op het tabblad, geef hieraan waar de pagina over gaat  -->
-    <title>Gamestars - Contact us</title>
-
-    <!-- Favicon kleine afbeelding die wordt weergegeven in de browser-tabbladen -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Link naar de Font Awesome iconen bibliotheek voor iconen -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+<!-- Header met navigatie menu -->
 <header>
     <nav>
         <a href="index.php">
             <img src="images/logo_breed_wit.png" alt="logo">
         </a>
+        <form id="form">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+            <input type="search" id="query" name="q" placeholder="Search">
+        </form>
         <ul>
             <a href="index.php">Home</a>
             <a href="games.php">Games</a>
@@ -49,88 +51,100 @@
     </nav>
 </header>
 
+<!-- Hoofdinhoud van de pagina -->
 <main class="main2">
-    <section class="contact-info">
-        <h4>CONTACT US</h4>
-        <h1>Get in touch <br>today</h1>
-        <p>We love questions and feedback – and we're always happy to help! <br>
-            Here are some ways to contact us.</p>
-        <div class="contact-method">
-            <div class="contact-item">
-                <i class="fas fa-envelope fa-lg"></i>
-                <article>
-                    <strong>Email:</strong>
-                    <p>contact@example.com</p>
-                </article>
+	<!-- Contactinformatie sectie -->
+	<section class="contact-info">
+		<h4>CONTACT US</h4>
+		<h1>Get in touch <br>today</h1>
+		<p>We love questions and feedback – and we're always happy to help! <br>
+			Here are some ways to contact us.</p>
 
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-phone fa-lg"></i>
-                <article>
-                    <strong>Phone:</strong>
-                    <p>+1 123 456 7890</p>
-                </article>
-            </div>
-        </div>
-    </section>
+		<!-- Verschillende contactmethoden -->
+		<div class="contact-method">
+			<div class="contact-item">
+				<!-- E-mail icoon met bijbehorende gegevens -->
+				<i class="fas fa-envelope fa-lg"></i>
+				<article>
+					<strong>Email:</strong>
+					<p>contact@example.com</p>
+				</article>
+			</div>
+			<div class="contact-item">
+				<!-- Telefoon icoon met bijbehorende gegevens -->
+				<i class="fas fa-phone fa-lg"></i>
+				<article>
+					<strong>Phone:</strong>
+					<p>+1 123 456 7890</p>
+				</article>
+			</div>
+		</div>
+	</section>
 
-    <section class="contact-form">
-        <form action="#" method="post">
-            <label for="full-name">Full Name</label>
-            <input type="text" id="full-name" name="full-name" required>
+	<!-- Contactformulier sectie -->
+	<section class="contact-form">
+		<form action="#" method="post">
+			<!-- Velden voor naam, e-mail, bedrijf en bericht -->
+			<label for="full-name">Full Name</label>
+			<input type="text" id="full-name" name="full-name" required>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" required>
 
-            <label for="company">Company (Optional)</label>
-            <input type="text" id="company" name="company">
+			<label for="company">Company (Optional)</label>
+			<input type="text" id="company" name="company">
 
-            <label for="message">Leave us a message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+			<label for="message">Leave us a message</label>
+			<textarea id="message" name="message" rows="5" required></textarea>
 
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+			<!-- Verzenden knop voor het formulier -->
+			<button type="submit">Send Message</button>
+		</form>
+	</section>
 </main>
 
+<!-- Footer sectie van de pagina -->
 <footer>
-    <hr>
-      <div class="footer-content">
-        <div class="footer-items">
-          <img src="images/logo_kopie.png" alt="logo">
-          <p>1717 Harrison St, San Francisco, CA 94103, USA</p>
-          <p>&copyGameStars</p>
-        </div>
-        <div>
-          <h1>Main Menu</h1><br>
-          <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="games.php">Games</a></li>
-            <li><a href="merch.php">Merch</a></li>
-            <li><a href="contact_us_form.php">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h1>Find Us On</h1><br>
-          <ul>
-            <li><i class="fa-brands fa-square-x-twitter"></i></li>
-            <li><i class="fa-brands fa-square-facebook"></i></li>
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-brands fa-linkedin"></i></li>
-          </ul>
-        </div>
-        <div>
-          <h1>Contact Us</h1><br>
-          <p>
-            177 Huntington Ave Ste 1703<br><br>
-            contact-us@company.com<br><br>
-            +1-617-555-0108
-          </p>
-        </div>
-      </div>
-      <p class="disclaimer-footer">
-        Disclaimer: This website is not responsible for any mistakes
-      </p>
-    </footer>
+	<hr>
+	<div class="footer-content">
+		<div class="footer-items">
+			<!-- Footer logo en adres -->
+			<img src="images/logo_kopie.png" alt="logo">
+			<p>1717 Harrison St, San Francisco, CA 94103, USA</p>
+			<p>&copy; GameStars</p>
+		</div>
+		<div>
+			<h1>Main Menu</h1><br>
+			<ul>
+				<li><a href="index.php">Home</a></li>
+				<li><a href="games.php">Games</a></li>
+				<li><a href="merch.php">Merch</a></li>
+				<li><a href="contact_us_form.php">Contact</a></li>
+			</ul>
+		</div>
+		<div>
+			<h1>Find Us On</h1><br>
+			<ul>
+				<!-- Sociale media icoontjes -->
+				<li><i class="fa-brands fa-square-x-twitter"></i></li>
+				<li><i class="fa-brands fa-square-facebook"></i></li>
+				<li><i class="fa-brands fa-instagram"></i></li>
+				<li><i class="fa-brands fa-linkedin"></i></li>
+			</ul>
+		</div>
+		<div>
+			<h1>Contact Us</h1><br>
+			<p>
+				177 Huntington Ave Ste 1703<br><br>
+				contact-us@company.com<br><br>
+				+1-617-555-0108
+			</p>
+		</div>
+	</div>
+	<!-- Disclaimer voor de footer -->
+	<p class="disclaimer-footer">
+		Disclaimer: This website is not responsible for any mistakes
+	</p>
+</footer>
 </body>
 </html>

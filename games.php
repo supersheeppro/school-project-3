@@ -5,7 +5,7 @@
     <!-- Zorgt ervoor dat de pagina correct wordt weergegeven op mobiele apparaten. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- SEO (search engine optimation) Metagegevens -->
+    <!-- SEO (search engine optimization) Metagegevens -->
 
     <!-- Description voor zoekmachines en sociale media, omschrijft kort de inhoud van de pagina. -->
     <meta name="description" content="Een pagina met de games en de ratings ervan">
@@ -157,7 +157,7 @@
                 </figcaption>
             </figure>
             <figure>
-                <a href="review_pagina_4.html?titel=Grand Theft Auto V">
+                <a href="review_pagina_2.html?titel=Grand Theft Auto V">
                     <img src="images/gtav.jpg" alt="Game 11">
                 </a>
                 <figcaption>
@@ -196,7 +196,7 @@
                 </figcaption>
             </figure>
             <figure>
-                <a href="review_pagina_3.php?titel=Far Cry 4">
+                <a href="review_pagina_4.php?titel=Far Cry 4">
                     <img src="images/farcry.jpg" alt="Game 11">
                 </a> 
                 <figcaption>
@@ -207,7 +207,7 @@
         </div>
         <div class="game-list">
             <figure>
-                <a href="review_pagina_3.html?titel=Red Dead Redemption II">
+                <a href="review_pagina_3.html?titel=Red%20Dead%20Redemption%20II">
                     <img src="images/rdr2.jpg" alt="Game 7">
                 </a>   
                 <figcaption>
@@ -216,7 +216,9 @@
                 </figcaption>
             </figure>
             <figure>
-                <img src="images/spiderman22.jpg"  alt="Game 8">
+                <a href="review_pagina_latest.php?titel=Spider Man 2">
+                    <img src="images/spiderman22.jpg"  alt="Game 8">
+                </a>
                 <figcaption>
                     <p>SPIDERMAN 2</p>
                     <p class="stars">★★★☆☆</p>
@@ -257,7 +259,7 @@
         <h1>Now Popular</h1>
         <div class="popular-list">
             <figure>
-                <a href="review_pagina_1.html?titel=Minecraft Java / Bedrock">
+                <a href="review_pagina_1.php?titel=Minecraft">
                     <img src="images/minecraft3.jpg" alt="Game 7">
                 </a>
                 <figcaption>
@@ -312,8 +314,8 @@
           <ul>
             <li><i class="fa-brands fa-square-x-twitter"></i></li>
             <li><i class="fa-brands fa-square-facebook"></i></li>
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-brands fa-linkedin"></i></li>
+            <li><i class="fa-brands fa-square-instagram"></i></li>
+            <li><i class="fa-brands fa-square-linkedin"></i></li>
           </ul>
         </div>
         <div>
@@ -331,3 +333,4 @@
     </footer>
 
 </body>
+</html>
